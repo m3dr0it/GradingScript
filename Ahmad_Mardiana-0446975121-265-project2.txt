@@ -1,0 +1,3604 @@
+   Static hostname: node1
+         Icon name: computer-vm
+           Chassis: vm
+        Machine ID: c87fdaeda054482fbb7c700d607bb943
+           Boot ID: b8e0bc37327e456ea820e1b7be1b1ade
+    Virtualization: kvm
+  Operating System: Red Hat Enterprise Linux Server 7.8 (Maipo)
+       CPE OS Name: cpe:/o:redhat:enterprise_linux:7.8:GA:server
+            Kernel: Linux 3.10.0-1127.el7.x86_64
+      Architecture: x86-64
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN mode DEFAULT group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP mode DEFAULT group default qlen 1000
+    link/ether 52:54:00:28:c2:93 brd ff:ff:ff:ff:ff:ff
+3: docker0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN mode DEFAULT group default 
+    link/ether 02:42:80:94:86:5f brd ff:ff:ff:ff:ff:ff
+4: br-2cadd976321a: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP mode DEFAULT group default 
+    link/ether 02:42:83:8b:ec:f1 brd ff:ff:ff:ff:ff:ff
+16: vethb528788@if15: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-2cadd976321a state UP mode DEFAULT group default 
+    link/ether 5e:6d:92:6b:b9:3c brd ff:ff:ff:ff:ff:ff link-netnsid 0
+18: vethff242ec@if17: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-2cadd976321a state UP mode DEFAULT group default 
+    link/ether 36:28:44:aa:ea:7c brd ff:ff:ff:ff:ff:ff link-netnsid 1
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 52:54:00:28:c2:93 brd ff:ff:ff:ff:ff:ff
+    inet 10.10.21.101/24 brd 10.10.21.255 scope global noprefixroute eth0
+       valid_lft forever preferred_lft forever
+    inet6 fe80::44cb:72bc:5bf6:cecb/64 scope link tentative noprefixroute dadfailed 
+       valid_lft forever preferred_lft forever
+    inet6 fe80::fb69:18bd:38b1:ef43/64 scope link noprefixroute 
+       valid_lft forever preferred_lft forever
+3: docker0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default 
+    link/ether 02:42:80:94:86:5f brd ff:ff:ff:ff:ff:ff
+    inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
+       valid_lft forever preferred_lft forever
+4: br-2cadd976321a: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default 
+    link/ether 02:42:83:8b:ec:f1 brd ff:ff:ff:ff:ff:ff
+    inet 172.18.0.1/16 brd 172.18.255.255 scope global br-2cadd976321a
+       valid_lft forever preferred_lft forever
+    inet6 fe80::42:83ff:fe8b:ecf1/64 scope link 
+       valid_lft forever preferred_lft forever
+16: vethb528788@if15: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-2cadd976321a state UP group default 
+    link/ether 5e:6d:92:6b:b9:3c brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet6 fe80::5c6d:92ff:fe6b:b93c/64 scope link 
+       valid_lft forever preferred_lft forever
+18: vethff242ec@if17: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-2cadd976321a state UP group default 
+    link/ether 36:28:44:aa:ea:7c brd ff:ff:ff:ff:ff:ff link-netnsid 1
+    inet6 fe80::3428:44ff:feaa:ea7c/64 scope link 
+       valid_lft forever preferred_lft forever
+Permissive
+docker-ce-19.03.12-3.el7.x86_64
+docker-ce-cli-19.03.12-3.el7.x86_64
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+wordpress           latest              a5fef19f5a86        10 days ago         543MB
+mariadb             latest              22851c7fe916        13 days ago         407MB
+/root/var:
+total 0
+drwxr-xr-x. 3 root root 19 Jul  6 02:44 lib
+drwxr-xr-x. 3 root root 18 Jul  6 02:50 www
+
+/root/var/lib:
+total 0
+drwxr-xr-x. 5 polkitd root 206 Jul  6 15:07 mysql
+
+/root/var/lib/mysql:
+total 141004
+-rw-rw----. 1 polkitd input  18546688 Jul  6 15:03 aria_log.00000001
+-rw-rw----. 1 polkitd input        52 Jul  6 15:03 aria_log_control
+-rw-rw----. 1 polkitd input       976 Jul  6 15:03 ib_buffer_pool
+-rw-rw----. 1 polkitd input  12582912 Jul  6 15:03 ibdata1
+-rw-rw----. 1 polkitd input 100663296 Jul  6 15:07 ib_logfile0
+-rw-rw----. 1 polkitd input  12582912 Jul  6 15:07 ibtmp1
+-rw-rw----. 1 polkitd input         0 Jul  6 02:44 multi-master.info
+drwx------. 2 polkitd input      4096 Jul  6 02:44 mysql
+drwx------. 2 polkitd input        20 Jul  6 02:44 performance_schema
+drwx------. 2 polkitd input        20 Jul  6 02:44 wordpress
+
+/root/var/lib/mysql/mysql:
+total 10808
+-rw-rw----. 1 polkitd input    2108 Jul  6 02:44 columns_priv.frm
+-rw-rw----. 1 polkitd input    8192 Jul  6 02:44 columns_priv.MAD
+-rw-rw----. 1 polkitd input    8192 Jul  6 02:44 columns_priv.MAI
+-rw-rw----. 1 polkitd input    2600 Jul  6 02:44 column_stats.frm
+-rw-rw----. 1 polkitd input    8192 Jul  6 02:44 column_stats.MAD
+-rw-rw----. 1 polkitd input    8192 Jul  6 02:44 column_stats.MAI
+-rw-rw----. 1 polkitd input    2713 Jul  6 02:44 db.frm
+-rw-rw----. 1 polkitd input   16384 Jul  6 02:44 db.MAD
+-rw-rw----. 1 polkitd input   24576 Jul  6 02:44 db.MAI
+-rw-rw----. 1 polkitd input      67 Jul  6 02:44 db.opt
+-rw-rw----. 1 polkitd input    3752 Jul  6 02:44 event.frm
+-rw-rw----. 1 polkitd input    8192 Jul  6 02:44 event.MAD
+-rw-rw----. 1 polkitd input    8192 Jul  6 02:44 event.MAI
+-rw-rw----. 1 polkitd input    1580 Jul  6 02:44 func.frm
+-rw-rw----. 1 polkitd input    8192 Jul  6 02:44 func.MAD
+-rw-rw----. 1 polkitd input    8192 Jul  6 02:44 func.MAI
+-rw-rw----. 1 polkitd input      35 Jul  6 02:44 general_log.CSM
+-rw-rw----. 1 polkitd input       0 Jul  6 02:44 general_log.CSV
+-rw-rw----. 1 polkitd input     804 Jul  6 02:44 general_log.frm
+-rw-rw----. 1 polkitd input    1451 Jul  6 02:44 global_priv.frm
+-rw-rw----. 1 polkitd input   16384 Jul  6 02:44 global_priv.MAD
+-rw-rw----. 1 polkitd input   16384 Jul  6 02:44 global_priv.MAI
+-rw-rw----. 1 polkitd input    1024 Jul  6 02:44 gtid_slave_pos.frm
+-rw-rw----. 1 polkitd input   98304 Jul  6 02:44 gtid_slave_pos.ibd
+-rw-rw----. 1 polkitd input    1704 Jul  6 02:44 help_category.frm
+-rw-rw----. 1 polkitd input   16384 Jul  6 02:44 help_category.MAD
+-rw-rw----. 1 polkitd input   24576 Jul  6 02:44 help_category.MAI
+-rw-rw----. 1 polkitd input    1636 Jul  6 02:44 help_keyword.frm
+-rw-rw----. 1 polkitd input   16384 Jul  6 02:44 help_keyword.MAD
+-rw-rw----. 1 polkitd input   24576 Jul  6 02:44 help_keyword.MAI
+-rw-rw----. 1 polkitd input    1457 Jul  6 02:44 help_relation.frm
+-rw-rw----. 1 polkitd input   16384 Jul  6 02:44 help_relation.MAD
+-rw-rw----. 1 polkitd input   24576 Jul  6 02:44 help_relation.MAI
+-rw-rw----. 1 polkitd input    1774 Jul  6 02:44 help_topic.frm
+-rw-rw----. 1 polkitd input 1531904 Jul  6 02:44 help_topic.MAD
+-rw-rw----. 1 polkitd input   40960 Jul  6 02:44 help_topic.MAI
+-rw-rw----. 1 polkitd input    1627 Jul  6 02:44 index_stats.frm
+-rw-rw----. 1 polkitd input    8192 Jul  6 02:44 index_stats.MAD
+-rw-rw----. 1 polkitd input    8192 Jul  6 02:44 index_stats.MAI
+-rw-rw----. 1 polkitd input    5404 Jul  6 02:44 innodb_index_stats.frm
+-rw-rw----. 1 polkitd input   98304 Jul  6 02:44 innodb_index_stats.ibd
+-rw-rw----. 1 polkitd input    1909 Jul  6 02:44 innodb_table_stats.frm
+-rw-rw----. 1 polkitd input   98304 Jul  6 02:44 innodb_table_stats.ibd
+-rw-rw----. 1 polkitd input    1516 Jul  6 02:44 plugin.frm
+-rw-rw----. 1 polkitd input    8192 Jul  6 02:44 plugin.MAD
+-rw-rw----. 1 polkitd input    8192 Jul  6 02:44 plugin.MAI
+-rw-rw----. 1 polkitd input    3549 Jul  6 02:44 proc.frm
+-rw-rw----. 1 polkitd input   16384 Jul  6 02:44 proc.MAD
+-rw-rw----. 1 polkitd input   16384 Jul  6 02:44 proc.MAI
+-rw-rw----. 1 polkitd input    2893 Jul  6 02:44 procs_priv.frm
+-rw-rw----. 1 polkitd input    8192 Jul  6 02:44 procs_priv.MAD
+-rw-rw----. 1 polkitd input    8192 Jul  6 02:44 procs_priv.MAI
+-rw-rw----. 1 polkitd input    2837 Jul  6 02:44 proxies_priv.frm
+-rw-rw----. 1 polkitd input   16384 Jul  6 02:44 proxies_priv.MAD
+-rw-rw----. 1 polkitd input   24576 Jul  6 02:44 proxies_priv.MAI
+-rw-rw----. 1 polkitd input    1659 Jul  6 02:44 roles_mapping.frm
+-rw-rw----. 1 polkitd input    8192 Jul  6 02:44 roles_mapping.MAD
+-rw-rw----. 1 polkitd input    8192 Jul  6 02:44 roles_mapping.MAI
+-rw-rw----. 1 polkitd input   10000 Jul  6 02:44 servers.frm
+-rw-rw----. 1 polkitd input    8192 Jul  6 02:44 servers.MAD
+-rw-rw----. 1 polkitd input    8192 Jul  6 02:44 servers.MAI
+-rw-rw----. 1 polkitd input      35 Jul  6 02:44 slow_log.CSM
+-rw-rw----. 1 polkitd input       0 Jul  6 02:44 slow_log.CSV
+-rw-rw----. 1 polkitd input    2374 Jul  6 02:44 slow_log.frm
+-rw-rw----. 1 polkitd input    2978 Jul  6 02:44 tables_priv.frm
+-rw-rw----. 1 polkitd input   16384 Jul  6 02:44 tables_priv.MAD
+-rw-rw----. 1 polkitd input   24576 Jul  6 02:44 tables_priv.MAI
+-rw-rw----. 1 polkitd input    1372 Jul  6 02:44 table_stats.frm
+-rw-rw----. 1 polkitd input    8192 Jul  6 02:44 table_stats.MAD
+-rw-rw----. 1 polkitd input    8192 Jul  6 02:44 table_stats.MAI
+-rw-rw----. 1 polkitd input     971 Jul  6 02:44 time_zone.frm
+-rw-rw----. 1 polkitd input     969 Jul  6 02:44 time_zone_leap_second.frm
+-rw-rw----. 1 polkitd input    8192 Jul  6 02:44 time_zone_leap_second.MAD
+-rw-rw----. 1 polkitd input    8192 Jul  6 02:44 time_zone_leap_second.MAI
+-rw-rw----. 1 polkitd input   90112 Jul  6 02:44 time_zone.MAD
+-rw-rw----. 1 polkitd input   40960 Jul  6 02:44 time_zone.MAI
+-rw-rw----. 1 polkitd input    1144 Jul  6 02:44 time_zone_name.frm
+-rw-rw----. 1 polkitd input   90112 Jul  6 02:44 time_zone_name.MAD
+-rw-rw----. 1 polkitd input   65536 Jul  6 02:44 time_zone_name.MAI
+-rw-rw----. 1 polkitd input    1011 Jul  6 02:44 time_zone_transition.frm
+-rw-rw----. 1 polkitd input 5390336 Jul  6 02:44 time_zone_transition.MAD
+-rw-rw----. 1 polkitd input 2138112 Jul  6 02:44 time_zone_transition.MAI
+-rw-rw----. 1 polkitd input    1077 Jul  6 02:44 time_zone_transition_type.frm
+-rw-rw----. 1 polkitd input  434176 Jul  6 02:44 time_zone_transition_type.MAD
+-rw-rw----. 1 polkitd input  147456 Jul  6 02:44 time_zone_transition_type.MAI
+-rw-rw----. 1 polkitd input    2618 Jul  6 02:44 transaction_registry.frm
+-rw-rw----. 1 polkitd input  147456 Jul  6 02:44 transaction_registry.ibd
+-rw-rw----. 1 polkitd input   13331 Jul  6 02:44 user.frm
+
+/root/var/lib/mysql/performance_schema:
+total 4
+-rw-rw----. 1 polkitd input 61 Jul  6 02:44 db.opt
+
+/root/var/lib/mysql/wordpress:
+total 4
+-rw-rw----. 1 polkitd input 67 Jul  6 02:44 db.opt
+
+/root/var/www:
+total 4
+drwxr-xr-x. 5 33 tape 4096 Jul  6 15:06 html
+
+/root/var/www/html:
+total 208
+-rw-r--r--.  1 33 tape   405 Feb  6 01:33 index.php
+-rw-r--r--.  1 33 tape 19915 Feb 12 06:54 license.txt
+-rw-r--r--.  1 33 tape  7278 Jan 10 09:05 readme.html
+-rw-r--r--.  1 33 tape  6912 Feb  6 01:33 wp-activate.php
+drwxr-xr-x.  9 33 tape  4096 Jun 10 17:48 wp-admin
+-rw-r--r--.  1 33 tape   351 Feb  6 01:33 wp-blog-header.php
+-rw-r--r--.  1 33 tape  2332 Jun  2 16:26 wp-comments-post.php
+-rw-r--r--.  1 33 tape  3200 Jul  6 15:06 wp-config.php
+-rw-r--r--.  1 33 tape  2823 Jul  6 15:06 wp-config-sample.php
+drwxr-xr-x.  4 33 tape    52 Jul  7 18:05 wp-content
+-rw-r--r--.  1 33 tape  3940 Feb  6 01:33 wp-cron.php
+drwxr-xr-x. 21 33 tape  8192 Jun 10 17:48 wp-includes
+-rw-r--r--.  1 33 tape  2496 Feb  6 01:33 wp-links-opml.php
+-rw-r--r--.  1 33 tape  3300 Feb  6 01:33 wp-load.php
+-rw-r--r--.  1 33 tape 47874 Feb  9 22:50 wp-login.php
+-rw-r--r--.  1 33 tape  8509 Apr 14 07:34 wp-mail.php
+-rw-r--r--.  1 33 tape 19396 Apr  9 23:59 wp-settings.php
+-rw-r--r--.  1 33 tape 31111 Feb  6 01:33 wp-signup.php
+-rw-r--r--.  1 33 tape  4755 Feb  6 01:33 wp-trackback.php
+-rw-r--r--.  1 33 tape  3133 Feb  6 01:33 xmlrpc.php
+
+/root/var/www/html/wp-admin:
+total 984
+-rw-r--r--. 1 33 tape 17979 Jun 10 17:32 about.php
+-rw-r--r--. 1 33 tape  4654 Feb  6 01:33 admin-ajax.php
+-rw-r--r--. 1 33 tape  2832 Jan 28 19:45 admin-footer.php
+-rw-r--r--. 1 33 tape   406 Feb  6 01:33 admin-functions.php
+-rw-r--r--. 1 33 tape  8160 Feb  9 11:55 admin-header.php
+-rw-r--r--. 1 33 tape 12100 Feb  9 23:12 admin.php
+-rw-r--r--. 1 33 tape  1671 Feb  6 01:33 admin-post.php
+-rw-r--r--. 1 33 tape  3798 Feb  6 01:33 async-upload.php
+-rw-r--r--. 1 33 tape 10983 Feb  9 11:55 comment.php
+-rw-r--r--. 1 33 tape  4658 Mar 27 19:48 credits.php
+drwxr-xr-x. 3 33 tape  4096 Jun 10 17:48 css
+-rw-r--r--. 1 33 tape   416 Feb  6 01:33 custom-background.php
+-rw-r--r--. 1 33 tape   426 Feb  6 01:33 custom-header.php
+-rw-r--r--. 1 33 tape  9621 Feb  6 01:33 customize.php
+-rw-r--r--. 1 33 tape 13740 Feb  9 11:55 edit-comments.php
+-rw-r--r--. 1 33 tape 28793 Mar  2 19:37 edit-form-advanced.php
+-rw-r--r--. 1 33 tape 14060 Feb 10 12:52 edit-form-blocks.php
+-rw-r--r--. 1 33 tape  8105 Mar  2 19:37 edit-form-comment.php
+-rw-r--r--. 1 33 tape  6225 Mar  2 19:37 edit-link-form.php
+-rw-r--r--. 1 33 tape 18456 Feb  9 23:12 edit.php
+-rw-r--r--. 1 33 tape 10100 Feb  6 01:33 edit-tag-form.php
+-rw-r--r--. 1 33 tape 21904 Feb  6 01:33 edit-tags.php
+-rw-r--r--. 1 33 tape  3227 Feb  6 01:33 erase-personal-data.php
+-rw-r--r--. 1 33 tape  3202 Feb  6 01:33 export-personal-data.php
+-rw-r--r--. 1 33 tape 10951 Feb 11 14:35 export.php
+-rw-r--r--. 1 33 tape  4604 Apr  9 22:56 freedoms.php
+drwxr-xr-x. 2 33 tape  4096 Jun 10 17:48 images
+-rw-r--r--. 1 33 tape  7519 Feb  6 01:33 import.php
+drwxr-xr-x. 2 33 tape  8192 Jun 10 17:48 includes
+-rw-r--r--. 1 33 tape  5889 Feb  6 01:33 index.php
+-rw-r--r--. 1 33 tape  5906 Feb  9 11:55 install-helper.php
+-rw-r--r--. 1 33 tape 17022 Feb  9 22:30 install.php
+drwxr-xr-x. 3 33 tape  4096 Jun 10 17:48 js
+-rw-r--r--. 1 33 tape   711 Feb  6 01:33 link-add.php
+-rw-r--r--. 1 33 tape  4188 Feb  6 01:33 link-manager.php
+-rw-r--r--. 1 33 tape  2613 Mar  1 05:38 link-parse-opml.php
+-rw-r--r--. 1 33 tape  2730 Feb  6 01:33 link.php
+-rw-r--r--. 1 33 tape  1689 Feb  6 01:33 load-scripts.php
+-rw-r--r--. 1 33 tape  2297 Feb  6 01:33 load-styles.php
+drwxr-xr-x. 2 33 tape    24 Jun 10 17:48 maint
+-rw-r--r--. 1 33 tape  3179 Feb  6 01:33 media-new.php
+-rw-r--r--. 1 33 tape  5598 Feb  9 11:53 media.php
+-rw-r--r--. 1 33 tape  3362 Feb  9 11:53 media-upload.php
+-rw-r--r--. 1 33 tape  9752 Jan 28 19:45 menu-header.php
+-rw-r--r--. 1 33 tape 14490 Feb 11 16:48 menu.php
+-rw-r--r--. 1 33 tape   307 Feb  6 01:33 moderation.php
+-rw-r--r--. 1 33 tape   196 Feb  6 01:33 ms-admin.php
+-rw-r--r--. 1 33 tape  4183 Feb  9 11:53 ms-delete-site.php
+-rw-r--r--. 1 33 tape   216 Feb  6 01:33 ms-edit.php
+-rw-r--r--. 1 33 tape   223 Feb  6 01:33 ms-options.php
+-rw-r--r--. 1 33 tape   215 Feb  6 01:33 ms-sites.php
+-rw-r--r--. 1 33 tape   217 Feb  6 01:33 ms-themes.php
+-rw-r--r--. 1 33 tape   219 Feb  6 01:33 ms-upgrade-network.php
+-rw-r--r--. 1 33 tape   215 Feb  6 01:33 ms-users.php
+-rw-r--r--. 1 33 tape  4641 Feb  9 11:55 my-sites.php
+-rw-r--r--. 1 33 tape 43907 Feb  6 01:33 nav-menus.php
+drwxr-xr-x. 2 33 tape  4096 Jun 10 17:48 network
+-rw-r--r--. 1 33 tape  5378 Feb  6 01:33 network.php
+-rw-r--r--. 1 33 tape 15300 Feb  9 23:12 options-discussion.php
+-rw-r--r--. 1 33 tape 14939 Feb  9 11:55 options-general.php
+-rw-r--r--. 1 33 tape   492 Aug 15  2019 options-head.php
+-rw-r--r--. 1 33 tape  6237 Feb  6 01:33 options-media.php
+-rw-r--r--. 1 33 tape 19206 Feb  6 01:33 options-permalink.php
+-rw-r--r--. 1 33 tape 12302 Feb  9 11:53 options.php
+-rw-r--r--. 1 33 tape  8072 Feb  9 23:12 options-privacy.php
+-rw-r--r--. 1 33 tape  9700 Feb  6 01:33 options-reading.php
+-rw-r--r--. 1 33 tape  8623 Feb  6 01:33 options-writing.php
+-rw-r--r--. 1 33 tape 13359 Feb  6 01:33 plugin-editor.php
+-rw-r--r--. 1 33 tape  6388 Feb  6 01:33 plugin-install.php
+-rw-r--r--. 1 33 tape 24356 Feb  6 01:33 plugins.php
+-rw-r--r--. 1 33 tape  2695 Feb  9 11:55 post-new.php
+-rw-r--r--. 1 33 tape  9963 Feb  9 11:53 post.php
+-rw-r--r--. 1 33 tape  2386 Feb  6 01:33 press-this.php
+-rw-r--r--. 1 33 tape  2346 Mar 27 19:48 privacy.php
+-rw-r--r--. 1 33 tape   833 Feb  6 01:33 privacy-policy-guide.php
+-rw-r--r--. 1 33 tape   283 Feb  6 01:33 profile.php
+-rw-r--r--. 1 33 tape  5194 Feb  6 01:33 revision.php
+-rw-r--r--. 1 33 tape 15901 Feb 22 13:33 setup-config.php
+-rw-r--r--. 1 33 tape  5776 Feb  6 01:33 site-health-info.php
+-rw-r--r--. 1 33 tape  5328 Feb  6 01:33 site-health.php
+-rw-r--r--. 1 33 tape  2248 Feb  6 01:33 term.php
+-rw-r--r--. 1 33 tape 15146 Feb  6 01:33 theme-editor.php
+-rw-r--r--. 1 33 tape 15200 Feb  6 01:33 theme-install.php
+-rw-r--r--. 1 33 tape 23626 Jun 10 13:49 themes.php
+-rw-r--r--. 1 33 tape  3452 Mar  2 19:50 tools.php
+-rw-r--r--. 1 33 tape 33796 Feb  9 22:30 update-core.php
+-rw-r--r--. 1 33 tape 10563 Feb  6 01:33 update.php
+-rw-r--r--. 1 33 tape   341 Feb  6 01:33 upgrade-functions.php
+-rw-r--r--. 1 33 tape  5654 Feb  9 22:30 upgrade.php
+-rw-r--r--. 1 33 tape 13919 Feb  9 23:12 upload.php
+drwxr-xr-x. 2 33 tape   171 Jun 10 17:48 user
+-rw-r--r--. 1 33 tape 29213 Feb  6 01:33 user-edit.php
+-rw-r--r--. 1 33 tape 22333 Feb  9 11:53 user-new.php
+-rw-r--r--. 1 33 tape 19900 Feb  6 01:33 users.php
+-rw-r--r--. 1 33 tape 19741 Feb  6 01:33 widgets.php
+
+/root/var/www/html/wp-admin/css:
+total 1960
+-rw-r--r--. 1 33 tape 22559 Apr  9 22:56 about.css
+-rw-r--r--. 1 33 tape 17053 Apr  9 22:56 about.min.css
+-rw-r--r--. 1 33 tape 22606 Apr  9 22:56 about-rtl.css
+-rw-r--r--. 1 33 tape 17065 Apr  9 22:56 about-rtl.min.css
+-rw-r--r--. 1 33 tape 19268 Oct 17  2019 admin-menu.css
+-rw-r--r--. 1 33 tape 15486 Oct 17  2019 admin-menu.min.css
+-rw-r--r--. 1 33 tape 19317 Oct 25  2019 admin-menu-rtl.css
+-rw-r--r--. 1 33 tape 15500 Oct 17  2019 admin-menu-rtl.min.css
+-rw-r--r--. 1 33 tape  1575 Mar  4  2019 code-editor.css
+-rw-r--r--. 1 33 tape  1431 Dec 11  2018 code-editor.min.css
+-rw-r--r--. 1 33 tape  1614 Oct 25  2019 code-editor-rtl.css
+-rw-r--r--. 1 33 tape  1435 Dec 11  2018 code-editor-rtl.min.css
+-rw-r--r--. 1 33 tape  3594 Feb  7 16:11 color-picker.css
+-rw-r--r--. 1 33 tape  2890 Feb  7 16:11 color-picker.min.css
+-rw-r--r--. 1 33 tape  3632 Feb  7 16:11 color-picker-rtl.css
+-rw-r--r--. 1 33 tape  2893 Feb  7 16:11 color-picker-rtl.min.css
+drwxr-xr-x. 9 33 tape   168 Jun 10 17:48 colors
+-rw-r--r--. 1 33 tape 71147 May 19 18:18 common.css
+-rw-r--r--. 1 33 tape 53974 May 19 18:18 common.min.css
+-rw-r--r--. 1 33 tape 71226 May 19 18:18 common-rtl.css
+-rw-r--r--. 1 33 tape 54018 May 19 18:18 common-rtl.min.css
+-rw-r--r--. 1 33 tape 68716 Feb 15 00:08 customize-controls.css
+-rw-r--r--. 1 33 tape 57620 Feb 15 00:08 customize-controls.min.css
+-rw-r--r--. 1 33 tape 68796 Feb 15 00:08 customize-controls-rtl.css
+-rw-r--r--. 1 33 tape 57665 Feb 15 00:08 customize-controls-rtl.min.css
+-rw-r--r--. 1 33 tape 21974 Apr  7  2019 customize-nav-menus.css
+-rw-r--r--. 1 33 tape 18092 Apr  7  2019 customize-nav-menus.min.css
+-rw-r--r--. 1 33 tape 22020 Oct 25  2019 customize-nav-menus-rtl.css
+-rw-r--r--. 1 33 tape 18103 Sep 23  2019 customize-nav-menus-rtl.min.css
+-rw-r--r--. 1 33 tape 12713 Nov  8  2019 customize-widgets.css
+-rw-r--r--. 1 33 tape  9722 May 29  2019 customize-widgets.min.css
+-rw-r--r--. 1 33 tape 12750 Nov  8  2019 customize-widgets-rtl.css
+-rw-r--r--. 1 33 tape  9724 Sep 23  2019 customize-widgets-rtl.min.css
+-rw-r--r--. 1 33 tape 23894 Mar  2 19:37 dashboard.css
+-rw-r--r--. 1 33 tape 18888 Mar  2 19:37 dashboard.min.css
+-rw-r--r--. 1 33 tape 23925 Mar  2 19:37 dashboard-rtl.css
+-rw-r--r--. 1 33 tape 18884 Mar  2 19:37 dashboard-rtl.min.css
+-rw-r--r--. 1 33 tape  6629 Feb 17  2019 deprecated-media.css
+-rw-r--r--. 1 33 tape  5528 Feb 17  2019 deprecated-media.min.css
+-rw-r--r--. 1 33 tape  6664 Oct 25  2019 deprecated-media-rtl.css
+-rw-r--r--. 1 33 tape  5528 Sep 23  2019 deprecated-media-rtl.min.css
+-rw-r--r--. 1 33 tape 30564 Apr  9 18:46 edit.css
+-rw-r--r--. 1 33 tape 24285 Apr  9 18:46 edit.min.css
+-rw-r--r--. 1 33 tape 30604 Apr  9 18:46 edit-rtl.css
+-rw-r--r--. 1 33 tape 24290 Apr  9 18:46 edit-rtl.min.css
+-rw-r--r--. 1 33 tape   611 Nov 17  2013 farbtastic.css
+-rw-r--r--. 1 33 tape   537 Aug 19  2017 farbtastic.min.css
+-rw-r--r--. 1 33 tape   647 Oct 25  2019 farbtastic-rtl.css
+-rw-r--r--. 1 33 tape   538 Sep 23  2019 farbtastic-rtl.min.css
+-rw-r--r--. 1 33 tape 32053 Feb 29 18:45 forms.css
+-rw-r--r--. 1 33 tape 24453 Feb 29 18:45 forms.min.css
+-rw-r--r--. 1 33 tape 32093 Feb 29 18:45 forms-rtl.css
+-rw-r--r--. 1 33 tape 24458 Feb 29 18:45 forms-rtl.min.css
+-rw-r--r--. 1 33 tape 11924 Mar  2 19:37 ie.css
+-rw-r--r--. 1 33 tape 10283 Mar  2 19:37 ie.min.css
+-rw-r--r--. 1 33 tape 11966 Mar  2 19:37 ie-rtl.css
+-rw-r--r--. 1 33 tape 10290 Mar  2 19:37 ie-rtl.min.css
+-rw-r--r--. 1 33 tape  6147 Jan 13 20:11 install.css
+-rw-r--r--. 1 33 tape  5126 Jan 13 20:11 install.min.css
+-rw-r--r--. 1 33 tape  6181 Jan 13 20:11 install-rtl.css
+-rw-r--r--. 1 33 tape  5125 Jan 13 20:11 install-rtl.min.css
+-rw-r--r--. 1 33 tape  3689 Jun 17  2016 l10n.css
+-rw-r--r--. 1 33 tape  2477 Dec 11  2018 l10n.min.css
+-rw-r--r--. 1 33 tape  3727 Oct 25  2019 l10n-rtl.css
+-rw-r--r--. 1 33 tape  2480 Sep 23  2019 l10n-rtl.min.css
+-rw-r--r--. 1 33 tape 40034 Feb 21 12:04 list-tables.css
+-rw-r--r--. 1 33 tape 32475 Feb 21 12:04 list-tables.min.css
+-rw-r--r--. 1 33 tape 40096 Feb 21 12:04 list-tables-rtl.css
+-rw-r--r--. 1 33 tape 32502 Feb 21 12:04 list-tables-rtl.min.css
+-rw-r--r--. 1 33 tape  6611 Feb  9 20:52 login.css
+-rw-r--r--. 1 33 tape  5312 Feb  9 20:52 login.min.css
+-rw-r--r--. 1 33 tape  6651 Feb  9 20:52 login-rtl.css
+-rw-r--r--. 1 33 tape  5317 Feb  9 20:52 login-rtl.min.css
+-rw-r--r--. 1 33 tape 23904 Mar  3 12:21 media.css
+-rw-r--r--. 1 33 tape 19338 Mar  3 12:21 media.min.css
+-rw-r--r--. 1 33 tape 23949 Mar  3 12:21 media-rtl.css
+-rw-r--r--. 1 33 tape 19348 Mar  3 12:21 media-rtl.min.css
+-rw-r--r--. 1 33 tape 15625 Sep 25  2019 nav-menus.css
+-rw-r--r--. 1 33 tape 12293 Sep 25  2019 nav-menus.min.css
+-rw-r--r--. 1 33 tape 15689 Oct 25  2019 nav-menus-rtl.css
+-rw-r--r--. 1 33 tape 12322 Sep 25  2019 nav-menus-rtl.min.css
+-rw-r--r--. 1 33 tape 10483 Aug  3  2019 revisions.css
+-rw-r--r--. 1 33 tape  8599 Aug  3  2019 revisions.min.css
+-rw-r--r--. 1 33 tape 10530 Oct 25  2019 revisions-rtl.css
+-rw-r--r--. 1 33 tape  8611 Sep 23  2019 revisions-rtl.min.css
+-rw-r--r--. 1 33 tape  7886 Feb  5 01:43 site-health.css
+-rw-r--r--. 1 33 tape  6555 Feb  5 01:43 site-health.min.css
+-rw-r--r--. 1 33 tape  7928 Feb  5 01:43 site-health-rtl.css
+-rw-r--r--. 1 33 tape  6562 Feb  5 01:43 site-health-rtl.min.css
+-rw-r--r--. 1 33 tape  1021 Jul 15  2017 site-icon.css
+-rw-r--r--. 1 33 tape   744 Aug 19  2017 site-icon.min.css
+-rw-r--r--. 1 33 tape  1058 Oct 25  2019 site-icon-rtl.css
+-rw-r--r--. 1 33 tape   746 Sep 23  2019 site-icon-rtl.min.css
+-rw-r--r--. 1 33 tape 39933 Feb 15 00:08 themes.css
+-rw-r--r--. 1 33 tape 31531 Feb 15 00:08 themes.min.css
+-rw-r--r--. 1 33 tape 39989 Feb 15 00:08 themes-rtl.css
+-rw-r--r--. 1 33 tape 31552 Feb 15 00:08 themes-rtl.min.css
+-rw-r--r--. 1 33 tape 17214 Feb 25 12:04 widgets.css
+-rw-r--r--. 1 33 tape 14170 Feb 25 12:04 widgets.min.css
+-rw-r--r--. 1 33 tape 17252 Feb 25 12:04 widgets-rtl.css
+-rw-r--r--. 1 33 tape 14173 Feb 25 12:04 widgets-rtl.min.css
+-rw-r--r--. 1 33 tape   395 Mar 22  2019 wp-admin.css
+-rw-r--r--. 1 33 tape   490 Mar 22  2019 wp-admin.min.css
+-rw-r--r--. 1 33 tape   490 Oct 25  2019 wp-admin-rtl.css
+-rw-r--r--. 1 33 tape   550 Mar 22  2019 wp-admin-rtl.min.css
+
+/root/var/www/html/wp-admin/css/colors:
+total 24
+-rw-r--r--. 1 33 tape 14148 Dec 16  2019 _admin.scss
+drwxr-xr-x. 2 33 tape   113 Jun 10 17:48 blue
+drwxr-xr-x. 2 33 tape   113 Jun 10 17:48 coffee
+drwxr-xr-x. 2 33 tape   113 Jun 10 17:48 ectoplasm
+drwxr-xr-x. 2 33 tape   113 Jun 10 17:48 light
+drwxr-xr-x. 2 33 tape   113 Jun 10 17:48 midnight
+-rw-r--r--. 1 33 tape  1099 Dec  5  2019 _mixins.scss
+drwxr-xr-x. 2 33 tape   113 Jun 10 17:48 ocean
+drwxr-xr-x. 2 33 tape   113 Jun 10 17:48 sunrise
+-rw-r--r--. 1 33 tape  2118 Dec  5  2019 _variables.scss
+
+/root/var/www/html/wp-admin/css/colors/blue:
+total 68
+-rw-r--r--. 1 33 tape 14756 Dec 16  2019 colors.css
+-rw-r--r--. 1 33 tape 12840 Dec 16  2019 colors.min.css
+-rw-r--r--. 1 33 tape 14754 Dec 16  2019 colors-rtl.css
+-rw-r--r--. 1 33 tape 12838 Dec 16  2019 colors-rtl.min.css
+-rw-r--r--. 1 33 tape   249 Dec 16  2018 colors.scss
+
+/root/var/www/html/wp-admin/css/colors/coffee:
+total 68
+-rw-r--r--. 1 33 tape 14780 Dec 16  2019 colors.css
+-rw-r--r--. 1 33 tape 12864 Dec 16  2019 colors.min.css
+-rw-r--r--. 1 33 tape 14778 Dec 16  2019 colors-rtl.css
+-rw-r--r--. 1 33 tape 12862 Dec 16  2019 colors-rtl.min.css
+-rw-r--r--. 1 33 tape   135 Dec 16  2018 colors.scss
+
+/root/var/www/html/wp-admin/css/colors/ectoplasm:
+total 68
+-rw-r--r--. 1 33 tape 14778 Dec 16  2019 colors.css
+-rw-r--r--. 1 33 tape 12861 Dec 16  2019 colors.min.css
+-rw-r--r--. 1 33 tape 14776 Dec 16  2019 colors-rtl.css
+-rw-r--r--. 1 33 tape 12859 Dec 16  2019 colors-rtl.min.css
+-rw-r--r--. 1 33 tape   157 Dec 16  2018 colors.scss
+
+/root/var/www/html/wp-admin/css/colors/light:
+total 68
+-rw-r--r--. 1 33 tape 15409 Dec 16  2019 colors.css
+-rw-r--r--. 1 33 tape 13324 Dec 16  2019 colors.min.css
+-rw-r--r--. 1 33 tape 15407 Dec 16  2019 colors-rtl.css
+-rw-r--r--. 1 33 tape 13322 Dec 16  2019 colors-rtl.min.css
+-rw-r--r--. 1 33 tape  1119 Dec 16  2018 colors.scss
+
+/root/var/www/html/wp-admin/css/colors/midnight:
+total 68
+-rw-r--r--. 1 33 tape 14780 Dec 16  2019 colors.css
+-rw-r--r--. 1 33 tape 12864 Dec 16  2019 colors.min.css
+-rw-r--r--. 1 33 tape 14778 Dec 16  2019 colors-rtl.css
+-rw-r--r--. 1 33 tape 12862 Dec 16  2019 colors-rtl.min.css
+-rw-r--r--. 1 33 tape   106 Dec 16  2018 colors.scss
+
+/root/var/www/html/wp-admin/css/colors/ocean:
+total 68
+-rw-r--r--. 1 33 tape 14780 Dec 16  2019 colors.css
+-rw-r--r--. 1 33 tape 12864 Dec 16  2019 colors.min.css
+-rw-r--r--. 1 33 tape 14778 Dec 16  2019 colors-rtl.css
+-rw-r--r--. 1 33 tape 12862 Dec 16  2019 colors-rtl.min.css
+-rw-r--r--. 1 33 tape   157 Dec 16  2018 colors.scss
+
+/root/var/www/html/wp-admin/css/colors/sunrise:
+total 68
+-rw-r--r--. 1 33 tape 14780 Dec 16  2019 colors.css
+-rw-r--r--. 1 33 tape 12864 Dec 16  2019 colors.min.css
+-rw-r--r--. 1 33 tape 14778 Dec 16  2019 colors-rtl.css
+-rw-r--r--. 1 33 tape 12862 Dec 16  2019 colors-rtl.min.css
+-rw-r--r--. 1 33 tape   166 Dec 16  2018 colors.scss
+
+/root/var/www/html/wp-admin/images:
+total 452
+-rw-r--r--. 1 33 tape   147 Sep 26  2012 align-center-2x.png
+-rw-r--r--. 1 33 tape   546 Sep 24  2012 align-center.png
+-rw-r--r--. 1 33 tape   143 Sep 26  2012 align-left-2x.png
+-rw-r--r--. 1 33 tape   554 Sep 24  2012 align-left.png
+-rw-r--r--. 1 33 tape   121 Sep 26  2012 align-none-2x.png
+-rw-r--r--. 1 33 tape   417 Sep 24  2012 align-none.png
+-rw-r--r--. 1 33 tape   142 Sep 26  2012 align-right-2x.png
+-rw-r--r--. 1 33 tape   509 Sep 24  2012 align-right.png
+-rw-r--r--. 1 33 tape   863 Sep 26  2012 arrows-2x.png
+-rw-r--r--. 1 33 tape   243 Nov  7  2012 arrows.png
+-rw-r--r--. 1 33 tape 40626 Jun 30  2015 browser.png
+-rw-r--r--. 1 33 tape 40170 Jul  5  2016 browser-rtl.png
+-rw-r--r--. 1 33 tape   424 Oct  5  2019 bubble_bg-2x.gif
+-rw-r--r--. 1 33 tape   398 Oct  5  2019 bubble_bg.gif
+-rw-r--r--. 1 33 tape   258 Feb 13  2014 comment-grey-bubble-2x.png
+-rw-r--r--. 1 33 tape   114 Nov  7  2012 comment-grey-bubble.png
+-rw-r--r--. 1 33 tape   996 Oct  5  2019 date-button-2x.gif
+-rw-r--r--. 1 33 tape   400 Oct  5  2019 date-button.gif
+-rw-r--r--. 1 33 tape   719 Nov  7  2012 generic.png
+-rw-r--r--. 1 33 tape 21770 Oct 28  2014 icons32-2x.png
+-rw-r--r--. 1 33 tape  8023 Oct 28  2014 icons32.png
+-rw-r--r--. 1 33 tape 21396 Nov 25  2014 icons32-vs-2x.png
+-rw-r--r--. 1 33 tape  8007 Oct 28  2014 icons32-vs.png
+-rw-r--r--. 1 33 tape  7664 Oct 28  2014 imgedit-icons-2x.png
+-rw-r--r--. 1 33 tape  4055 Nov 25  2014 imgedit-icons.png
+-rw-r--r--. 1 33 tape  1523 Nov  7  2012 list-2x.png
+-rw-r--r--. 1 33 tape  1003 Nov  7  2012 list.png
+-rw-r--r--. 1 33 tape  1372 Oct  5  2019 loading.gif
+-rw-r--r--. 1 33 tape   360 Feb 13  2014 marker.png
+-rw-r--r--. 1 33 tape  2001 Sep 24  2012 mask.png
+-rw-r--r--. 1 33 tape   850 Nov  7  2012 media-button-2x.png
+-rw-r--r--. 1 33 tape   200 Oct  5  2019 media-button-image.gif
+-rw-r--r--. 1 33 tape   206 Oct  5  2019 media-button-music.gif
+-rw-r--r--. 1 33 tape   248 Oct  5  2019 media-button-other.gif
+-rw-r--r--. 1 33 tape   323 Nov  7  2012 media-button.png
+-rw-r--r--. 1 33 tape   133 Oct  5  2019 media-button-video.gif
+-rw-r--r--. 1 33 tape 12672 Oct 28  2014 menu-2x.png
+-rw-r--r--. 1 33 tape  5039 Oct 28  2014 menu.png
+-rw-r--r--. 1 33 tape 12453 Oct 28  2014 menu-vs-2x.png
+-rw-r--r--. 1 33 tape  5086 Oct 28  2014 menu-vs.png
+-rw-r--r--. 1 33 tape   755 Nov  7  2012 no.png
+-rw-r--r--. 1 33 tape  5142 Oct 28  2014 post-formats32.png
+-rw-r--r--. 1 33 tape  5111 Oct 28  2014 post-formats32-vs.png
+-rw-r--r--. 1 33 tape  2157 Feb 13  2014 post-formats.png
+-rw-r--r--. 1 33 tape  2450 Oct 28  2014 post-formats-vs.png
+-rw-r--r--. 1 33 tape   151 Dec 18  2018 resize-2x.gif
+-rw-r--r--. 1 33 tape    64 Dec 18  2018 resize.gif
+-rw-r--r--. 1 33 tape   150 Dec 18  2018 resize-rtl-2x.gif
+-rw-r--r--. 1 33 tape    70 Dec 18  2018 resize-rtl.gif
+-rw-r--r--. 1 33 tape   120 Nov  7  2012 se.png
+-rw-r--r--. 1 33 tape    97 Oct  5  2019 sort-2x.gif
+-rw-r--r--. 1 33 tape    55 Oct  5  2019 sort.gif
+-rw-r--r--. 1 33 tape  7536 Dec 18  2018 spinner-2x.gif
+-rw-r--r--. 1 33 tape  3656 Dec 18  2018 spinner.gif
+-rw-r--r--. 1 33 tape  1257 Nov  8  2012 stars-2x.png
+-rw-r--r--. 1 33 tape   924 Nov  7  2012 stars.png
+-rw-r--r--. 1 33 tape  6047 Oct 28  2014 wheel.png
+-rw-r--r--. 1 33 tape  3113 May 21 05:13 w-logo-blue.png
+-rw-r--r--. 1 33 tape  5395 Mar 10  2016 w-logo-white.png
+-rw-r--r--. 1 33 tape  2480 Nov  7  2012 wordpress-logo.png
+-rw-r--r--. 1 33 tape  1521 Apr  5  2015 wordpress-logo.svg
+-rw-r--r--. 1 33 tape  1639 Mar  9  2016 wordpress-logo-white.svg
+-rw-r--r--. 1 33 tape  8875 Oct  5  2019 wpspin_light-2x.gif
+-rw-r--r--. 1 33 tape  2052 Oct  5  2019 wpspin_light.gif
+-rw-r--r--. 1 33 tape   825 Oct  5  2019 xit-2x.gif
+-rw-r--r--. 1 33 tape   181 Oct  5  2019 xit.gif
+-rw-r--r--. 1 33 tape   539 Sep 24  2012 yes.png
+
+/root/var/www/html/wp-admin/includes:
+total 2840
+-rw-r--r--. 1 33 tape   6539 Jan 28 19:45 admin-filters.php
+-rw-r--r--. 1 33 tape   3556 Feb  6 01:33 admin.php
+-rw-r--r--. 1 33 tape 140515 Feb 10 14:57 ajax-actions.php
+-rw-r--r--. 1 33 tape   9540 Feb 14 20:55 bookmark.php
+-rw-r--r--. 1 33 tape   3229 Jan 28 19:45 class-automatic-upgrader-skin.php
+-rw-r--r--. 1 33 tape   2073 Sep  2  2019 class-bulk-plugin-upgrader-skin.php
+-rw-r--r--. 1 33 tape   2107 Sep  2  2019 class-bulk-theme-upgrader-skin.php
+-rw-r--r--. 1 33 tape   5309 Sep 15  2019 class-bulk-upgrader-skin.php
+-rw-r--r--. 1 33 tape  14599 Feb  9 22:30 class-core-upgrader.php
+-rw-r--r--. 1 33 tape  20739 Jan 28 19:45 class-custom-background.php
+-rw-r--r--. 1 33 tape  47885 Feb  9 11:55 class-custom-image-header.php
+-rw-r--r--. 1 33 tape   3384 Jan 28 19:45 class-file-upload-upgrader.php
+-rw-r--r--. 1 33 tape  27128 Feb  6 01:33 class-ftp.php
+-rw-r--r--. 1 33 tape   5426 Nov  1  2019 class-ftp-pure.php
+-rw-r--r--. 1 33 tape   8475 Nov  1  2019 class-ftp-sockets.php
+-rw-r--r--. 1 33 tape  14741 Jan 28 19:45 class-language-pack-upgrader.php
+-rw-r--r--. 1 33 tape   2384 Sep  2  2019 class-language-pack-upgrader-skin.php
+-rw-r--r--. 1 33 tape 196026 Jan 28 19:56 class-pclzip.php
+-rw-r--r--. 1 33 tape   4624 Feb  9 11:55 class-plugin-installer-skin.php
+-rw-r--r--. 1 33 tape  17655 Mar  3 06:39 class-plugin-upgrader.php
+-rw-r--r--. 1 33 tape   2731 Sep  6  2019 class-plugin-upgrader-skin.php
+-rw-r--r--. 1 33 tape   4386 Feb  9 11:55 class-theme-installer-skin.php
+-rw-r--r--. 1 33 tape  20587 Mar  3 06:39 class-theme-upgrader.php
+-rw-r--r--. 1 33 tape   3702 Sep  2  2019 class-theme-upgrader-skin.php
+-rw-r--r--. 1 33 tape   4260 Feb  9 11:55 class-walker-category-checklist.php
+-rw-r--r--. 1 33 tape   5088 Feb  5 02:25 class-walker-nav-menu-checklist.php
+-rw-r--r--. 1 33 tape  12267 Feb  5 02:43 class-walker-nav-menu-edit.php
+-rw-r--r--. 1 33 tape   3258 Oct  9  2019 class-wp-ajax-upgrader-skin.php
+-rw-r--r--. 1 33 tape  36197 Feb  9 11:55 class-wp-automatic-updater.php
+-rw-r--r--. 1 33 tape  28381 Feb  9 23:57 class-wp-comments-list-table.php
+-rw-r--r--. 1 33 tape  17817 Feb  6 01:33 class-wp-community-events.php
+-rw-r--r--. 1 33 tape  47017 Feb 22 13:56 class-wp-debug-data.php
+-rw-r--r--. 1 33 tape  23114 Jan 28 19:45 class-wp-filesystem-base.php
+-rw-r--r--. 1 33 tape  16459 Feb  9 11:55 class-wp-filesystem-direct.php
+-rw-r--r--. 1 33 tape  19986 Feb  9 11:55 class-wp-filesystem-ftpext.php
+-rw-r--r--. 1 33 tape  16770 Feb  9 11:55 class-wp-filesystem-ftpsockets.php
+-rw-r--r--. 1 33 tape  22068 Feb  9 11:55 class-wp-filesystem-ssh2.php
+-rw-r--r--. 1 33 tape   7546 Feb  9 11:55 class-wp-importer.php
+-rw-r--r--. 1 33 tape   4539 Jan 28 19:45 class-wp-internal-pointers.php
+-rw-r--r--. 1 33 tape   7916 Jan 11 12:59 class-wp-links-list-table.php
+-rw-r--r--. 1 33 tape   1071 Nov 30  2017 class-wp-list-table-compat.php
+-rw-r--r--. 1 33 tape  38728 Feb  9 11:55 class-wp-list-table.php
+-rw-r--r--. 1 33 tape  23038 Feb  9 23:57 class-wp-media-list-table.php
+-rw-r--r--. 1 33 tape  20362 Feb  9 11:55 class-wp-ms-sites-list-table.php
+-rw-r--r--. 1 33 tape  21064 Feb  9 11:55 class-wp-ms-themes-list-table.php
+-rw-r--r--. 1 33 tape  14073 Feb  9 11:55 class-wp-ms-users-list-table.php
+-rw-r--r--. 1 33 tape  23178 Feb  9 11:55 class-wp-plugin-install-list-table.php
+-rw-r--r--. 1 33 tape  35918 Feb  2 10:50 class-wp-plugins-list-table.php
+-rw-r--r--. 1 33 tape   1472 Aug 16  2018 class-wp-post-comments-list-table.php
+-rw-r--r--. 1 33 tape  58141 Feb 18 10:32 class-wp-posts-list-table.php
+-rw-r--r--. 1 33 tape   4690 Feb 10 16:15 class-wp-privacy-data-export-requests-list-table.php
+-rw-r--r--. 1 33 tape   4858 Feb 10 16:15 class-wp-privacy-data-removal-requests-list-table.php
+-rw-r--r--. 1 33 tape  33206 Feb 12 06:44 class-wp-privacy-policy-content.php
+-rw-r--r--. 1 33 tape  11362 Feb 10 14:57 class-wp-privacy-requests-table.php
+-rw-r--r--. 1 33 tape  36640 Feb  9 11:55 class-wp-screen.php
+-rw-r--r--. 1 33 tape  13518 Feb  6 01:33 class-wp-site-health-auto-updates.php
+-rw-r--r--. 1 33 tape  71740 Jun  9 07:27 class-wp-site-health.php
+-rw-r--r--. 1 33 tape   6159 Jan 28 19:45 class-wp-site-icon.php
+-rw-r--r--. 1 33 tape  18979 May  6 09:26 class-wp-terms-list-table.php
+-rw-r--r--. 1 33 tape  15373 Feb  6 01:33 class-wp-theme-install-list-table.php
+-rw-r--r--. 1 33 tape  10168 Jan 28 19:45 class-wp-themes-list-table.php
+-rw-r--r--. 1 33 tape  35737 Jan 28 19:45 class-wp-upgrader.php
+-rw-r--r--. 1 33 tape   5219 Jan 11 13:32 class-wp-upgrader-skin.php
+-rw-r--r--. 1 33 tape   1477 Oct  8  2019 class-wp-upgrader-skins.php
+-rw-r--r--. 1 33 tape  17765 Jan 28 19:45 class-wp-users-list-table.php
+-rw-r--r--. 1 33 tape   5885 Feb  6 01:33 comment.php
+-rw-r--r--. 1 33 tape  20750 Jul 18  2018 continents-cities.php
+-rw-r--r--. 1 33 tape   5549 Feb  6 01:33 credits.php
+-rw-r--r--. 1 33 tape  64557 Mar  3 07:22 dashboard.php
+-rw-r--r--. 1 33 tape  40705 Apr  9 23:02 deprecated.php
+-rw-r--r--. 1 33 tape   1437 Jul  1  2019 edit-tag-messages.php
+-rw-r--r--. 1 33 tape  23610 Feb  9 11:55 export.php
+-rw-r--r--. 1 33 tape  80752 Mar  1 05:40 file.php
+-rw-r--r--. 1 33 tape  35782 Mar  1 05:38 image-edit.php
+-rw-r--r--. 1 33 tape  34245 Feb 13 19:07 image.php
+-rw-r--r--. 1 33 tape   6640 Feb  9 21:12 import.php
+-rw-r--r--. 1 33 tape   3226 Feb  6 01:33 list-table.php
+-rw-r--r--. 1 33 tape 113909 Jun 10 13:46 media.php
+-rw-r--r--. 1 33 tape   9149 Jan 17 19:54 menu.php
+-rw-r--r--. 1 33 tape  62853 Feb  9 21:29 meta-boxes.php
+-rw-r--r--. 1 33 tape  43045 Jun 10 13:50 misc.php
+-rw-r--r--. 1 33 tape   1376 Jan 28 19:35 ms-admin-filters.php
+-rw-r--r--. 1 33 tape   3031 Sep  2  2019 ms-deprecated.php
+-rw-r--r--. 1 33 tape  33707 Feb  9 11:55 ms.php
+-rw-r--r--. 1 33 tape  46646 Feb  9 11:55 nav-menu.php
+-rw-r--r--. 1 33 tape  24462 Feb  6 01:33 network.php
+-rw-r--r--. 1 33 tape   1086 Sep 20  2019 noop.php
+-rw-r--r--. 1 33 tape   4108 Jul 25  2019 options.php
+-rw-r--r--. 1 33 tape  34454 Feb  6 01:33 plugin-install.php
+-rw-r--r--. 1 33 tape  84417 Feb  9 11:55 plugin.php
+-rw-r--r--. 1 33 tape  75425 Mar  2 19:37 post.php
+-rw-r--r--. 1 33 tape  31491 Feb 11 16:43 privacy-tools.php
+-rw-r--r--. 1 33 tape  15922 Jan 28 19:45 revision.php
+-rw-r--r--. 1 33 tape  41762 Feb 11 16:48 schema.php
+-rw-r--r--. 1 33 tape   6371 Jan 28 19:45 screen.php
+-rw-r--r--. 1 33 tape   7962 Jan 28 19:45 taxonomy.php
+-rw-r--r--. 1 33 tape  90554 Feb  9 23:12 template.php
+-rw-r--r--. 1 33 tape   6568 Jul  1  2019 theme-install.php
+-rw-r--r--. 1 33 tape  34265 May 14 05:22 theme.php
+-rw-r--r--. 1 33 tape   8773 Feb  9 22:30 translation-install.php
+-rw-r--r--. 1 33 tape  59356 Feb  9 22:30 update-core.php
+-rw-r--r--. 1 33 tape  29091 Feb  9 11:55 update.php
+-rw-r--r--. 1 33 tape 104564 Feb 11 16:48 upgrade.php
+-rw-r--r--. 1 33 tape  18231 Feb  9 11:55 user.php
+-rw-r--r--. 1 33 tape  10795 Jan 28 19:45 widgets.php
+
+/root/var/www/html/wp-admin/js:
+total 1804
+-rw-r--r--. 1 33 tape   2956 Jan 28 19:45 accordion.js
+-rw-r--r--. 1 33 tape    874 Oct 25  2019 accordion.min.js
+-rw-r--r--. 1 33 tape  11588 Jan 28 19:45 code-editor.js
+-rw-r--r--. 1 33 tape   3099 Oct 25  2019 code-editor.min.js
+-rw-r--r--. 1 33 tape   9800 Jan 28 19:45 color-picker.js
+-rw-r--r--. 1 33 tape   3523 Oct 25  2019 color-picker.min.js
+-rw-r--r--. 1 33 tape   2793 Jan 28 19:45 comment.js
+-rw-r--r--. 1 33 tape   1265 Oct 25  2019 comment.min.js
+-rw-r--r--. 1 33 tape  43664 Jan 28 19:45 common.js
+-rw-r--r--. 1 33 tape  15813 Oct 25  2019 common.min.js
+-rw-r--r--. 1 33 tape   3338 Nov 29  2019 custom-background.js
+-rw-r--r--. 1 33 tape   1156 Oct 25  2019 custom-background.min.js
+-rw-r--r--. 1 33 tape   2017 Nov 29  2019 custom-header.js
+-rw-r--r--. 1 33 tape 291107 Jan 28 19:45 customize-controls.js
+-rw-r--r--. 1 33 tape 112053 Oct 25  2019 customize-controls.min.js
+-rw-r--r--. 1 33 tape 108379 Feb 25 06:14 customize-nav-menus.js
+-rw-r--r--. 1 33 tape  45806 Feb 25 06:14 customize-nav-menus.min.js
+-rw-r--r--. 1 33 tape  71590 Feb  9 23:12 customize-widgets.js
+-rw-r--r--. 1 33 tape  28196 Oct 25  2019 customize-widgets.min.js
+-rw-r--r--. 1 33 tape  18847 Nov 29  2019 dashboard.js
+-rw-r--r--. 1 33 tape   6688 Oct 25  2019 dashboard.min.js
+-rw-r--r--. 1 33 tape  37025 Feb  9 23:12 edit-comments.js
+-rw-r--r--. 1 33 tape  15314 Oct 25  2019 edit-comments.min.js
+-rw-r--r--. 1 33 tape  42607 Jan 28 19:45 editor-expand.js
+-rw-r--r--. 1 33 tape  13467 Oct 25  2019 editor-expand.min.js
+-rw-r--r--. 1 33 tape  45334 Jan 28 19:45 editor.js
+-rw-r--r--. 1 33 tape  13363 Oct 25  2019 editor.min.js
+-rw-r--r--. 1 33 tape   7689 Nov 11  2010 farbtastic.js
+-rw-r--r--. 1 33 tape   5642 Jan 28 19:45 gallery.js
+-rw-r--r--. 1 33 tape   3858 Oct 25  2019 gallery.min.js
+-rw-r--r--. 1 33 tape  29469 Feb 10 23:40 image-edit.js
+-rw-r--r--. 1 33 tape  10239 Feb 10 23:40 image-edit.min.js
+-rw-r--r--. 1 33 tape  16277 Jan 28 19:45 inline-edit-post.js
+-rw-r--r--. 1 33 tape   7320 Oct 25  2019 inline-edit-post.min.js
+-rw-r--r--. 1 33 tape   7697 Jan 28 19:45 inline-edit-tax.js
+-rw-r--r--. 1 33 tape   2914 Oct 25  2019 inline-edit-tax.min.js
+-rw-r--r--. 1 33 tape  23643 Oct 25  2019 iris.min.js
+-rw-r--r--. 1 33 tape    873 Jun 27  2018 language-chooser.js
+-rw-r--r--. 1 33 tape    409 Oct 25  2019 language-chooser.min.js
+-rw-r--r--. 1 33 tape   3875 Jan 28 19:45 link.js
+-rw-r--r--. 1 33 tape   1669 Oct 25  2019 link.min.js
+-rw-r--r--. 1 33 tape   1218 Feb  1 23:15 media-gallery.js
+-rw-r--r--. 1 33 tape    572 Oct 25  2019 media-gallery.min.js
+-rw-r--r--. 1 33 tape   5221 Nov 29  2019 media.js
+-rw-r--r--. 1 33 tape   1902 Oct 25  2019 media.min.js
+-rw-r--r--. 1 33 tape   3458 Jan 28 19:45 media-upload.js
+-rw-r--r--. 1 33 tape   1147 Oct 25  2019 media-upload.min.js
+-rw-r--r--. 1 33 tape  43837 Feb 16 01:27 nav-menu.js
+-rw-r--r--. 1 33 tape  21822 Feb 16 01:27 nav-menu.min.js
+-rw-r--r--. 1 33 tape   3171 Nov 29  2019 password-strength-meter.js
+-rw-r--r--. 1 33 tape    766 Oct 25  2019 password-strength-meter.min.js
+-rw-r--r--. 1 33 tape   7023 Jan 28 19:45 plugin-install.js
+-rw-r--r--. 1 33 tape   2418 Oct 25  2019 plugin-install.min.js
+-rw-r--r--. 1 33 tape  11811 Mar  2 19:37 postbox.js
+-rw-r--r--. 1 33 tape   4203 Mar  2 19:37 postbox.min.js
+-rw-r--r--. 1 33 tape  37420 Jan 28 19:45 post.js
+-rw-r--r--. 1 33 tape  18128 Oct 25  2019 post.min.js
+-rw-r--r--. 1 33 tape   9057 Mar  3 12:51 privacy-tools.js
+-rw-r--r--. 1 33 tape   4044 Mar  3 12:51 privacy-tools.min.js
+-rw-r--r--. 1 33 tape  33920 Jan 28 19:37 revisions.js
+-rw-r--r--. 1 33 tape  17910 Oct 25  2019 revisions.min.js
+-rw-r--r--. 1 33 tape    841 Aug 19  2018 set-post-thumbnail.js
+-rw-r--r--. 1 33 tape    568 Oct 25  2019 set-post-thumbnail.min.js
+-rw-r--r--. 1 33 tape   9045 Jan 28 19:45 site-health.js
+-rw-r--r--. 1 33 tape   5049 Oct 25  2019 site-health.min.js
+-rw-r--r--. 1 33 tape   5532 Jan 28 19:45 svg-painter.js
+-rw-r--r--. 1 33 tape   2392 Oct 25  2019 svg-painter.min.js
+-rw-r--r--. 1 33 tape  11076 Jan 28 19:45 tags-box.js
+-rw-r--r--. 1 33 tape   3077 Oct 25  2019 tags-box.min.js
+-rw-r--r--. 1 33 tape   4683 Jan 28 19:45 tags.js
+-rw-r--r--. 1 33 tape   1821 Oct 25  2019 tags.min.js
+-rw-r--r--. 1 33 tape   5454 Jan 28 19:45 tags-suggest.js
+-rw-r--r--. 1 33 tape   2250 Oct 25  2019 tags-suggest.min.js
+-rw-r--r--. 1 33 tape  54739 Jan 28 19:45 theme.js
+-rw-r--r--. 1 33 tape  26580 Oct 25  2019 theme.min.js
+-rw-r--r--. 1 33 tape  24669 Jan 28 19:45 theme-plugin-editor.js
+-rw-r--r--. 1 33 tape  11267 Oct 25  2019 theme-plugin-editor.min.js
+-rw-r--r--. 1 33 tape  80569 Nov 29  2019 updates.js
+-rw-r--r--. 1 33 tape  35725 Oct 25  2019 updates.min.js
+-rw-r--r--. 1 33 tape  11043 Jan 28 19:45 user-profile.js
+-rw-r--r--. 1 33 tape   5583 Oct 25  2019 user-profile.min.js
+-rw-r--r--. 1 33 tape   2317 Jun 27  2018 user-suggest.js
+-rw-r--r--. 1 33 tape    692 Oct 25  2019 user-suggest.min.js
+drwxr-xr-x. 2 33 tape   4096 Jun 10 17:48 widgets
+-rw-r--r--. 1 33 tape  22867 Feb 11 10:26 widgets.js
+-rw-r--r--. 1 33 tape  12453 Feb 11 10:26 widgets.min.js
+-rw-r--r--. 1 33 tape   7696 Jan 28 19:45 word-count.js
+-rw-r--r--. 1 33 tape   1536 Oct 25  2019 word-count.min.js
+-rw-r--r--. 1 33 tape    759 May 26  2019 xfn.js
+-rw-r--r--. 1 33 tape    476 Oct 25  2019 xfn.min.js
+
+/root/var/www/html/wp-admin/js/widgets:
+total 164
+-rw-r--r--. 1 33 tape 15630 Nov 29  2019 custom-html-widgets.js
+-rw-r--r--. 1 33 tape  5566 Oct 25  2019 custom-html-widgets.min.js
+-rw-r--r--. 1 33 tape  4284 Nov 29  2019 media-audio-widget.js
+-rw-r--r--. 1 33 tape  1470 Oct 25  2019 media-audio-widget.min.js
+-rw-r--r--. 1 33 tape 10354 Nov 29  2019 media-gallery-widget.js
+-rw-r--r--. 1 33 tape  3796 Oct 25  2019 media-gallery-widget.min.js
+-rw-r--r--. 1 33 tape  5468 Nov 29  2019 media-image-widget.js
+-rw-r--r--. 1 33 tape  2044 Oct 25  2019 media-image-widget.min.js
+-rw-r--r--. 1 33 tape  7020 Nov 29  2019 media-video-widget.js
+-rw-r--r--. 1 33 tape  2735 Oct 25  2019 media-video-widget.min.js
+-rw-r--r--. 1 33 tape 42722 Nov 29  2019 media-widgets.js
+-rw-r--r--. 1 33 tape 14294 Nov 18  2019 media-widgets.min.js
+-rw-r--r--. 1 33 tape 18089 Nov 29  2019 text-widgets.js
+-rw-r--r--. 1 33 tape  5911 Oct 25  2019 text-widgets.min.js
+
+/root/var/www/html/wp-admin/maint:
+total 8
+-rw-r--r--. 1 33 tape 7278 Feb  6 01:33 repair.php
+
+/root/var/www/html/wp-admin/network:
+total 204
+-rw-r--r--. 1 33 tape   245 Feb  6 01:33 about.php
+-rw-r--r--. 1 33 tape  1024 Feb  6 01:33 admin.php
+-rw-r--r--. 1 33 tape   249 Feb  6 01:33 credits.php
+-rw-r--r--. 1 33 tape   910 Feb  6 01:33 edit.php
+-rw-r--r--. 1 33 tape   251 Feb  6 01:33 freedoms.php
+-rw-r--r--. 1 33 tape  2860 Feb  6 01:33 index.php
+-rw-r--r--. 1 33 tape  4743 Feb  6 01:33 menu.php
+-rw-r--r--. 1 33 tape   261 Feb  6 01:33 plugin-editor.php
+-rw-r--r--. 1 33 tape   376 Feb  6 01:33 plugin-install.php
+-rw-r--r--. 1 33 tape   249 Feb  6 01:33 plugins.php
+-rw-r--r--. 1 33 tape   249 Feb  6 01:33 privacy.php
+-rw-r--r--. 1 33 tape   254 Feb  6 01:33 profile.php
+-rw-r--r--. 1 33 tape 20683 Feb  9 11:55 settings.php
+-rw-r--r--. 1 33 tape   247 Feb  6 01:33 setup.php
+-rw-r--r--. 1 33 tape  7007 Feb  6 01:33 site-info.php
+-rw-r--r--. 1 33 tape  9865 Feb  6 01:33 site-new.php
+-rw-r--r--. 1 33 tape  5553 Feb  9 11:55 site-settings.php
+-rw-r--r--. 1 33 tape 13229 Feb  9 11:55 sites.php
+-rw-r--r--. 1 33 tape  6717 Feb  6 01:33 site-themes.php
+-rw-r--r--. 1 33 tape 11710 Feb  6 01:33 site-users.php
+-rw-r--r--. 1 33 tape   259 Feb  6 01:33 theme-editor.php
+-rw-r--r--. 1 33 tape   373 Feb  6 01:33 theme-install.php
+-rw-r--r--. 1 33 tape 12159 Feb  6 01:33 themes.php
+-rw-r--r--. 1 33 tape   253 Feb  6 01:33 update-core.php
+-rw-r--r--. 1 33 tape   444 Feb  6 01:33 update.php
+-rw-r--r--. 1 33 tape  4939 Feb  6 01:33 upgrade.php
+-rw-r--r--. 1 33 tape   253 Feb  6 01:33 user-edit.php
+-rw-r--r--. 1 33 tape  4872 Feb  6 01:33 user-new.php
+-rw-r--r--. 1 33 tape  9378 Feb  9 11:55 users.php
+
+/root/var/www/html/wp-admin/user:
+total 36
+-rw-r--r--. 1 33 tape 257 Feb  6 01:33 about.php
+-rw-r--r--. 1 33 tape 865 Feb  6 01:33 admin.php
+-rw-r--r--. 1 33 tape 261 Feb  6 01:33 credits.php
+-rw-r--r--. 1 33 tape 263 Feb  6 01:33 freedoms.php
+-rw-r--r--. 1 33 tape 251 Feb  6 01:33 index.php
+-rw-r--r--. 1 33 tape 758 Feb  6 01:33 menu.php
+-rw-r--r--. 1 33 tape 261 Feb  6 01:33 privacy.php
+-rw-r--r--. 1 33 tape 252 Feb  6 01:33 profile.php
+-rw-r--r--. 1 33 tape 250 Feb  6 01:33 user-edit.php
+
+/root/var/www/html/wp-content:
+total 4
+-rw-r--r--. 1 33 tape 28 Jan  8  2012 index.php
+drwxr-xr-x. 3 33 tape 55 Jun 10 17:48 plugins
+drwxr-xr-x. 5 33 tape 88 Jun 10 17:48 themes
+
+/root/var/www/html/wp-content/plugins:
+total 12
+drwxr-xr-x. 4 33 tape 4096 Jun 10 17:48 akismet
+-rw-r--r--. 1 33 tape 2578 Mar 18  2019 hello.php
+-rw-r--r--. 1 33 tape   28 Jun  5  2014 index.php
+
+/root/var/www/html/wp-content/plugins/akismet:
+total 200
+-rw-r--r--. 1 33 tape  2543 Apr 29 09:01 akismet.php
+-rw-r--r--. 1 33 tape 17716 Apr 21 09:06 changelog.txt
+-rw-r--r--. 1 33 tape 49324 Apr 21 07:01 class.akismet-admin.php
+-rw-r--r--. 1 33 tape  4663 Jun 28  2018 class.akismet-cli.php
+-rw-r--r--. 1 33 tape 58034 Mar  3 17:12 class.akismet.php
+-rw-r--r--. 1 33 tape 11135 Oct 30  2018 class.akismet-rest-api.php
+-rw-r--r--. 1 33 tape  2856 Jul 12  2017 class.akismet-widget.php
+drwxr-xr-x. 3 33 tape    69 Jun 10 17:48 _inc
+-rw-r--r--. 1 33 tape    26 Mar 10  2014 index.php
+-rw-r--r--. 1 33 tape 18092 Aug 23  2015 LICENSE.txt
+-rw-r--r--. 1 33 tape  4395 Apr 29 09:01 readme.txt
+drwxr-xr-x. 2 33 tape   206 Jun 10 17:48 views
+-rw-r--r--. 1 33 tape  6438 Apr  2  2019 wrapper.php
+
+/root/var/www/html/wp-content/plugins/akismet/_inc:
+total 32
+-rw-r--r--. 1 33 tape 12763 Feb 19 13:28 akismet.css
+-rw-r--r--. 1 33 tape 11641 Apr 21 07:01 akismet.js
+-rw-r--r--. 1 33 tape   700 Jul  2  2014 form.js
+drwxr-xr-x. 2 33 tape    30 Jun 10 17:48 img
+
+/root/var/www/html/wp-content/plugins/akismet/_inc/img:
+total 8
+-rw-r--r--. 1 33 tape 5052 May  1  2017 logo-full-2x.png
+
+/root/var/www/html/wp-content/plugins/akismet/views:
+total 64
+-rw-r--r--. 1 33 tape   177 Oct 22  2019 activate.php
+-rw-r--r--. 1 33 tape 11910 Jan  9  2019 config.php
+-rw-r--r--. 1 33 tape  4985 Oct 23  2019 connect-jp.php
+-rw-r--r--. 1 33 tape   803 Oct 31  2019 enter.php
+-rw-r--r--. 1 33 tape   748 May 13  2019 get.php
+-rw-r--r--. 1 33 tape  9295 Apr 21 07:01 notice.php
+-rw-r--r--. 1 33 tape   318 Oct 31  2019 predefined.php
+-rw-r--r--. 1 33 tape   324 Feb 19 13:28 setup.php
+-rw-r--r--. 1 33 tape   984 Oct 31  2019 start.php
+-rw-r--r--. 1 33 tape   744 Dec 15  2016 stats.php
+-rw-r--r--. 1 33 tape   125 Oct 21  2019 title.php
+
+/root/var/www/html/wp-content/themes:
+total 16
+-rw-r--r--. 1 33 tape   28 Jun  5  2014 index.php
+drwxr-xr-x. 8 33 tape 4096 Jun 10 17:48 twentynineteen
+drwxr-xr-x. 5 33 tape 4096 Jun 10 17:48 twentyseventeen
+drwxr-xr-x. 7 33 tape 4096 Jun 10 17:48 twentytwenty
+
+/root/var/www/html/wp-content/themes/twentynineteen:
+total 952
+-rw-r--r--.  1 33 tape    846 Dec  7  2019 404.php
+-rw-r--r--.  1 33 tape   1242 Jan 28 19:45 archive.php
+drwxr-xr-x.  2 33 tape     95 Jun 10 17:48 classes
+-rw-r--r--.  1 33 tape   4004 Jan 28 19:45 comments.php
+drwxr-xr-x.  2 33 tape     81 Jun 10 17:48 fonts
+-rw-r--r--.  1 33 tape   1622 Dec  7  2019 footer.php
+-rw-r--r--.  1 33 tape  10295 Feb  8 08:01 functions.php
+-rw-r--r--.  1 33 tape   1884 Dec  7  2019 header.php
+-rw-r--r--.  1 33 tape   2879 Jan 28 19:45 image.php
+drwxr-xr-x.  2 33 tape    186 Jun 10 17:48 inc
+-rw-r--r--.  1 33 tape   1066 Dec  7  2019 index.php
+drwxr-xr-x.  2 33 tape    153 Jun 10 17:48 js
+-rw-r--r--.  1 33 tape   1532 Oct  8  2019 package.json
+-rw-r--r--.  1 33 tape 160235 Oct  8  2019 package-lock.json
+-rw-r--r--.  1 33 tape    766 Jan 28 19:45 page.php
+-rw-r--r--.  1 33 tape    219 Dec 13  2018 postcss.config.js
+-rw-r--r--.  1 33 tape   3949 Feb 27  2019 print.css
+-rw-r--r--.  1 33 tape   3320 Apr  7  2019 print.scss
+-rw-r--r--.  1 33 tape   3001 Mar 31 15:18 readme.txt
+drwxr-xr-x. 13 33 tape    198 Jun 10 17:48 sass
+-rw-r--r--.  1 33 tape 175535 Dec 13  2018 screenshot.png
+-rw-r--r--.  1 33 tape   1361 Jan 28 19:45 search.php
+-rw-r--r--.  1 33 tape   1787 Jan 28 19:45 single.php
+-rw-r--r--.  1 33 tape 224904 May 19 20:23 style.css
+-rw-r--r--.  1 33 tape  75706 May 15 18:03 style-editor.css
+-rw-r--r--.  1 33 tape    159 Jan 18  2019 style-editor-customizer.css
+-rw-r--r--.  1 33 tape    158 Jan 18  2019 style-editor-customizer.scss
+-rw-r--r--.  1 33 tape  17873 Feb 20 11:40 style-editor.scss
+-rw-r--r--.  1 33 tape 224712 May 19 20:23 style-rtl.css
+-rw-r--r--.  1 33 tape   2841 Mar 31 15:18 style.scss
+drwxr-xr-x.  6 33 tape     61 Jun 10 17:48 template-parts
+
+/root/var/www/html/wp-content/themes/twentynineteen/classes:
+total 68
+-rw-r--r--. 1 33 tape 61396 Jan 28 19:45 class-twentynineteen-svg-icons.php
+-rw-r--r--. 1 33 tape  4111 Dec  7  2019 class-twentynineteen-walker-comment.php
+
+/root/var/www/html/wp-content/themes/twentynineteen/fonts:
+total 8
+-rw-r--r--. 1 33 tape 1212 Dec 13  2018 NonBreakingSpaceOverride.woff
+-rw-r--r--. 1 33 tape  764 Dec 13  2018 NonBreakingSpaceOverride.woff2
+
+/root/var/www/html/wp-content/themes/twentynineteen/inc:
+total 44
+-rw-r--r--. 1 33 tape  2491 Sep  2  2019 back-compat.php
+-rw-r--r--. 1 33 tape 11008 Dec  7  2019 color-patterns.php
+-rw-r--r--. 1 33 tape  4030 Dec  7  2019 customizer.php
+-rw-r--r--. 1 33 tape  3588 Feb 10 14:07 helper-functions.php
+-rw-r--r--. 1 33 tape  3336 Feb  8 08:01 icon-functions.php
+-rw-r--r--. 1 33 tape  7325 Feb  8 08:01 template-functions.php
+-rw-r--r--. 1 33 tape  7335 Jan 28 19:45 template-tags.php
+
+/root/var/www/html/wp-content/themes/twentynineteen/js:
+total 32
+-rw-r--r--. 1 33 tape  710 Aug 31  2019 customize-controls.js
+-rw-r--r--. 1 33 tape 1677 Jan 28 19:45 customize-preview.js
+-rw-r--r--. 1 33 tape 5375 Jan 28 19:45 priority-menu.js
+-rw-r--r--. 1 33 tape  794 Dec 18  2018 skip-link-focus-fix.js
+-rw-r--r--. 1 33 tape 9465 Jan 28 19:45 touch-keyboard-navigation.js
+
+/root/var/www/html/wp-content/themes/twentynineteen/sass:
+total 8
+drwxr-xr-x. 2 33 tape   26 Jun 10 17:48 blocks
+drwxr-xr-x. 2 33 tape   67 Jun 10 17:48 elements
+drwxr-xr-x. 2 33 tape   66 Jun 10 17:48 forms
+drwxr-xr-x. 2 33 tape   26 Jun 10 17:48 layout
+drwxr-xr-x. 2 33 tape   70 Jun 10 17:48 media
+drwxr-xr-x. 2 33 tape   56 Jun 10 17:48 mixins
+drwxr-xr-x. 2 33 tape   80 Jun 10 17:48 modules
+drwxr-xr-x. 2 33 tape  182 Jun 10 17:48 navigation
+-rw-r--r--. 1 33 tape 5986 Dec 13  2018 _normalize.scss
+drwxr-xr-x. 6 33 tape   84 Jun 10 17:48 site
+drwxr-xr-x. 2 33 tape   70 Jun 10 17:48 typography
+drwxr-xr-x. 2 33 tape  142 Jun 10 17:48 variables-site
+
+/root/var/www/html/wp-content/themes/twentynineteen/sass/blocks:
+total 20
+-rw-r--r--. 1 33 tape 20403 Feb 21 09:59 _blocks.scss
+
+/root/var/www/html/wp-content/themes/twentynineteen/sass/elements:
+total 12
+-rw-r--r--. 1 33 tape 1039 Dec 13  2018 _elements.scss
+-rw-r--r--. 1 33 tape  350 Dec 13  2018 _lists.scss
+-rw-r--r--. 1 33 tape  225 Jan 18  2019 _tables.scss
+
+/root/var/www/html/wp-content/themes/twentynineteen/sass/forms:
+total 12
+-rw-r--r--. 1 33 tape 772 Jan 18  2019 _buttons.scss
+-rw-r--r--. 1 33 tape 994 Dec 13  2018 _fields.scss
+-rw-r--r--. 1 33 tape  38 Dec 13  2018 _forms.scss
+
+/root/var/www/html/wp-content/themes/twentynineteen/sass/layout:
+total 4
+-rw-r--r--. 1 33 tape 87 Dec 13  2018 _layout.scss
+
+/root/var/www/html/wp-content/themes/twentynineteen/sass/media:
+total 12
+-rw-r--r--. 1 33 tape 648 Jan 18  2019 _captions.scss
+-rw-r--r--. 1 33 tape 933 Jan 18  2019 _galleries.scss
+-rw-r--r--. 1 33 tape 811 Dec 13  2018 _media.scss
+
+/root/var/www/html/wp-content/themes/twentynineteen/sass/mixins:
+total 8
+-rw-r--r--. 1 33 tape 2887 May 15 18:03 _mixins-master.scss
+-rw-r--r--. 1 33 tape  860 Dec 13  2018 _utilities.scss
+
+/root/var/www/html/wp-content/themes/twentynineteen/sass/modules:
+total 12
+-rw-r--r--. 1 33 tape 918 Jan 30 19:09 _accessibility.scss
+-rw-r--r--. 1 33 tape 445 Dec 13  2018 _alignments.scss
+-rw-r--r--. 1 33 tape 422 Dec 13  2018 _clearings.scss
+
+/root/var/www/html/wp-content/themes/twentynineteen/sass/navigation:
+total 32
+-rw-r--r--. 1 33 tape  267 Dec 13  2018 _links.scss
+-rw-r--r--. 1 33 tape  218 Dec 13  2018 _menu-footer-navigation.scss
+-rw-r--r--. 1 33 tape 8639 Apr  7  2019 _menu-main-navigation.scss
+-rw-r--r--. 1 33 tape 1181 Dec 18  2018 _menu-social-navigation.scss
+-rw-r--r--. 1 33 tape  571 Dec 13  2018 _navigation.scss
+-rw-r--r--. 1 33 tape 2726 Jan 18  2019 _next-previous.scss
+
+/root/var/www/html/wp-content/themes/twentynineteen/sass/site:
+total 4
+drwxr-xr-x. 2 33 tape  31 Jun 10 17:48 footer
+drwxr-xr-x. 2 33 tape  64 Jun 10 17:48 header
+drwxr-xr-x. 2 33 tape  79 Jun 10 17:48 primary
+drwxr-xr-x. 2 33 tape  27 Jun 10 17:48 secondary
+-rw-r--r--. 1 33 tape 908 Dec 13  2018 _site.scss
+
+/root/var/www/html/wp-content/themes/twentynineteen/sass/site/footer:
+total 4
+-rw-r--r--. 1 33 tape 908 Apr 23  2019 _site-footer.scss
+
+/root/var/www/html/wp-content/themes/twentynineteen/sass/site/header:
+total 12
+-rw-r--r--. 1 33 tape 6035 Apr  7  2019 _site-featured-image.scss
+-rw-r--r--. 1 33 tape 2093 Apr 23  2019 _site-header.scss
+
+/root/var/www/html/wp-content/themes/twentynineteen/sass/site/primary:
+total 20
+-rw-r--r--. 1 33 tape 1175 Sep 22  2019 _archives.scss
+-rw-r--r--. 1 33 tape 6385 Apr 23  2019 _comments.scss
+-rw-r--r--. 1 33 tape 4935 Sep 29  2019 _posts-and-pages.scss
+
+/root/var/www/html/wp-content/themes/twentynineteen/sass/site/secondary:
+total 4
+-rw-r--r--. 1 33 tape 1524 May 19 20:23 _widgets.scss
+
+/root/var/www/html/wp-content/themes/twentynineteen/sass/typography:
+total 12
+-rw-r--r--. 1 33 tape  714 Jan 18  2019 _copy.scss
+-rw-r--r--. 1 33 tape 2575 Apr 23  2019 _headings.scss
+-rw-r--r--. 1 33 tape  559 Jan 18  2019 _typography.scss
+
+/root/var/www/html/wp-content/themes/twentynineteen/sass/variables-site:
+total 28
+-rw-r--r--. 1 33 tape 1055 Dec 13  2018 _colors.scss
+-rw-r--r--. 1 33 tape  396 Dec 13  2018 _columns.scss
+-rw-r--r--. 1 33 tape 6474 Aug 30  2019 _fonts.scss
+-rw-r--r--. 1 33 tape  372 Dec 13  2018 _structure.scss
+-rw-r--r--. 1 33 tape  132 Dec 13  2018 _transitions.scss
+-rw-r--r--. 1 33 tape   98 Dec 13  2018 _variables-site.scss
+
+/root/var/www/html/wp-content/themes/twentynineteen/template-parts:
+total 0
+drwxr-xr-x. 2 33 tape 126 Jun 10 17:48 content
+drwxr-xr-x. 2 33 tape  32 Jun 10 17:48 footer
+drwxr-xr-x. 2 33 tape  55 Jun 10 17:48 header
+drwxr-xr-x. 2 33 tape  55 Jun 10 17:48 post
+
+/root/var/www/html/wp-content/themes/twentynineteen/template-parts/content:
+total 20
+-rw-r--r--. 1 33 tape  944 Dec  7  2019 content-excerpt.php
+-rw-r--r--. 1 33 tape 1327 Dec  7  2019 content-none.php
+-rw-r--r--. 1 33 tape 1328 Dec  7  2019 content-page.php
+-rw-r--r--. 1 33 tape 1465 Dec  7  2019 content.php
+-rw-r--r--. 1 33 tape 1303 Dec  7  2019 content-single.php
+
+/root/var/www/html/wp-content/themes/twentynineteen/template-parts/footer:
+total 4
+-rw-r--r--. 1 33 tape 528 Dec  7  2019 footer-widgets.php
+
+/root/var/www/html/wp-content/themes/twentynineteen/template-parts/header:
+total 8
+-rw-r--r--. 1 33 tape 1115 Jan 28 19:45 entry-header.php
+-rw-r--r--. 1 33 tape 1872 Dec  7  2019 site-branding.php
+
+/root/var/www/html/wp-content/themes/twentynineteen/template-parts/post:
+total 8
+-rw-r--r--. 1 33 tape 793 Dec  7  2019 author-bio.php
+-rw-r--r--. 1 33 tape 896 Dec  7  2019 discussion-meta.php
+
+/root/var/www/html/wp-content/themes/twentyseventeen:
+total 532
+-rw-r--r--. 1 33 tape    926 Dec  7  2019 404.php
+-rw-r--r--. 1 33 tape   1840 Jan 28 19:45 archive.php
+drwxr-xr-x. 5 33 tape     41 Jun 10 17:48 assets
+-rw-r--r--. 1 33 tape   2418 Dec  7  2019 comments.php
+-rw-r--r--. 1 33 tape   1346 Dec  7  2019 footer.php
+-rw-r--r--. 1 33 tape   1558 Dec  7  2019 front-page.php
+-rw-r--r--. 1 33 tape  20886 Feb  6 01:33 functions.php
+-rw-r--r--. 1 33 tape   1874 Dec  7  2019 header.php
+drwxr-xr-x. 2 33 tape    183 Jun 10 17:48 inc
+-rw-r--r--. 1 33 tape   2154 Jan 28 19:45 index.php
+-rw-r--r--. 1 33 tape   1002 Jan 28 19:45 page.php
+-rw-r--r--. 1 33 tape   4300 Mar 31 15:18 readme.txt
+-rw-r--r--. 1 33 tape   9643 May  2  2018 rtl.css
+-rw-r--r--. 1 33 tape 363833 Oct 20  2016 screenshot.png
+-rw-r--r--. 1 33 tape    984 Dec  7  2019 searchform.php
+-rw-r--r--. 1 33 tape   2061 Jan 28 19:45 search.php
+-rw-r--r--. 1 33 tape    522 Dec  7  2019 sidebar.php
+-rw-r--r--. 1 33 tape   1632 Jan 28 19:45 single.php
+-rw-r--r--. 1 33 tape  83974 Mar 31 15:18 style.css
+drwxr-xr-x. 7 33 tape     76 Jun 10 17:48 template-parts
+
+/root/var/www/html/wp-content/themes/twentyseventeen/assets:
+total 0
+drwxr-xr-x. 2 33 tape 126 Jun 10 17:48 css
+drwxr-xr-x. 2 33 tape 103 Jun 10 17:48 images
+drwxr-xr-x. 2 33 tape 173 Jun 10 17:48 js
+
+/root/var/www/html/wp-content/themes/twentyseventeen/assets/css:
+total 76
+-rw-r--r--. 1 33 tape 10207 Jan  5  2019 blocks.css
+-rw-r--r--. 1 33 tape 18233 Jun 28  2019 colors-dark.css
+-rw-r--r--. 1 33 tape 21827 Aug 20  2019 editor-blocks.css
+-rw-r--r--. 1 33 tape  8818 Dec 18  2018 editor-style.css
+-rw-r--r--. 1 33 tape  3646 Dec  2  2016 ie8.css
+-rw-r--r--. 1 33 tape  1281 Dec  2  2016 ie9.css
+
+/root/var/www/html/wp-content/themes/twentyseventeen/assets/images:
+total 536
+-rw-r--r--. 1 33 tape 117713 Nov 23  2016 coffee.jpg
+-rw-r--r--. 1 33 tape  93540 Nov 23  2016 espresso.jpg
+-rw-r--r--. 1 33 tape 114854 Nov 17  2016 header.jpg
+-rw-r--r--. 1 33 tape 171858 Nov 23  2016 sandwich.jpg
+-rw-r--r--. 1 33 tape  42656 Sep 25  2017 svg-icons.svg
+
+/root/var/www/html/wp-content/themes/twentyseventeen/assets/js:
+total 48
+-rw-r--r--. 1 33 tape  1129 Aug 31  2019 customize-controls.js
+-rw-r--r--. 1 33 tape  4481 Jan 28 19:45 customize-preview.js
+-rw-r--r--. 1 33 tape  7754 Jan 21  2019 global.js
+-rw-r--r--. 1 33 tape 10330 Oct 20  2016 html5.js
+-rw-r--r--. 1 33 tape  5836 Oct 20  2016 jquery.scrollTo.js
+-rw-r--r--. 1 33 tape  3754 Dec  2  2016 navigation.js
+-rw-r--r--. 1 33 tape   683 Nov 14  2016 skip-link-focus-fix.js
+
+/root/var/www/html/wp-content/themes/twentyseventeen/inc:
+total 64
+-rw-r--r--. 1 33 tape  2532 Sep  2  2019 back-compat.php
+-rw-r--r--. 1 33 tape 22523 Dec  7  2019 color-patterns.php
+-rw-r--r--. 1 33 tape  4449 Jan 28 19:45 custom-header.php
+-rw-r--r--. 1 33 tape  6879 Dec  7  2019 customizer.php
+-rw-r--r--. 1 33 tape  7132 Feb  6 01:33 icon-functions.php
+-rw-r--r--. 1 33 tape  2578 Dec  7  2019 template-functions.php
+-rw-r--r--. 1 33 tape  7098 Jan 28 19:45 template-tags.php
+
+/root/var/www/html/wp-content/themes/twentyseventeen/template-parts:
+total 0
+drwxr-xr-x. 2 33 tape  53 Jun 10 17:48 footer
+drwxr-xr-x. 2 33 tape  55 Jun 10 17:48 header
+drwxr-xr-x. 2 33 tape  32 Jun 10 17:48 navigation
+drwxr-xr-x. 2 33 tape  97 Jun 10 17:48 page
+drwxr-xr-x. 2 33 tape 178 Jun 10 17:48 post
+
+/root/var/www/html/wp-content/themes/twentyseventeen/template-parts/footer:
+total 8
+-rw-r--r--. 1 33 tape 753 Dec  7  2019 footer-widgets.php
+-rw-r--r--. 1 33 tape 590 Dec  7  2019 site-info.php
+
+/root/var/www/html/wp-content/themes/twentyseventeen/template-parts/header:
+total 8
+-rw-r--r--. 1 33 tape  366 Dec  7  2019 header-image.php
+-rw-r--r--. 1 33 tape 1261 Dec  7  2019 site-branding.php
+
+/root/var/www/html/wp-content/themes/twentyseventeen/template-parts/navigation:
+total 4
+-rw-r--r--. 1 33 tape 1039 Dec  7  2019 navigation-top.php
+
+/root/var/www/html/wp-content/themes/twentyseventeen/template-parts/page:
+total 12
+-rw-r--r--. 1 33 tape 2299 Dec  7  2019 content-front-page-panels.php
+-rw-r--r--. 1 33 tape 1377 Dec  7  2019 content-front-page.php
+-rw-r--r--. 1 33 tape  785 Dec  7  2019 content-page.php
+
+/root/var/www/html/wp-content/themes/twentyseventeen/template-parts/post:
+total 28
+-rw-r--r--. 1 33 tape 2659 Dec  7  2019 content-audio.php
+-rw-r--r--. 1 33 tape 1391 Dec  7  2019 content-excerpt.php
+-rw-r--r--. 1 33 tape 2326 Dec  7  2019 content-gallery.php
+-rw-r--r--. 1 33 tape 2180 Dec  7  2019 content-image.php
+-rw-r--r--. 1 33 tape 1020 Dec  7  2019 content-none.php
+-rw-r--r--. 1 33 tape 2018 Dec  7  2019 content.php
+-rw-r--r--. 1 33 tape 2683 Dec  7  2019 content-video.php
+
+/root/var/www/html/wp-content/themes/twentytwenty:
+total 804
+-rw-r--r--. 1 33 tape    820 Dec  7  2019 404.php
+drwxr-xr-x. 6 33 tape     54 Jun 10 17:48 assets
+drwxr-xr-x. 2 33 tape   4096 Jun 10 17:48 classes
+-rw-r--r--. 1 33 tape   3218 Jan 28 19:45 comments.php
+-rw-r--r--. 1 33 tape   1827 Jan 28 19:45 footer.php
+-rw-r--r--. 1 33 tape  27044 Jan 30 16:55 functions.php
+-rw-r--r--. 1 33 tape   5065 Dec  7  2019 header.php
+drwxr-xr-x. 2 33 tape    101 Jun 10 17:48 inc
+-rw-r--r--. 1 33 tape   2799 Jan 28 19:45 index.php
+-rw-r--r--. 1 33 tape   2092 Oct  8  2019 package.json
+-rw-r--r--. 1 33 tape 444067 Oct  8  2019 package-lock.json
+-rw-r--r--. 1 33 tape   2574 Nov 11  2019 print.css
+-rw-r--r--. 1 33 tape   3708 May 19 18:31 readme.txt
+-rw-r--r--. 1 33 tape  53066 Oct 29  2019 screenshot.png
+-rw-r--r--. 1 33 tape   1460 Feb 28 15:56 searchform.php
+-rw-r--r--. 1 33 tape    565 Dec  7  2019 singular.php
+-rw-r--r--. 1 33 tape 121057 May 19 18:26 style.css
+-rw-r--r--. 1 33 tape 120054 May 23 02:25 style-rtl.css
+drwxr-xr-x. 2 33 tape    250 Jun 10 17:48 template-parts
+drwxr-xr-x. 2 33 tape     63 Jun 10 17:48 templates
+
+/root/var/www/html/wp-content/themes/twentytwenty/assets:
+total 0
+drwxr-xr-x. 2 33 tape 138 Jun 10 17:48 css
+drwxr-xr-x. 3 33 tape  19 Jun 10 17:48 fonts
+drwxr-xr-x. 2 33 tape 244 Jun 10 17:48 images
+drwxr-xr-x. 2 33 tape 188 Jun 10 17:48 js
+
+/root/var/www/html/wp-content/themes/twentytwenty/assets/css:
+total 120
+-rw-r--r--. 1 33 tape 38957 Nov 12  2019 editor-style-block.css
+-rw-r--r--. 1 33 tape 38964 Nov 12  2019 editor-style-block-rtl.css
+-rw-r--r--. 1 33 tape 17562 Feb 11 11:11 editor-style-classic.css
+-rw-r--r--. 1 33 tape 17539 Feb 11 11:11 editor-style-classic-rtl.css
+
+/root/var/www/html/wp-content/themes/twentytwenty/assets/fonts:
+total 0
+drwxr-xr-x. 2 33 tape 67 Jun 10 17:48 inter
+
+/root/var/www/html/wp-content/themes/twentytwenty/assets/fonts/inter:
+total 452
+-rw-r--r--. 1 33 tape 236832 Oct 22  2019 Inter-italic-var.woff2
+-rw-r--r--. 1 33 tape 223892 Oct 22  2019 Inter-upright-var.woff2
+
+/root/var/www/html/wp-content/themes/twentytwenty/assets/images:
+total 64
+-rw-r--r--. 1 33 tape  1211 Oct 22  2019 2020-landscape-1.png
+-rw-r--r--. 1 33 tape  6248 Oct 22  2019 2020-landscape-2.png
+-rw-r--r--. 1 33 tape  4201 Oct 22  2019 2020-square-1.png
+-rw-r--r--. 1 33 tape  3366 Oct 22  2019 2020-square-2.png
+-rw-r--r--. 1 33 tape  2333 Oct 22  2019 2020-three-quarters-1.png
+-rw-r--r--. 1 33 tape  2708 Oct 22  2019 2020-three-quarters-2.png
+-rw-r--r--. 1 33 tape 26106 Oct 22  2019 2020-three-quarters-3.png
+-rw-r--r--. 1 33 tape  2185 Oct 22  2019 2020-three-quarters-4.png
+
+/root/var/www/html/wp-content/themes/twentytwenty/assets/js:
+total 60
+-rw-r--r--. 1 33 tape  4491 Jan 28 19:45 color-calculations.js
+-rw-r--r--. 1 33 tape  3107 Dec  7  2019 customize-controls.js
+-rw-r--r--. 1 33 tape   839 Oct  8  2019 customize.js
+-rw-r--r--. 1 33 tape  5647 Jan 28 19:45 customize-preview.js
+-rw-r--r--. 1 33 tape   178 Dec  7  2019 editor-script-block.js
+-rw-r--r--. 1 33 tape 25570 May 19 18:50 index.js
+-rw-r--r--. 1 33 tape   792 Oct 29  2019 skip-link-focus-fix.js
+
+/root/var/www/html/wp-content/themes/twentytwenty/classes:
+total 116
+-rw-r--r--. 1 33 tape 14333 Dec  7  2019 class-twentytwenty-customize.php
+-rw-r--r--. 1 33 tape  6654 Jan 28 19:45 class-twentytwenty-non-latin-languages.php
+-rw-r--r--. 1 33 tape  1245 Jan 28 19:45 class-twentytwenty-script-loader.php
+-rw-r--r--. 1 33 tape   476 Dec  7  2019 class-twentytwenty-separator-control.php
+-rw-r--r--. 1 33 tape 66903 May 19 18:41 class-twentytwenty-svg-icons.php
+-rw-r--r--. 1 33 tape  4735 Jan 28 19:45 class-twentytwenty-walker-comment.php
+-rw-r--r--. 1 33 tape  5226 Jan 28 19:45 class-twentytwenty-walker-page.php
+
+/root/var/www/html/wp-content/themes/twentytwenty/inc:
+total 52
+-rw-r--r--. 1 33 tape  9228 Jan 28 19:45 custom-css.php
+-rw-r--r--. 1 33 tape 11872 Feb 27 17:00 starter-content.php
+-rw-r--r--. 1 33 tape  1851 Jan 28 19:45 svg-icons.php
+-rw-r--r--. 1 33 tape 22416 May 19 19:30 template-tags.php
+
+/root/var/www/html/wp-content/themes/twentytwenty/template-parts:
+total 44
+-rw-r--r--. 1 33 tape 5503 May 19 19:30 content-cover.php
+-rw-r--r--. 1 33 tape 2105 May 19 19:30 content.php
+-rw-r--r--. 1 33 tape 1052 Jan 28 19:45 entry-author-bio.php
+-rw-r--r--. 1 33 tape 1872 Jan 28 19:45 entry-header.php
+-rw-r--r--. 1 33 tape  883 Jan 28 19:45 featured-image.php
+-rw-r--r--. 1 33 tape 3180 Jan 28 19:45 footer-menus-widgets.php
+-rw-r--r--. 1 33 tape 3633 Dec  7  2019 modal-menu.php
+-rw-r--r--. 1 33 tape  945 Dec  7  2019 modal-search.php
+-rw-r--r--. 1 33 tape 1571 Dec  7  2019 navigation.php
+-rw-r--r--. 1 33 tape 2046 Jan 28 19:45 pagination.php
+
+/root/var/www/html/wp-content/themes/twentytwenty/templates:
+total 8
+-rw-r--r--. 1 33 tape 488 Dec  7  2019 template-cover.php
+-rw-r--r--. 1 33 tape 202 Dec  7  2019 template-full-width.php
+
+/root/var/www/html/wp-includes:
+total 6288
+-rw-r--r--.  1 33 tape  31315 Mar 17 15:28 admin-bar.php
+drwxr-xr-x.  2 33 tape     40 Jun 10 17:48 assets
+-rw-r--r--.  1 33 tape  11840 Sep  2  2019 atomlib.php
+-rw-r--r--.  1 33 tape  17037 Jan 28 19:45 author-template.php
+drwxr-xr-x.  4 33 tape    270 Jun 10 17:48 blocks
+-rw-r--r--.  1 33 tape  18749 Mar  1 05:38 blocks.php
+-rw-r--r--.  1 33 tape  15004 Feb  9 11:55 bookmark.php
+-rw-r--r--.  1 33 tape  12503 Feb  9 11:55 bookmark-template.php
+-rw-r--r--.  1 33 tape   8801 Feb  6 00:53 cache.php
+-rw-r--r--.  1 33 tape  29061 Feb  2 19:14 canonical.php
+-rw-r--r--.  1 33 tape  34685 Feb 11 16:48 capabilities.php
+-rw-r--r--.  1 33 tape  12202 Feb  9 11:55 category.php
+-rw-r--r--.  1 33 tape  53088 Feb  9 11:55 category-template.php
+drwxr-xr-x.  2 33 tape     27 Jun 10 17:48 certificates
+-rw-r--r--.  1 33 tape    529 Feb  6 01:33 class-feed.php
+-rw-r--r--.  1 33 tape  39108 Feb 22 14:12 class-http.php
+-rw-r--r--.  1 33 tape   2543 Feb  6 01:33 class-IXR.php
+-rw-r--r--.  1 33 tape  43447 Nov  2  2019 class-json.php
+-rw-r--r--.  1 33 tape    407 Feb  6 01:33 class-oembed.php
+-rw-r--r--.  1 33 tape   7319 Nov  1  2019 class-phpass.php
+-rw-r--r--.  1 33 tape 147966 Feb  6 01:33 class-phpmailer.php
+-rw-r--r--.  1 33 tape  20919 Aug  3  2019 class-pop3.php
+-rw-r--r--.  1 33 tape  29804 Nov  5  2019 class-requests.php
+-rw-r--r--.  1 33 tape  89261 Feb  6 01:33 class-simplepie.php
+-rw-r--r--.  1 33 tape  40919 Sep 12  2019 class-smtp.php
+-rw-r--r--.  1 33 tape  37785 Jul  6  2016 class-snoopy.php
+-rw-r--r--.  1 33 tape   2127 Nov 30  2017 class-walker-category-dropdown.php
+-rw-r--r--.  1 33 tape   7874 Oct  6  2019 class-walker-category.php
+-rw-r--r--.  1 33 tape  13683 Jun  2 17:46 class-walker-comment.php
+-rw-r--r--.  1 33 tape   8650 Jan 28 19:45 class-walker-nav-menu.php
+-rw-r--r--.  1 33 tape   2299 Sep  2  2019 class-walker-page-dropdown.php
+-rw-r--r--.  1 33 tape   7033 Feb  9 11:55 class-walker-page.php
+-rw-r--r--.  1 33 tape  17185 Feb  9 11:55 class-wp-admin-bar.php
+-rw-r--r--.  1 33 tape   5236 Jan 28 19:45 class-wp-ajax-response.php
+-rw-r--r--.  1 33 tape  15215 Feb  7  2019 class-wp-block-parser.php
+-rw-r--r--.  1 33 tape   4728 Oct 27  2019 class-wp-block-styles-registry.php
+-rw-r--r--.  1 33 tape   4815 Dec 17  2018 class-wp-block-type.php
+-rw-r--r--.  1 33 tape   4746 Sep  2  2019 class-wp-block-type-registry.php
+-rw-r--r--.  1 33 tape   8968 Nov  5  2019 class-wp-comment.php
+-rw-r--r--.  1 33 tape  44522 Jun  2 16:26 class-wp-comment-query.php
+-rw-r--r--.  1 33 tape  25505 Feb 27 15:09 class-wp-customize-control.php
+-rw-r--r--.  1 33 tape 200156 Apr 29 13:28 class-wp-customize-manager.php
+-rw-r--r--.  1 33 tape  54529 Feb 26 10:33 class-wp-customize-nav-menus.php
+-rw-r--r--.  1 33 tape  10406 Feb 27 15:36 class-wp-customize-panel.php
+-rw-r--r--.  1 33 tape  10974 Feb 27 15:29 class-wp-customize-section.php
+-rw-r--r--.  1 33 tape  29680 Feb 27 15:23 class-wp-customize-setting.php
+-rw-r--r--.  1 33 tape  66974 Feb 26 10:33 class-wp-customize-widgets.php
+-rw-r--r--.  1 33 tape  34826 Jan 28 19:45 class-wp-date-query.php
+-rw-r--r--.  1 33 tape  12674 Mar 24 17:08 class.wp-dependencies.php
+-rw-r--r--.  1 33 tape   2500 Mar  1 11:24 class-wp-dependency.php
+-rw-r--r--.  1 33 tape  70665 Feb  9 11:55 class-wp-editor.php
+-rw-r--r--.  1 33 tape  14802 Jan 28 19:45 class-wp-embed.php
+-rw-r--r--.  1 33 tape   4923 Jan  9  2019 class-wp-error.php
+-rw-r--r--.  1 33 tape   7416 Mar 27 19:56 class-wp-fatal-error-handler.php
+-rw-r--r--.  1 33 tape    749 Nov 30  2017 class-wp-feed-cache.php
+-rw-r--r--.  1 33 tape   2560 Nov 30  2017 class-wp-feed-cache-transient.php
+-rw-r--r--.  1 33 tape  14051 Feb  9 11:55 class-wp-hook.php
+-rw-r--r--.  1 33 tape   7146 Aug  5  2019 class-wp-http-cookie.php
+-rw-r--r--.  1 33 tape  12330 Feb  9 11:55 class-wp-http-curl.php
+-rw-r--r--.  1 33 tape   6510 Jan 19 22:14 class-wp-http-encoding.php
+-rw-r--r--.  1 33 tape   3334 Feb  9 11:55 class-wp-http-ixr-client.php
+-rw-r--r--.  1 33 tape   6077 Feb  9 11:55 class-wp-http-proxy.php
+-rw-r--r--.  1 33 tape   1950 Jan 28 19:45 class-wp-http-requests-hooks.php
+-rw-r--r--.  1 33 tape   4343 Oct 12  2019 class-wp-http-requests-response.php
+-rw-r--r--.  1 33 tape   2951 Jul  1  2019 class-wp-http-response.php
+-rw-r--r--.  1 33 tape  16079 Feb  9 11:55 class-wp-http-streams.php
+-rw-r--r--.  1 33 tape  14104 Jan 28 19:45 class-wp-image-editor-gd.php
+-rw-r--r--.  1 33 tape  23868 Feb  9 11:55 class-wp-image-editor-imagick.php
+-rw-r--r--.  1 33 tape  14016 Feb  9 11:55 class-wp-image-editor.php
+-rw-r--r--.  1 33 tape   6407 Jul  2  2019 class-wp-list-util.php
+-rw-r--r--.  1 33 tape  13914 Feb  9 22:30 class-wp-locale.php
+-rw-r--r--.  1 33 tape   5022 Aug  3  2019 class-wp-locale-switcher.php
+-rw-r--r--.  1 33 tape   1805 Jan 28 19:45 class-wp-matchesmapregex.php
+-rw-r--r--.  1 33 tape   5386 Feb  1 15:32 class-wp-metadata-lazyloader.php
+-rw-r--r--.  1 33 tape  27826 Jan 11 13:32 class-wp-meta-query.php
+-rw-r--r--.  1 33 tape  12376 Jan 28 19:45 class-wp-network.php
+-rw-r--r--.  1 33 tape  18372 Feb  9 11:55 class-wp-network-query.php
+-rw-r--r--.  1 33 tape  12848 Apr 29 11:52 class-wp-object-cache.php
+-rw-r--r--.  1 33 tape   6027 Nov 10  2019 class-wp-oembed-controller.php
+-rw-r--r--.  1 33 tape  30476 Feb  8 23:55 class-wp-oembed.php
+-rw-r--r--.  1 33 tape   4931 Jan 28 19:45 class-wp-paused-extensions-storage.php
+-rw-r--r--.  1 33 tape  24688 Jun  2 16:26 class-wp.php
+-rw-r--r--.  1 33 tape   6441 Mar 15  2019 class-wp-post.php
+-rw-r--r--.  1 33 tape  19533 Feb  9 23:12 class-wp-post-type.php
+-rw-r--r--.  1 33 tape 131635 Apr 29 11:50 class-wp-query.php
+-rw-r--r--.  1 33 tape   6457 Jan 28 19:45 class-wp-recovery-mode-cookie-service.php
+-rw-r--r--.  1 33 tape  10121 Jan 28 19:45 class-wp-recovery-mode-email-service.php
+-rw-r--r--.  1 33 tape   4282 Jan 28 19:45 class-wp-recovery-mode-key-service.php
+-rw-r--r--.  1 33 tape   3368 Jan 28 19:45 class-wp-recovery-mode-link-service.php
+-rw-r--r--.  1 33 tape  11356 Jan 28 19:45 class-wp-recovery-mode.php
+-rw-r--r--.  1 33 tape  60831 Feb  9 11:55 class-wp-rewrite.php
+-rw-r--r--.  1 33 tape   2792 Oct 26  2019 class-wp-role.php
+-rw-r--r--.  1 33 tape   8406 Feb  9 11:55 class-wp-roles.php
+-rw-r--r--.  1 33 tape  18150 Feb  9 11:55 class.wp-scripts.php
+-rw-r--r--.  1 33 tape   7431 Jan 28 19:45 class-wp-session-tokens.php
+-rw-r--r--.  1 33 tape   2328 Jan 28 19:45 class-wp-simplepie-file.php
+-rw-r--r--.  1 33 tape   1775 Feb  9 11:55 class-wp-simplepie-sanitize-kses.php
+-rw-r--r--.  1 33 tape   7367 Aug 29  2019 class-wp-site.php
+-rw-r--r--.  1 33 tape  28532 Jan 28 19:45 class-wp-site-query.php
+-rw-r--r--.  1 33 tape  10682 Feb  9 11:55 class.wp-styles.php
+-rw-r--r--.  1 33 tape  10842 Jan 28 19:45 class-wp-taxonomy.php
+-rw-r--r--.  1 33 tape  19271 Jan 28 19:45 class-wp-tax-query.php
+-rw-r--r--.  1 33 tape   5265 Feb 25  2018 class-wp-term.php
+-rw-r--r--.  1 33 tape  35527 Nov  4  2019 class-wp-term-query.php
+-rw-r--r--.  1 33 tape    716 Nov 30  2017 class-wp-text-diff-renderer-inline.php
+-rw-r--r--.  1 33 tape  16831 Jan 28 19:45 class-wp-text-diff-renderer-table.php
+-rw-r--r--.  1 33 tape  50865 Mar  1 05:38 class-wp-theme.php
+-rw-r--r--.  1 33 tape   2990 Jan  9  2019 class-wp-user-meta-session-tokens.php
+-rw-r--r--.  1 33 tape  21872 Feb  9 11:55 class-wp-user.php
+-rw-r--r--.  1 33 tape  31302 Jan 28 19:45 class-wp-user-query.php
+-rw-r--r--.  1 33 tape   1996 Jun 10  2019 class-wp-user-request.php
+-rw-r--r--.  1 33 tape  12722 Feb  9 11:55 class-wp-walker.php
+-rw-r--r--.  1 33 tape   2620 Jan 28 19:45 class-wp-widget-factory.php
+-rw-r--r--.  1 33 tape  17902 Jan 28 19:45 class-wp-widget.php
+-rw-r--r--.  1 33 tape 209821 Feb  9 23:12 class-wp-xmlrpc-server.php
+-rw-r--r--.  1 33 tape 117259 Jun  2 16:26 comment.php
+-rw-r--r--.  1 33 tape  92992 Jun 10 15:23 comment-template.php
+-rw-r--r--.  1 33 tape  11764 Feb  9 11:55 compat.php
+-rw-r--r--.  1 33 tape  32667 Feb  6 01:33 cron.php
+drwxr-xr-x.  3 33 tape   4096 Jun 10 17:48 css
+drwxr-xr-x.  2 33 tape   4096 Jun 10 17:48 customize
+-rw-r--r--.  1 33 tape    406 Feb  6 01:33 date.php
+-rw-r--r--.  1 33 tape  10157 Feb  2 00:34 default-constants.php
+-rw-r--r--.  1 33 tape  26110 Jun 10 13:44 default-filters.php
+-rw-r--r--.  1 33 tape   2123 Feb  6 01:33 default-widgets.php
+-rw-r--r--.  1 33 tape 114363 Apr  9 23:02 deprecated.php
+-rw-r--r--.  1 33 tape  47441 Jun 10 13:44 embed.php
+-rw-r--r--.  1 33 tape    341 Feb  6 01:33 embed-template.php
+-rw-r--r--.  1 33 tape   3385 Jan 28 19:45 error-protection.php
+-rw-r--r--.  1 33 tape   5444 Feb  9 11:55 feed-atom-comments.php
+-rw-r--r--.  1 33 tape   3102 Jan 28 19:45 feed-atom.php
+-rw-r--r--.  1 33 tape  22060 Mar  1 05:38 feed.php
+-rw-r--r--.  1 33 tape   2668 Jan 28 19:45 feed-rdf.php
+-rw-r--r--.  1 33 tape   4088 Jan 28 19:45 feed-rss2-comments.php
+-rw-r--r--.  1 33 tape   3799 Jan 28 19:45 feed-rss2.php
+-rw-r--r--.  1 33 tape   1189 Jan 28 19:45 feed-rss.php
+drwxr-xr-x.  2 33 tape    114 Jun 10 17:48 fonts
+-rw-r--r--.  1 33 tape 297925 Apr 29 11:54 formatting.php
+-rw-r--r--.  1 33 tape 231358 May 21 05:13 functions.php
+-rw-r--r--.  1 33 tape  12842 Jan 28 19:45 functions.wp-scripts.php
+-rw-r--r--.  1 33 tape   8245 Feb  7 12:42 functions.wp-styles.php
+-rw-r--r--.  1 33 tape 152929 Mar 17 15:28 general-template.php
+-rw-r--r--.  1 33 tape  22545 Feb  9 11:55 http.php
+drwxr-xr-x.  2 33 tape   4096 Jun 10 17:48 ID3
+drwxr-xr-x.  6 33 tape   4096 Jun 10 17:48 images
+drwxr-xr-x.  2 33 tape   4096 Jun 10 17:48 IXR
+drwxr-xr-x. 13 33 tape   4096 Jun 10 17:48 js
+-rw-r--r--.  1 33 tape  59046 Feb  9 11:55 kses.php
+-rw-r--r--.  1 33 tape  53814 Feb  9 22:30 l10n.php
+-rw-r--r--.  1 33 tape 143795 Feb  9 23:12 link-template.php
+-rw-r--r--.  1 33 tape  43955 Feb 25 13:33 load.php
+-rw-r--r--.  1 33 tape    162 Oct  8  2019 locale.php
+-rw-r--r--.  1 33 tape 150547 Feb 29 11:49 media.php
+-rw-r--r--.  1 33 tape  58085 Feb  7 00:13 media-template.php
+-rw-r--r--.  1 33 tape  50379 Feb 28 07:14 meta.php
+-rw-r--r--.  1 33 tape  24986 Feb  6 01:33 ms-blogs.php
+-rw-r--r--.  1 33 tape   4787 Jan 28 19:45 ms-default-constants.php
+-rw-r--r--.  1 33 tape   6428 Jan 28 19:45 ms-default-filters.php
+-rw-r--r--.  1 33 tape  21122 Feb  6 01:33 ms-deprecated.php
+-rw-r--r--.  1 33 tape   2641 Feb  9 11:55 ms-files.php
+-rw-r--r--.  1 33 tape  89438 Feb  9 11:55 ms-functions.php
+-rw-r--r--.  1 33 tape  19797 Feb  9 11:55 ms-load.php
+-rw-r--r--.  1 33 tape   3658 Jan  8  2019 ms-network.php
+-rw-r--r--.  1 33 tape   4122 Feb  6 01:33 ms-settings.php
+-rw-r--r--.  1 33 tape  43033 Feb  6 01:33 ms-site.php
+-rw-r--r--.  1 33 tape  41730 Mar 17 15:21 nav-menu.php
+-rw-r--r--.  1 33 tape  22150 Feb  9 11:55 nav-menu-template.php
+-rw-r--r--.  1 33 tape  70890 Feb 25 15:08 option.php
+-rw-r--r--.  1 33 tape   6263 Jan 11 13:32 pluggable-deprecated.php
+-rw-r--r--.  1 33 tape 101249 Jun 10 13:47 pluggable.php
+-rw-r--r--.  1 33 tape  32201 Feb  6 01:33 plugin.php
+drwxr-xr-x.  2 33 tape    118 Jun 10 17:48 pomo
+-rw-r--r--.  1 33 tape   7069 Jan 28 19:45 post-formats.php
+-rw-r--r--.  1 33 tape 244529 Apr 29 11:47 post.php
+-rw-r--r--.  1 33 tape  63041 Feb  9 11:55 post-template.php
+-rw-r--r--.  1 33 tape   9021 Feb  1 22:08 post-thumbnail-template.php
+-rw-r--r--.  1 33 tape  34218 Mar  1 12:29 query.php
+drwxr-xr-x.  2 33 tape   4096 Jun 10 17:48 random_compat
+-rw-r--r--.  1 33 tape    202 Oct  8  2019 registration-functions.php
+-rw-r--r--.  1 33 tape    202 Oct  8  2019 registration.php
+drwxr-xr-x.  9 33 tape   4096 Jun 10 17:48 Requests
+drwxr-xr-x.  5 33 tape    150 Jun 10 17:48 rest-api
+-rw-r--r--.  1 33 tape  47294 May 22 17:00 rest-api.php
+-rw-r--r--.  1 33 tape  21710 Feb 25 14:35 revision.php
+-rw-r--r--.  1 33 tape  18048 Feb  9 11:55 rewrite.php
+-rw-r--r--.  1 33 tape    211 Feb  6 01:33 rss-functions.php
+-rw-r--r--.  1 33 tape  23208 Oct 31  2016 rss.php
+-rw-r--r--.  1 33 tape 104915 Mar  3 11:55 script-loader.php
+-rw-r--r--.  1 33 tape    258 Feb  6 01:33 session.php
+-rw-r--r--.  1 33 tape  21400 Feb  9 11:55 shortcodes.php
+drwxr-xr-x.  9 33 tape   4096 Jun 10 17:48 SimplePie
+drwxr-xr-x.  5 33 tape    102 Jun 10 17:48 sodium_compat
+-rw-r--r--.  1 33 tape    443 Jul 15  2019 spl-autoload-compat.php
+-rw-r--r--.  1 33 tape 158347 Apr 14 04:17 taxonomy.php
+-rw-r--r--.  1 33 tape   3014 Feb  6 01:33 template-loader.php
+-rw-r--r--.  1 33 tape  21046 Feb  6 01:33 template.php
+drwxr-xr-x.  3 33 tape     34 Jun 10 17:48 Text
+drwxr-xr-x.  2 33 tape    192 Jun 10 17:48 theme-compat
+-rw-r--r--.  1 33 tape 104946 Feb 11 11:36 theme.php
+-rw-r--r--.  1 33 tape  25689 Feb  9 22:30 update.php
+-rw-r--r--.  1 33 tape 131952 Apr 29 11:49 user.php
+-rw-r--r--.  1 33 tape   5820 Jan 28 19:45 vars.php
+-rw-r--r--.  1 33 tape    765 Jun 10 17:32 version.php
+drwxr-xr-x.  2 33 tape   4096 Jun 10 17:48 widgets
+-rw-r--r--.  1 33 tape  58761 Jan 28 19:45 widgets.php
+-rw-r--r--.  1 33 tape   1045 Dec 11  2013 wlwmanifest.xml
+-rw-r--r--.  1 33 tape 103912 Feb  9 22:30 wp-db.php
+-rw-r--r--.  1 33 tape    647 Feb  6 01:33 wp-diff.php
+
+/root/var/www/html/wp-includes/assets:
+total 12
+-rw-r--r--. 1 33 tape 8670 Apr 24 11:32 script-loader-packages.php
+
+/root/var/www/html/wp-includes/blocks:
+total 108
+-rw-r--r--. 1 33 tape  3282 Sep 19  2019 archives.php
+-rw-r--r--. 1 33 tape  1006 Sep 19  2019 block.php
+-rw-r--r--. 1 33 tape  2073 Sep 19  2019 calendar.php
+-rw-r--r--. 1 33 tape  3078 Sep 19  2019 categories.php
+-rw-r--r--. 1 33 tape  5753 Oct 28  2019 latest-comments.php
+-rw-r--r--. 1 33 tape  6913 Mar  2 18:21 latest-posts.php
+-rw-r--r--. 1 33 tape  4189 Apr 24 11:32 rss.php
+-rw-r--r--. 1 33 tape  2358 Apr 24 11:32 search.php
+drwxr-xr-x. 2 33 tape    24 Jun 10 17:48 shortcode
+-rw-r--r--. 1 33 tape   824 Feb  6 16:03 shortcode.php
+drwxr-xr-x. 2 33 tape    24 Jun 10 17:48 social-link
+-rw-r--r--. 1 33 tape 55780 Mar 24 06:05 social-link.php
+-rw-r--r--. 1 33 tape  1821 Sep 19  2019 tag-cloud.php
+
+/root/var/www/html/wp-includes/blocks/shortcode:
+total 4
+-rw-r--r--. 1 33 tape 132 Feb  6 16:03 block.json
+
+/root/var/www/html/wp-includes/blocks/social-link:
+total 4
+-rw-r--r--. 1 33 tape 208 Mar  2 18:21 block.json
+
+/root/var/www/html/wp-includes/certificates:
+total 232
+-rw-r--r--. 1 33 tape 236373 Sep 12  2019 ca-bundle.crt
+
+/root/var/www/html/wp-includes/css:
+total 676
+-rw-r--r--.  1 33 tape 26136 Sep  2  2019 admin-bar.css
+-rw-r--r--.  1 33 tape 21375 Sep  2  2019 admin-bar.min.css
+-rw-r--r--.  1 33 tape 26175 Oct 25  2019 admin-bar-rtl.css
+-rw-r--r--.  1 33 tape 21379 Sep 23  2019 admin-bar-rtl.min.css
+-rw-r--r--.  1 33 tape  9546 Dec  9  2019 buttons.css
+-rw-r--r--.  1 33 tape  5867 Dec  9  2019 buttons.min.css
+-rw-r--r--.  1 33 tape  9583 Dec  9  2019 buttons-rtl.css
+-rw-r--r--.  1 33 tape  5869 Dec  9  2019 buttons-rtl.min.css
+-rw-r--r--.  1 33 tape  3629 May 30  2019 customize-preview.css
+-rw-r--r--.  1 33 tape  2854 May 30  2019 customize-preview.min.css
+-rw-r--r--.  1 33 tape  3669 Oct 25  2019 customize-preview-rtl.css
+-rw-r--r--.  1 33 tape  2859 Sep 23  2019 customize-preview-rtl.min.css
+-rw-r--r--.  1 33 tape 50341 May 15  2019 dashicons.css
+-rw-r--r--.  1 33 tape 47558 May 15  2019 dashicons.min.css
+drwxr-xr-x. 11 33 tape   180 Jun 10 17:48 dist
+-rw-r--r--.  1 33 tape 32979 Dec  9  2019 editor.css
+-rw-r--r--.  1 33 tape 27221 Dec  9  2019 editor.min.css
+-rw-r--r--.  1 33 tape 33017 Dec  9  2019 editor-rtl.css
+-rw-r--r--.  1 33 tape 27224 Dec  9  2019 editor-rtl.min.css
+-rw-r--r--.  1 33 tape  5958 Sep 30  2019 jquery-ui-dialog.css
+-rw-r--r--.  1 33 tape  4592 Sep 30  2019 jquery-ui-dialog.min.css
+-rw-r--r--.  1 33 tape  5997 Oct 25  2019 jquery-ui-dialog-rtl.css
+-rw-r--r--.  1 33 tape  4596 Sep 30  2019 jquery-ui-dialog-rtl.min.css
+-rw-r--r--.  1 33 tape 54837 Apr 13 20:28 media-views.css
+-rw-r--r--.  1 33 tape 44517 Apr 13 20:28 media-views.min.css
+-rw-r--r--.  1 33 tape 54876 Apr 13 20:28 media-views-rtl.css
+-rw-r--r--.  1 33 tape 44521 Apr 13 20:28 media-views-rtl.min.css
+-rw-r--r--.  1 33 tape  2507 May 30  2019 wp-auth-check.css
+-rw-r--r--.  1 33 tape  1940 May 30  2019 wp-auth-check.min.css
+-rw-r--r--.  1 33 tape  2544 Oct 25  2019 wp-auth-check-rtl.css
+-rw-r--r--.  1 33 tape  1942 Sep 23  2019 wp-auth-check-rtl.min.css
+-rw-r--r--.  1 33 tape  7925 May 30  2019 wp-embed-template.css
+-rw-r--r--.  1 33 tape  1477 Oct 31  2015 wp-embed-template-ie.css
+-rw-r--r--.  1 33 tape  1473 Aug 19  2017 wp-embed-template-ie.min.css
+-rw-r--r--.  1 33 tape  6955 May 30  2019 wp-embed-template.min.css
+-rw-r--r--.  1 33 tape  4020 May 30  2019 wp-pointer.css
+-rw-r--r--.  1 33 tape  3232 May 30  2019 wp-pointer.min.css
+-rw-r--r--.  1 33 tape  4060 Oct 25  2019 wp-pointer-rtl.css
+-rw-r--r--.  1 33 tape  3237 Sep 23  2019 wp-pointer-rtl.min.css
+
+/root/var/www/html/wp-includes/css/dist:
+total 0
+drwxr-xr-x. 2 33 tape  90 Jun 10 17:48 block-directory
+drwxr-xr-x. 2 33 tape  90 Jun 10 17:48 block-editor
+drwxr-xr-x. 2 33 tape 262 Jun 10 17:48 block-library
+drwxr-xr-x. 2 33 tape  90 Jun 10 17:48 components
+drwxr-xr-x. 2 33 tape 206 Jun 10 17:48 editor
+drwxr-xr-x. 2 33 tape  90 Jun 10 17:48 edit-post
+drwxr-xr-x. 2 33 tape  90 Jun 10 17:48 format-library
+drwxr-xr-x. 2 33 tape  90 Jun 10 17:48 list-reusable-blocks
+drwxr-xr-x. 2 33 tape  90 Jun 10 17:48 nux
+
+/root/var/www/html/wp-includes/css/dist/block-directory:
+total 24
+-rw-r--r--. 1 33 tape 4612 Apr 24 11:32 style.css
+-rw-r--r--. 1 33 tape 3231 Feb  6 16:03 style.min.css
+-rw-r--r--. 1 33 tape 4615 Apr 24 11:32 style-rtl.css
+-rw-r--r--. 1 33 tape 3234 Feb  6 16:03 style-rtl.min.css
+
+/root/var/www/html/wp-includes/css/dist/block-editor:
+total 304
+-rw-r--r--. 1 33 tape 83031 Apr 24 11:32 style.css
+-rw-r--r--. 1 33 tape 68690 Mar 10 11:42 style.min.css
+-rw-r--r--. 1 33 tape 82972 Apr 24 11:32 style-rtl.css
+-rw-r--r--. 1 33 tape 68628 Mar 10 11:42 style-rtl.min.css
+
+/root/var/www/html/wp-includes/css/dist/block-library:
+total 456
+-rw-r--r--. 1 33 tape 53994 Apr 24 11:32 editor.css
+-rw-r--r--. 1 33 tape 43944 Mar 10 11:42 editor.min.css
+-rw-r--r--. 1 33 tape 53927 Apr 24 11:32 editor-rtl.css
+-rw-r--r--. 1 33 tape 43947 Mar 10 11:42 editor-rtl.min.css
+-rw-r--r--. 1 33 tape 64568 Apr 24 11:32 style.css
+-rw-r--r--. 1 33 tape 53593 Apr 24 11:32 style.min.css
+-rw-r--r--. 1 33 tape 64065 Apr 24 11:32 style-rtl.css
+-rw-r--r--. 1 33 tape 53367 Apr 24 11:32 style-rtl.min.css
+-rw-r--r--. 1 33 tape  3461 Apr 24 11:32 theme.css
+-rw-r--r--. 1 33 tape  1954 Feb  6 16:03 theme.min.css
+-rw-r--r--. 1 33 tape  3464 Apr 24 11:32 theme-rtl.css
+-rw-r--r--. 1 33 tape  1957 Feb  6 16:03 theme-rtl.min.css
+
+/root/var/www/html/wp-includes/css/dist/components:
+total 496
+-rw-r--r--. 1 33 tape 137038 Mar 24 06:05 style.css
+-rw-r--r--. 1 33 tape 112005 Mar 24 06:05 style.min.css
+-rw-r--r--. 1 33 tape 136734 Mar 24 06:05 style-rtl.css
+-rw-r--r--. 1 33 tape 111932 Mar 24 06:05 style-rtl.min.css
+
+/root/var/www/html/wp-includes/css/dist/editor:
+total 104
+-rw-r--r--. 1 33 tape  2415 Apr 24 11:32 editor-styles.css
+-rw-r--r--. 1 33 tape   794 Jan  8 06:57 editor-styles.min.css
+-rw-r--r--. 1 33 tape  2417 Apr 24 11:32 editor-styles-rtl.css
+-rw-r--r--. 1 33 tape   796 Jan  8 06:57 editor-styles-rtl.min.css
+-rw-r--r--. 1 33 tape 23880 Apr 24 11:32 style.css
+-rw-r--r--. 1 33 tape 19140 Mar 10 11:42 style.min.css
+-rw-r--r--. 1 33 tape 23831 Apr 24 11:32 style-rtl.css
+-rw-r--r--. 1 33 tape 19169 Mar 10 11:42 style-rtl.min.css
+
+/root/var/www/html/wp-includes/css/dist/edit-post:
+total 352
+-rw-r--r--. 1 33 tape 94533 Apr 24 11:32 style.css
+-rw-r--r--. 1 33 tape 79280 Mar 10 11:42 style.min.css
+-rw-r--r--. 1 33 tape 94509 Apr 24 11:32 style-rtl.css
+-rw-r--r--. 1 33 tape 79302 Mar 10 11:42 style-rtl.min.css
+
+/root/var/www/html/wp-includes/css/dist/format-library:
+total 16
+-rw-r--r--. 1 33 tape 2787 Apr 24 11:32 style.css
+-rw-r--r--. 1 33 tape 1685 Feb 10 17:33 style.min.css
+-rw-r--r--. 1 33 tape 2787 Apr 24 11:32 style-rtl.css
+-rw-r--r--. 1 33 tape 1685 Feb 10 17:33 style-rtl.min.css
+
+/root/var/www/html/wp-includes/css/dist/list-reusable-blocks:
+total 16
+-rw-r--r--. 1 33 tape 1231 Feb 24 19:18 style.css
+-rw-r--r--. 1 33 tape  467 Feb 24 19:18 style.min.css
+-rw-r--r--. 1 33 tape 1230 Feb 24 19:18 style-rtl.css
+-rw-r--r--. 1 33 tape  466 Feb 24 19:18 style-rtl.min.css
+
+/root/var/www/html/wp-includes/css/dist/nux:
+total 16
+-rw-r--r--. 1 33 tape 3469 Jan 22 17:06 style.css
+-rw-r--r--. 1 33 tape 2342 Jan  8 06:57 style.min.css
+-rw-r--r--. 1 33 tape 3400 Jan 22 17:06 style-rtl.css
+-rw-r--r--. 1 33 tape 2273 Jan  8 06:57 style-rtl.min.css
+
+/root/var/www/html/wp-includes/customize:
+total 236
+-rw-r--r--. 1 33 tape  1208 Aug 16  2018 class-wp-customize-background-image-control.php
+-rw-r--r--. 1 33 tape   508 Oct 24  2015 class-wp-customize-background-image-setting.php
+-rw-r--r--. 1 33 tape  2951 Nov 30  2017 class-wp-customize-background-position-control.php
+-rw-r--r--. 1 33 tape  2313 Nov 30  2017 class-wp-customize-code-editor-control.php
+-rw-r--r--. 1 33 tape  3066 Feb 26 08:30 class-wp-customize-color-control.php
+-rw-r--r--. 1 33 tape  1460 Jul 26  2017 class-wp-customize-cropped-image-control.php
+-rw-r--r--. 1 33 tape  4891 Feb 26 10:33 class-wp-customize-custom-css-setting.php
+-rw-r--r--. 1 33 tape  8733 Sep  2  2019 class-wp-customize-date-time-control.php
+-rw-r--r--. 1 33 tape   588 Jul 26  2017 class-wp-customize-filter-setting.php
+-rw-r--r--. 1 33 tape  7902 Sep  2  2019 class-wp-customize-header-image-control.php
+-rw-r--r--. 1 33 tape  1650 Feb  6 01:33 class-wp-customize-header-image-setting.php
+-rw-r--r--. 1 33 tape  1073 Nov 30  2017 class-wp-customize-image-control.php
+-rw-r--r--. 1 33 tape  9363 Feb 26 08:30 class-wp-customize-media-control.php
+-rw-r--r--. 1 33 tape  1122 Oct  4  2017 class-wp-customize-nav-menu-auto-add-control.php
+-rw-r--r--. 1 33 tape  2068 Sep  2  2019 class-wp-customize-nav-menu-control.php
+-rw-r--r--. 1 33 tape  6994 Feb 25 11:41 class-wp-customize-nav-menu-item-control.php
+-rw-r--r--. 1 33 tape 27212 Feb 26 10:33 class-wp-customize-nav-menu-item-setting.php
+-rw-r--r--. 1 33 tape  2287 Jul  2  2019 class-wp-customize-nav-menu-location-control.php
+-rw-r--r--. 1 33 tape  2876 Sep  2  2019 class-wp-customize-nav-menu-locations-control.php
+-rw-r--r--. 1 33 tape  1131 Oct  4  2017 class-wp-customize-nav-menu-name-control.php
+-rw-r--r--. 1 33 tape   720 Nov 30  2017 class-wp-customize-nav-menu-section.php
+-rw-r--r--. 1 33 tape 18932 Feb 26 10:33 class-wp-customize-nav-menu-setting.php
+-rw-r--r--. 1 33 tape  3083 Sep  2  2019 class-wp-customize-nav-menus-panel.php
+-rw-r--r--. 1 33 tape  1710 Feb 26 08:30 class-wp-customize-new-menu-control.php
+-rw-r--r--. 1 33 tape  1693 Feb 26 10:33 class-wp-customize-new-menu-section.php
+-rw-r--r--. 1 33 tape  8855 Nov 30  2017 class-wp-customize-partial.php
+-rw-r--r--. 1 33 tape 15162 Feb 26 10:33 class-wp-customize-selective-refresh.php
+-rw-r--r--. 1 33 tape  1059 Nov 30  2017 class-wp-customize-sidebar-section.php
+-rw-r--r--. 1 33 tape  3266 Feb 26 08:30 class-wp-customize-site-icon-control.php
+-rw-r--r--. 1 33 tape  4534 Jan 20 09:27 class-wp-customize-theme-control.php
+-rw-r--r--. 1 33 tape  3238 Sep  2  2019 class-wp-customize-themes-panel.php
+-rw-r--r--. 1 33 tape  6757 Jan 28 19:45 class-wp-customize-themes-section.php
+-rw-r--r--. 1 33 tape  1001 Jan 28 19:45 class-wp-customize-upload-control.php
+-rw-r--r--. 1 33 tape  1657 Jul 26  2017 class-wp-widget-area-customize-control.php
+-rw-r--r--. 1 33 tape  2646 Apr 13  2019 class-wp-widget-form-customize-control.php
+
+/root/var/www/html/wp-includes/fonts:
+total 248
+-rw-r--r--. 1 33 tape  44868 Mar 27  2019 dashicons.eot
+-rw-r--r--. 1 33 tape 108437 Mar 27  2019 dashicons.svg
+-rw-r--r--. 1 33 tape  44696 Mar 27  2019 dashicons.ttf
+-rw-r--r--. 1 33 tape  26124 Mar 18  2016 dashicons.woff
+-rw-r--r--. 1 33 tape  21004 Mar 27  2019 dashicons.woff2
+
+/root/var/www/html/wp-includes/ID3:
+total 1116
+-rw-r--r--. 1 33 tape  51113 Sep 14  2019 getid3.lib.php
+-rw-r--r--. 1 33 tape  70952 Sep 18  2019 getid3.php
+-rw-r--r--. 1 33 tape   1307 Jun 27  2015 license.commercial.txt
+-rw-r--r--. 1 33 tape   1361 Sep 14  2019 license.txt
+-rw-r--r--. 1 33 tape  39260 Sep 14  2019 module.audio.ac3.php
+-rw-r--r--. 1 33 tape  10872 Sep 14  2019 module.audio.dts.php
+-rw-r--r--. 1 33 tape  19540 Sep 14  2019 module.audio.flac.php
+-rw-r--r--. 1 33 tape 102108 Sep 14  2019 module.audio.mp3.php
+-rw-r--r--. 1 33 tape  42978 Sep 14  2019 module.audio.ogg.php
+-rw-r--r--. 1 33 tape 127950 Sep 14  2019 module.audio-video.asf.php
+-rw-r--r--. 1 33 tape  26979 Sep 14  2019 module.audio-video.flv.php
+-rw-r--r--. 1 33 tape 105731 Sep 18  2019 module.audio-video.matroska.php
+-rw-r--r--. 1 33 tape 150669 Sep 14  2019 module.audio-video.quicktime.php
+-rw-r--r--. 1 33 tape 134316 Sep 14  2019 module.audio-video.riff.php
+-rw-r--r--. 1 33 tape  18678 Sep 14  2019 module.tag.apetag.php
+-rw-r--r--. 1 33 tape  13334 Sep 14  2019 module.tag.id3v1.php
+-rw-r--r--. 1 33 tape 154298 Sep 14  2019 module.tag.id3v2.php
+-rw-r--r--. 1 33 tape  11558 Sep 14  2019 module.tag.lyrics3.php
+-rw-r--r--. 1 33 tape  26245 Sep 14  2019 readme.txt
+
+/root/var/www/html/wp-includes/images:
+total 136
+-rw-r--r--. 1 33 tape  3999 Oct 28  2014 admin-bar-sprite-2x.png
+-rw-r--r--. 1 33 tape  2467 Feb 13  2014 admin-bar-sprite.png
+-rw-r--r--. 1 33 tape  1666 Oct 28  2014 arrow-pointer-blue-2x.png
+-rw-r--r--. 1 33 tape   793 Nov  7  2012 arrow-pointer-blue.png
+-rw-r--r--. 1 33 tape    43 Oct  5  2019 blank.gif
+drwxr-xr-x. 2 33 tape   195 Jun 10 17:48 crystal
+-rw-r--r--. 1 33 tape    84 Oct  5  2019 down_arrow-2x.gif
+-rw-r--r--. 1 33 tape    59 Oct  5  2019 down_arrow.gif
+-rw-r--r--. 1 33 tape  1369 Sep 26  2012 icon-pointer-flag-2x.png
+-rw-r--r--. 1 33 tape   783 Dec  5  2011 icon-pointer-flag.png
+drwxr-xr-x. 2 33 tape   176 Jun 10 17:48 media
+-rw-r--r--. 1 33 tape  1306 Nov  7  2012 rss-2x.png
+-rw-r--r--. 1 33 tape   608 Nov  7  2012 rss.png
+drwxr-xr-x. 2 33 tape  4096 Jun 10 17:48 smilies
+-rw-r--r--. 1 33 tape  7536 Dec 18  2018 spinner-2x.gif
+-rw-r--r--. 1 33 tape  3656 Dec 18  2018 spinner.gif
+-rw-r--r--. 1 33 tape   354 Nov  7  2012 toggle-arrow-2x.png
+-rw-r--r--. 1 33 tape   289 Oct 28  2014 toggle-arrow.png
+-rw-r--r--. 1 33 tape  3542 Oct 28  2014 uploader-icons-2x.png
+-rw-r--r--. 1 33 tape  1556 Feb 13  2014 uploader-icons.png
+-rw-r--r--. 1 33 tape  3113 Feb 23  2016 w-logo-blue.png
+-rw-r--r--. 1 33 tape  4119 May 21 05:13 w-logo-blue-white-bg.png
+drwxr-xr-x. 2 33 tape    72 Jun 10 17:48 wlw
+-rw-r--r--. 1 33 tape 14931 Nov 25  2014 wpicons-2x.png
+-rw-r--r--. 1 33 tape  7086 Nov 25  2014 wpicons.png
+-rw-r--r--. 1 33 tape  8875 Oct  5  2019 wpspin-2x.gif
+-rw-r--r--. 1 33 tape  2052 Oct  5  2019 wpspin.gif
+-rw-r--r--. 1 33 tape   825 Oct  5  2019 xit-2x.gif
+-rw-r--r--. 1 33 tape   181 Oct  5  2019 xit.gif
+
+/root/var/www/html/wp-includes/images/crystal:
+total 40
+-rw-r--r--. 1 33 tape 2454 Oct 28  2014 archive.png
+-rw-r--r--. 1 33 tape 2184 Oct 28  2014 audio.png
+-rw-r--r--. 1 33 tape 1604 Nov  7  2012 code.png
+-rw-r--r--. 1 33 tape  453 Feb 13  2014 default.png
+-rw-r--r--. 1 33 tape 2063 Oct 28  2014 document.png
+-rw-r--r--. 1 33 tape 2217 Oct 28  2014 interactive.png
+-rw-r--r--. 1 33 tape  149 Mar  2  2014 license.txt
+-rw-r--r--. 1 33 tape 2408 Oct 28  2014 spreadsheet.png
+-rw-r--r--. 1 33 tape  670 Feb 13  2014 text.png
+-rw-r--r--. 1 33 tape 1339 Nov  7  2012 video.png
+
+/root/var/www/html/wp-includes/images/media:
+total 36
+-rw-r--r--. 1 33 tape 417 Mar 27  2014 archive.png
+-rw-r--r--. 1 33 tape 382 Mar 27  2014 audio.png
+-rw-r--r--. 1 33 tape 274 Mar 25  2014 code.png
+-rw-r--r--. 1 33 tape 168 Mar 25  2014 default.png
+-rw-r--r--. 1 33 tape 200 Mar 25  2014 document.png
+-rw-r--r--. 1 33 tape 319 Mar 25  2014 interactive.png
+-rw-r--r--. 1 33 tape 188 Mar 25  2014 spreadsheet.png
+-rw-r--r--. 1 33 tape 188 Mar 25  2014 text.png
+-rw-r--r--. 1 33 tape 283 Mar 25  2014 video.png
+
+/root/var/www/html/wp-includes/images/smilies:
+total 104
+-rw-r--r--. 1 33 tape 1007 Apr 10  2015 frownie.png
+-rw-r--r--. 1 33 tape  169 Oct  5  2019 icon_arrow.gif
+-rw-r--r--. 1 33 tape  173 Oct  5  2019 icon_biggrin.gif
+-rw-r--r--. 1 33 tape  170 Oct  5  2019 icon_confused.gif
+-rw-r--r--. 1 33 tape  172 Oct  5  2019 icon_cool.gif
+-rw-r--r--. 1 33 tape  412 Oct  5  2019 icon_cry.gif
+-rw-r--r--. 1 33 tape  170 Oct  5  2019 icon_eek.gif
+-rw-r--r--. 1 33 tape  193 Oct  5  2019 icon_evil.gif
+-rw-r--r--. 1 33 tape  236 Oct  5  2019 icon_exclaim.gif
+-rw-r--r--. 1 33 tape  174 Oct  5  2019 icon_idea.gif
+-rw-r--r--. 1 33 tape  331 Oct  5  2019 icon_lol.gif
+-rw-r--r--. 1 33 tape  172 Oct  5  2019 icon_mad.gif
+-rw-r--r--. 1 33 tape  348 Oct  5  2019 icon_mrgreen.gif
+-rw-r--r--. 1 33 tape  167 Oct  5  2019 icon_neutral.gif
+-rw-r--r--. 1 33 tape  247 Oct  5  2019 icon_question.gif
+-rw-r--r--. 1 33 tape  175 Oct  5  2019 icon_razz.gif
+-rw-r--r--. 1 33 tape  645 Oct  5  2019 icon_redface.gif
+-rw-r--r--. 1 33 tape  471 Oct  5  2019 icon_rolleyes.gif
+-rw-r--r--. 1 33 tape  167 Oct  5  2019 icon_sad.gif
+-rw-r--r--. 1 33 tape  173 Oct  5  2019 icon_smile.gif
+-rw-r--r--. 1 33 tape  174 Oct  5  2019 icon_surprised.gif
+-rw-r--r--. 1 33 tape  241 Oct  5  2019 icon_twisted.gif
+-rw-r--r--. 1 33 tape  168 Oct  5  2019 icon_wink.gif
+-rw-r--r--. 1 33 tape 1486 Apr 10  2015 mrgreen.png
+-rw-r--r--. 1 33 tape 1233 Apr 10  2015 rolleyes.png
+-rw-r--r--. 1 33 tape 1008 Apr 10  2015 simple-smile.png
+
+/root/var/www/html/wp-includes/images/wlw:
+total 12
+-rw-r--r--. 1 33 tape 1373 Nov  7  2012 wp-comments.png
+-rw-r--r--. 1 33 tape  664 Nov  7  2012 wp-icon.png
+-rw-r--r--. 1 33 tape 2376 Oct 28  2014 wp-watermark.png
+
+/root/var/www/html/wp-includes/IXR:
+total 56
+-rw-r--r--. 1 33 tape  414 Aug 26  2016 class-IXR-base64.php
+-rw-r--r--. 1 33 tape  963 Aug 26  2016 class-IXR-clientmulticall.php
+-rw-r--r--. 1 33 tape 4643 Aug 26  2016 class-IXR-client.php
+-rw-r--r--. 1 33 tape 1691 May 25  2019 class-IXR-date.php
+-rw-r--r--. 1 33 tape  854 Aug 26  2016 class-IXR-error.php
+-rw-r--r--. 1 33 tape 5323 Aug 26  2016 class-IXR-introspectionserver.php
+-rw-r--r--. 1 33 tape 8071 Mar 28  2019 class-IXR-message.php
+-rw-r--r--. 1 33 tape  927 Aug 26  2016 class-IXR-request.php
+-rw-r--r--. 1 33 tape 6932 May 25  2019 class-IXR-server.php
+-rw-r--r--. 1 33 tape 3790 Aug 26  2016 class-IXR-value.php
+
+/root/var/www/html/wp-includes/js:
+total 2532
+-rw-r--r--. 1 33 tape  11150 Jan 28 19:45 admin-bar.js
+-rw-r--r--. 1 33 tape   3791 Dec 11  2019 admin-bar.min.js
+-rw-r--r--. 1 33 tape   2655 Jan 28 19:45 api-request.js
+-rw-r--r--. 1 33 tape    805 Oct 25  2019 api-request.min.js
+-rw-r--r--. 1 33 tape  21370 Jan 28 19:45 autosave.js
+-rw-r--r--. 1 33 tape   5520 Oct 25  2019 autosave.min.js
+-rw-r--r--. 1 33 tape  77794 Sep 17  2019 backbone.js
+-rw-r--r--. 1 33 tape  23971 Oct 25  2019 backbone.min.js
+-rw-r--r--. 1 33 tape  29276 Mar 27  2019 clipboard.js
+-rw-r--r--. 1 33 tape  10541 Oct 25  2019 clipboard.min.js
+drwxr-xr-x. 2 33 tape    176 Jun 10 17:48 codemirror
+-rw-r--r--. 1 33 tape  29083 Nov 17  2012 colorpicker.js
+-rw-r--r--. 1 33 tape  16654 Oct 25  2019 colorpicker.min.js
+-rw-r--r--. 1 33 tape  10633 Jan 28 19:45 comment-reply.js
+-rw-r--r--. 1 33 tape   2420 Nov 11  2019 comment-reply.min.js
+drwxr-xr-x. 2 33 tape     90 Jun 10 17:48 crop
+-rw-r--r--. 1 33 tape  25823 Jan 28 19:45 customize-base.js
+-rw-r--r--. 1 33 tape   7890 Oct 25  2019 customize-base.min.js
+-rw-r--r--. 1 33 tape   7905 Jan 28 19:45 customize-loader.js
+-rw-r--r--. 1 33 tape   3557 Oct 25  2019 customize-loader.min.js
+-rw-r--r--. 1 33 tape   6821 Jan 28 19:45 customize-models.js
+-rw-r--r--. 1 33 tape   3693 Oct 25  2019 customize-models.min.js
+-rw-r--r--. 1 33 tape  27960 Jan 28 19:45 customize-preview.js
+-rw-r--r--. 1 33 tape  10780 Oct 25  2019 customize-preview.min.js
+-rw-r--r--. 1 33 tape  15024 Nov 29  2019 customize-preview-nav-menus.js
+-rw-r--r--. 1 33 tape   5054 Oct 25  2019 customize-preview-nav-menus.min.js
+-rw-r--r--. 1 33 tape  23254 Jan 28 19:45 customize-preview-widgets.js
+-rw-r--r--. 1 33 tape   7880 Oct 25  2019 customize-preview-widgets.min.js
+-rw-r--r--. 1 33 tape  33324 Jan 28 19:45 customize-selective-refresh.js
+-rw-r--r--. 1 33 tape  10748 Oct 25  2019 customize-selective-refresh.min.js
+-rw-r--r--. 1 33 tape   5065 Jun 27  2018 customize-views.js
+-rw-r--r--. 1 33 tape   2457 Oct 25  2019 customize-views.min.js
+drwxr-xr-x. 3 33 tape   4096 Jun 10 17:48 dist
+-rw-r--r--. 1 33 tape  23154 Jan 28 19:45 heartbeat.js
+-rw-r--r--. 1 33 tape   5934 Oct 25  2019 heartbeat.min.js
+-rw-r--r--. 1 33 tape   4950 May 23  2018 hoverIntent.js
+-rw-r--r--. 1 33 tape   1718 Dec  9  2019 hoverintent-js.min.js
+-rw-r--r--. 1 33 tape   1130 Oct 25  2019 hoverIntent.min.js
+-rw-r--r--. 1 33 tape   8148 Oct 25  2019 imagesloaded.min.js
+drwxr-xr-x. 2 33 tape    147 Jun 10 17:48 imgareaselect
+drwxr-xr-x. 2 33 tape     78 Jun 10 17:48 jcrop
+drwxr-xr-x. 3 33 tape   4096 Jun 10 17:48 jquery
+-rw-r--r--. 1 33 tape  18422 Oct  6  2015 json2.js
+-rw-r--r--. 1 33 tape   3155 Oct 25  2019 json2.min.js
+-rw-r--r--. 1 33 tape  28988 Oct 25  2019 masonry.min.js
+-rw-r--r--. 1 33 tape  26059 Jan 28 19:45 mce-view.js
+-rw-r--r--. 1 33 tape   9908 Oct 25  2019 mce-view.min.js
+-rw-r--r--. 1 33 tape  27482 Jan 28 19:45 media-audiovideo.js
+-rw-r--r--. 1 33 tape  12882 Oct 25  2019 media-audiovideo.min.js
+-rw-r--r--. 1 33 tape  29066 Feb 23 03:58 media-editor.js
+-rw-r--r--. 1 33 tape  10896 Feb 23 03:58 media-editor.min.js
+drwxr-xr-x. 3 33 tape   4096 Jun 10 17:48 mediaelement
+-rw-r--r--. 1 33 tape  29816 Jan 28 19:45 media-grid.js
+-rw-r--r--. 1 33 tape  14423 Oct 25  2019 media-grid.min.js
+-rw-r--r--. 1 33 tape  45687 Jan 28 19:45 media-models.js
+-rw-r--r--. 1 33 tape  14042 Oct 25  2019 media-models.min.js
+-rw-r--r--. 1 33 tape 265785 Feb 11 11:32 media-views.js
+-rw-r--r--. 1 33 tape 106832 Feb 11 11:32 media-views.min.js
+drwxr-xr-x. 2 33 tape    193 Jun 10 17:48 plupload
+-rw-r--r--. 1 33 tape  22615 Jan 28 19:45 quicktags.js
+-rw-r--r--. 1 33 tape  11193 Oct 25  2019 quicktags.min.js
+-rw-r--r--. 1 33 tape  10758 Jan 28 19:45 shortcode.js
+-rw-r--r--. 1 33 tape   2660 Dec 21  2019 shortcode.min.js
+-rw-r--r--. 1 33 tape  10231 Apr 17  2012 swfobject.js
+drwxr-xr-x. 2 33 tape     87 Jun 10 17:48 swfupload
+drwxr-xr-x. 2 33 tape     96 Jun 10 17:48 thickbox
+drwxr-xr-x. 7 33 tape    183 Jun 10 17:48 tinymce
+-rw-r--r--. 1 33 tape  27665 Nov  5  2019 twemoji.js
+-rw-r--r--. 1 33 tape  10977 Nov  5  2019 twemoji.min.js
+-rw-r--r--. 1 33 tape   4969 Aug 22  2012 tw-sack.js
+-rw-r--r--. 1 33 tape   3299 Oct 25  2019 tw-sack.min.js
+-rw-r--r--. 1 33 tape  52919 Sep 12  2019 underscore.js
+-rw-r--r--. 1 33 tape  16154 Oct 25  2019 underscore.min.js
+-rw-r--r--. 1 33 tape   4665 Jan 28 19:45 utils.js
+-rw-r--r--. 1 33 tape   1868 Oct 25  2019 utils.min.js
+-rw-r--r--. 1 33 tape   3203 Jan 28 19:45 wp-ajax-response.js
+-rw-r--r--. 1 33 tape   2100 Oct 25  2019 wp-ajax-response.min.js
+-rw-r--r--. 1 33 tape  46760 Jan 28 19:45 wp-api.js
+-rw-r--r--. 1 33 tape  14653 Oct 25  2019 wp-api.min.js
+-rw-r--r--. 1 33 tape   4389 Jan 28 19:45 wp-auth-check.js
+-rw-r--r--. 1 33 tape   1815 Oct 25  2019 wp-auth-check.min.js
+-rw-r--r--. 1 33 tape  15242 Jun 27  2018 wp-backbone.js
+-rw-r--r--. 1 33 tape   3047 Oct 25  2019 wp-backbone.min.js
+-rw-r--r--. 1 33 tape  10447 Jan 28 19:45 wp-custom-header.js
+-rw-r--r--. 1 33 tape   4464 Oct 25  2019 wp-custom-header.min.js
+-rw-r--r--. 1 33 tape    560 Jun 27  2018 wpdialog.js
+-rw-r--r--. 1 33 tape    272 Oct 25  2019 wpdialog.min.js
+-rw-r--r--. 1 33 tape   3214 Aug 30  2018 wp-embed.js
+-rw-r--r--. 1 33 tape   1434 Oct 25  2019 wp-embed.min.js
+-rw-r--r--. 1 33 tape   6245 Jun 27  2018 wp-embed-template.js
+-rw-r--r--. 1 33 tape   3126 Oct 25  2019 wp-embed-template.min.js
+-rw-r--r--. 1 33 tape   8989 Jan 28 19:45 wp-emoji.js
+-rw-r--r--. 1 33 tape   6694 Aug  8  2019 wp-emoji-loader.js
+-rw-r--r--. 1 33 tape   1943 Oct 25  2019 wp-emoji-loader.min.js
+-rw-r--r--. 1 33 tape   2875 Oct 25  2019 wp-emoji.min.js
+-rw-r--r--. 1 33 tape  13901 Nov  5  2019 wp-emoji-release.min.js
+-rw-r--r--. 1 33 tape  21075 Jan 28 19:45 wplink.js
+-rw-r--r--. 1 33 tape  11251 Dec 17  2019 wplink.min.js
+-rw-r--r--. 1 33 tape    970 Jun 27  2018 wp-list-revisions.js
+-rw-r--r--. 1 33 tape    599 Oct 25  2019 wp-list-revisions.min.js
+-rw-r--r--. 1 33 tape  25269 Nov 29  2019 wp-lists.js
+-rw-r--r--. 1 33 tape   7436 Oct 25  2019 wp-lists.min.js
+-rw-r--r--. 1 33 tape  10313 Jan 28 19:45 wp-pointer.js
+-rw-r--r--. 1 33 tape   3662 Oct 25  2019 wp-pointer.min.js
+-rw-r--r--. 1 33 tape   1350 Sep  4  2019 wp-sanitize.js
+-rw-r--r--. 1 33 tape    458 Oct 25  2019 wp-sanitize.min.js
+-rw-r--r--. 1 33 tape   4017 Jan 28 19:45 wp-util.js
+-rw-r--r--. 1 33 tape   1079 Oct 25  2019 wp-util.min.js
+-rw-r--r--. 1 33 tape    821 Jun 27  2018 zxcvbn-async.js
+-rw-r--r--. 1 33 tape    353 Oct 25  2019 zxcvbn-async.min.js
+-rw-r--r--. 1 33 tape 822237 Oct 25  2019 zxcvbn.min.js
+
+/root/var/www/html/wp-includes/js/codemirror:
+total 1272
+-rw-r--r--. 1 33 tape  15899 Sep 13  2017 codemirror.min.css
+-rw-r--r--. 1 33 tape 585414 Sep 13  2017 codemirror.min.js
+-rw-r--r--. 1 33 tape 366769 Oct 25  2019 csslint.js
+-rw-r--r--. 1 33 tape 283149 Jan 22  2018 esprima.js
+-rw-r--r--. 1 33 tape   1002 Jan 22  2018 fakejshint.js
+-rw-r--r--. 1 33 tape  17735 Sep 13  2017 htmlhint.js
+-rw-r--r--. 1 33 tape    984 Sep 13  2017 htmlhint-kses.js
+-rw-r--r--. 1 33 tape  16189 Sep 13  2017 jsonlint.js
+
+/root/var/www/html/wp-includes/js/crop:
+total 32
+-rw-r--r--. 1 33 tape  2949 Dec 20  2012 cropper.css
+-rw-r--r--. 1 33 tape 16485 May  4  2007 cropper.js
+-rw-r--r--. 1 33 tape   277 Nov  7  2012 marqueeHoriz.gif
+-rw-r--r--. 1 33 tape   293 Nov  7  2012 marqueeVert.gif
+
+/root/var/www/html/wp-includes/js/dist:
+total 9564
+-rw-r--r--. 1 33 tape    8884 Mar 24 06:05 a11y.js
+-rw-r--r--. 1 33 tape    2274 Mar 24 06:05 a11y.min.js
+-rw-r--r--. 1 33 tape   41765 Mar 27 14:20 annotations.js
+-rw-r--r--. 1 33 tape   11415 Mar 27 14:20 annotations.min.js
+-rw-r--r--. 1 33 tape   34833 Mar 24 06:05 api-fetch.js
+-rw-r--r--. 1 33 tape   12338 Mar 24 06:05 api-fetch.min.js
+-rw-r--r--. 1 33 tape   22003 Mar 24 06:05 autop.js
+-rw-r--r--. 1 33 tape    7825 Mar 24 06:05 autop.min.js
+-rw-r--r--. 1 33 tape    5576 Mar 24 06:05 blob.js
+-rw-r--r--. 1 33 tape    1439 Mar 24 06:05 blob.min.js
+-rw-r--r--. 1 33 tape   55896 Mar 24 06:05 block-directory.js
+-rw-r--r--. 1 33 tape   19487 Mar 24 06:05 block-directory.min.js
+-rw-r--r--. 1 33 tape 1235265 Apr 24 11:32 block-editor.js
+-rw-r--r--. 1 33 tape  376768 Apr 24 11:32 block-editor.min.js
+-rw-r--r--. 1 33 tape  908596 Apr 24 11:32 block-library.js
+-rw-r--r--. 1 33 tape  385939 Apr 24 11:32 block-library.min.js
+-rw-r--r--. 1 33 tape   19410 Mar 24 06:05 block-serialization-default-parser.js
+-rw-r--r--. 1 33 tape    4481 Mar 24 06:05 block-serialization-default-parser.min.js
+-rw-r--r--. 1 33 tape  502540 Mar 27 14:20 blocks.js
+-rw-r--r--. 1 33 tape  166857 Mar 27 14:20 blocks.min.js
+-rw-r--r--. 1 33 tape 1792316 Mar 27 14:20 components.js
+-rw-r--r--. 1 33 tape  706638 Mar 27 14:20 components.min.js
+-rw-r--r--. 1 33 tape   86345 Mar 24 06:05 compose.js
+-rw-r--r--. 1 33 tape   19783 Mar 24 06:05 compose.min.js
+-rw-r--r--. 1 33 tape  145784 Mar 24 06:05 core-data.js
+-rw-r--r--. 1 33 tape   41285 Mar 24 06:05 core-data.min.js
+-rw-r--r--. 1 33 tape   12865 Mar 24 06:05 data-controls.js
+-rw-r--r--. 1 33 tape    3271 Mar 24 06:05 data-controls.min.js
+-rw-r--r--. 1 33 tape  138110 Mar 24 06:05 data.js
+-rw-r--r--. 1 33 tape   31026 Mar 24 06:05 data.min.js
+-rw-r--r--. 1 33 tape  232746 Mar 24 06:05 date.js
+-rw-r--r--. 1 33 tape  203523 Mar 24 06:05 date.min.js
+-rw-r--r--. 1 33 tape    7499 Mar 24 06:05 deprecated.js
+-rw-r--r--. 1 33 tape    1688 Mar 24 06:05 deprecated.min.js
+-rw-r--r--. 1 33 tape   35914 Mar 24 06:05 dom.js
+-rw-r--r--. 1 33 tape    8390 Mar 24 06:05 dom.min.js
+-rw-r--r--. 1 33 tape    5081 Mar 24 06:05 dom-ready.js
+-rw-r--r--. 1 33 tape    1219 Mar 24 06:05 dom-ready.min.js
+-rw-r--r--. 1 33 tape  527654 Mar 24 06:05 editor.js
+-rw-r--r--. 1 33 tape  184459 Mar 24 06:05 editor.min.js
+-rw-r--r--. 1 33 tape  379111 Mar 27 18:14 edit-post.js
+-rw-r--r--. 1 33 tape  198932 Mar 27 18:14 edit-post.min.js
+-rw-r--r--. 1 33 tape   56221 Mar 24 06:05 element.js
+-rw-r--r--. 1 33 tape   14609 Mar 24 06:05 element.min.js
+-rw-r--r--. 1 33 tape    8878 Mar 24 06:05 escape-html.js
+-rw-r--r--. 1 33 tape    1777 Mar 24 06:05 escape-html.min.js
+-rw-r--r--. 1 33 tape   65426 Mar 24 06:05 format-library.js
+-rw-r--r--. 1 33 tape   24193 Mar 24 06:05 format-library.min.js
+-rw-r--r--. 1 33 tape   25684 Mar 24 06:05 hooks.js
+-rw-r--r--. 1 33 tape    6177 Mar 24 06:05 hooks.min.js
+-rw-r--r--. 1 33 tape    4924 Mar 24 06:05 html-entities.js
+-rw-r--r--. 1 33 tape    1408 Mar 24 06:05 html-entities.min.js
+-rw-r--r--. 1 33 tape   37319 Mar 24 06:05 i18n.js
+-rw-r--r--. 1 33 tape    9207 Mar 24 06:05 i18n.min.js
+-rw-r--r--. 1 33 tape    6526 Mar 24 06:05 is-shallow-equal.js
+-rw-r--r--. 1 33 tape    1705 Mar 24 06:05 is-shallow-equal.min.js
+-rw-r--r--. 1 33 tape   29384 Mar 24 06:05 keyboard-shortcuts.js
+-rw-r--r--. 1 33 tape    7334 Mar 24 06:05 keyboard-shortcuts.min.js
+-rw-r--r--. 1 33 tape   19735 Mar 24 06:05 keycodes.js
+-rw-r--r--. 1 33 tape    5493 Mar 24 06:05 keycodes.min.js
+-rw-r--r--. 1 33 tape   24336 Mar 24 06:05 list-reusable-blocks.js
+-rw-r--r--. 1 33 tape    8415 Mar 24 06:05 list-reusable-blocks.min.js
+-rw-r--r--. 1 33 tape   45167 Mar 24 06:05 media-utils.js
+-rw-r--r--. 1 33 tape   14782 Mar 24 06:05 media-utils.min.js
+-rw-r--r--. 1 33 tape   21834 Mar 24 06:05 notices.js
+-rw-r--r--. 1 33 tape    4985 Mar 24 06:05 notices.min.js
+-rw-r--r--. 1 33 tape   33070 Mar 24 06:05 nux.js
+-rw-r--r--. 1 33 tape    9121 Mar 24 06:05 nux.min.js
+-rw-r--r--. 1 33 tape   23348 Mar 24 06:05 plugins.js
+-rw-r--r--. 1 33 tape    6889 Mar 24 06:05 plugins.min.js
+-rw-r--r--. 1 33 tape   12623 Mar 24 06:05 primitives.js
+-rw-r--r--. 1 33 tape    4284 Mar 24 06:05 primitives.min.js
+-rw-r--r--. 1 33 tape    8516 Mar 24 06:05 priority-queue.js
+-rw-r--r--. 1 33 tape    1664 Mar 24 06:05 priority-queue.min.js
+-rw-r--r--. 1 33 tape   25518 Mar 24 06:05 redux-routine.js
+-rw-r--r--. 1 33 tape    9787 Mar 24 06:05 redux-routine.min.js
+-rw-r--r--. 1 33 tape  183938 Mar 24 06:05 rich-text.js
+-rw-r--r--. 1 33 tape   54925 Mar 24 06:05 rich-text.min.js
+-rw-r--r--. 1 33 tape   23622 Mar 24 06:05 server-side-render.js
+-rw-r--r--. 1 33 tape    8422 Mar 24 06:05 server-side-render.min.js
+-rw-r--r--. 1 33 tape   19560 Mar 24 06:05 shortcode.js
+-rw-r--r--. 1 33 tape    4079 Mar 24 06:05 shortcode.min.js
+-rw-r--r--. 1 33 tape   13007 Mar 24 06:05 token-list.js
+-rw-r--r--. 1 33 tape    3259 Mar 24 06:05 token-list.min.js
+-rw-r--r--. 1 33 tape   45285 Mar 24 06:05 url.js
+-rw-r--r--. 1 33 tape   13641 Mar 24 06:05 url.min.js
+drwxr-xr-x. 2 33 tape    4096 Jun 10 17:48 vendor
+-rw-r--r--. 1 33 tape   17793 Mar 24 06:05 viewport.js
+-rw-r--r--. 1 33 tape    4651 Mar 24 06:05 viewport.min.js
+-rw-r--r--. 1 33 tape   10371 Mar 24 06:05 warning.js
+-rw-r--r--. 1 33 tape    2824 Mar 24 06:05 warning.min.js
+-rw-r--r--. 1 33 tape   14235 Mar 24 06:05 wordcount.js
+-rw-r--r--. 1 33 tape    3037 Mar 24 06:05 wordcount.min.js
+
+/root/var/www/html/wp-includes/js/dist/vendor:
+total 2516
+-rw-r--r--. 1 33 tape 540512 Aug 18  2019 lodash.js
+-rw-r--r--. 1 33 tape  73261 Aug 18  2019 lodash.min.js
+-rw-r--r--. 1 33 tape 146860 Dec 13  2018 moment.js
+-rw-r--r--. 1 33 tape  51679 Dec 13  2018 moment.min.js
+-rw-r--r--. 1 33 tape 930766 Sep 25  2019 react-dom.js
+-rw-r--r--. 1 33 tape 114123 Sep 25  2019 react-dom.min.js
+-rw-r--r--. 1 33 tape 120044 Sep 25  2019 react.js
+-rw-r--r--. 1 33 tape  13317 Sep 25  2019 react.min.js
+-rw-r--r--. 1 33 tape   1919 Feb 10 10:17 wp-polyfill-dom-rect.js
+-rw-r--r--. 1 33 tape    888 Feb 10 10:17 wp-polyfill-dom-rect.min.js
+-rw-r--r--. 1 33 tape    895 Dec 13  2018 wp-polyfill-element-closest.js
+-rw-r--r--. 1 33 tape    417 Dec 13  2018 wp-polyfill-element-closest.min.js
+-rw-r--r--. 1 33 tape  14805 Dec 13  2018 wp-polyfill-fetch.js
+-rw-r--r--. 1 33 tape   7987 Jun 27  2019 wp-polyfill-fetch.min.js
+-rw-r--r--. 1 33 tape   9631 Feb  7  2019 wp-polyfill-formdata.js
+-rw-r--r--. 1 33 tape   7165 Feb  7  2019 wp-polyfill-formdata.min.js
+-rw-r--r--. 1 33 tape 239007 Sep 19  2019 wp-polyfill.js
+-rw-r--r--. 1 33 tape  99133 Sep 19  2019 wp-polyfill.min.js
+-rw-r--r--. 1 33 tape    531 Dec 13  2018 wp-polyfill-node-contains.js
+-rw-r--r--. 1 33 tape    353 Dec 13  2018 wp-polyfill-node-contains.min.js
+-rw-r--r--. 1 33 tape 110332 Mar  3 11:55 wp-polyfill-url.js
+-rw-r--r--. 1 33 tape  47085 Mar  3 11:55 wp-polyfill-url.min.js
+
+/root/var/www/html/wp-includes/js/imgareaselect:
+total 64
+-rw-r--r--. 1 33 tape   178 Nov  7  2012 border-anim-h.gif
+-rw-r--r--. 1 33 tape   178 Nov  7  2012 border-anim-v.gif
+-rw-r--r--. 1 33 tape   790 Apr 25  2012 imgareaselect.css
+-rw-r--r--. 1 33 tape 38130 Nov 17  2019 jquery.imgareaselect.js
+-rw-r--r--. 1 33 tape  9714 Oct  5  2019 jquery.imgareaselect.min.js
+
+/root/var/www/html/wp-includes/js/jcrop:
+total 24
+-rw-r--r--. 1 33 tape   323 Nov  7  2012 Jcrop.gif
+-rw-r--r--. 1 33 tape  2124 Sep 21  2013 jquery.Jcrop.min.css
+-rw-r--r--. 1 33 tape 15893 Sep 21  2013 jquery.Jcrop.min.js
+
+/root/var/www/html/wp-includes/js/jquery:
+total 260
+-rw-r--r--. 1 33 tape  9315 Sep 12  2019 jquery.color.min.js
+-rw-r--r--. 1 33 tape 41023 Aug  5  2017 jquery.form.js
+-rw-r--r--. 1 33 tape 16193 Oct  5  2019 jquery.form.min.js
+-rw-r--r--. 1 33 tape  5612 Jan  1  2014 jquery.hotkeys.js
+-rw-r--r--. 1 33 tape  1793 Aug 22  2012 jquery.hotkeys.min.js
+-rw-r--r--. 1 33 tape 96873 May 17  2019 jquery.js
+-rw-r--r--. 1 33 tape  1819 Aug 18  2016 jquery.masonry.min.js
+-rw-r--r--. 1 33 tape 23515 May 23  2018 jquery-migrate.js
+-rw-r--r--. 1 33 tape 10056 May 20  2016 jquery-migrate.min.js
+-rw-r--r--. 1 33 tape  3785 Jan 29  2013 jquery.query.js
+-rw-r--r--. 1 33 tape  3457 Jan 10  2008 jquery.schedule.js
+-rw-r--r--. 1 33 tape   783 Jan 20  2011 jquery.serialize-object.js
+-rw-r--r--. 1 33 tape  3730 Nov 15  2013 jquery.table-hotkeys.js
+-rw-r--r--. 1 33 tape  2295 Aug 22  2012 jquery.table-hotkeys.min.js
+-rw-r--r--. 1 33 tape  1179 Apr 10  2012 jquery.ui.touch-punch.js
+-rw-r--r--. 1 33 tape  6991 Jan 13  2016 suggest.js
+-rw-r--r--. 1 33 tape  2993 Jan 13  2016 suggest.min.js
+drwxr-xr-x. 2 33 tape  4096 Jun 10 17:48 ui
+
+/root/var/www/html/wp-includes/js/jquery/ui:
+total 332
+-rw-r--r--. 1 33 tape  8566 Oct  5  2019 accordion.min.js
+-rw-r--r--. 1 33 tape  8229 Oct  5  2019 autocomplete.min.js
+-rw-r--r--. 1 33 tape  7217 Oct  5  2019 button.min.js
+-rw-r--r--. 1 33 tape  3931 Oct  5  2019 core.min.js
+-rw-r--r--. 1 33 tape 36380 Oct  5  2019 datepicker.min.js
+-rw-r--r--. 1 33 tape 12098 Oct  5  2019 dialog.min.js
+-rw-r--r--. 1 33 tape 18847 Oct  5  2019 draggable.min.js
+-rw-r--r--. 1 33 tape  6242 Oct  5  2019 droppable.min.js
+-rw-r--r--. 1 33 tape  1131 Oct  5  2019 effect-blind.min.js
+-rw-r--r--. 1 33 tape  1242 Oct  5  2019 effect-bounce.min.js
+-rw-r--r--. 1 33 tape   912 Oct  5  2019 effect-clip.min.js
+-rw-r--r--. 1 33 tape   993 Oct  5  2019 effect-drop.min.js
+-rw-r--r--. 1 33 tape  1169 Oct  5  2019 effect-explode.min.js
+-rw-r--r--. 1 33 tape   515 Oct  5  2019 effect-fade.min.js
+-rw-r--r--. 1 33 tape  1029 Oct  5  2019 effect-fold.min.js
+-rw-r--r--. 1 33 tape   789 Oct  5  2019 effect-highlight.min.js
+-rw-r--r--. 1 33 tape 13266 Oct  5  2019 effect.min.js
+-rw-r--r--. 1 33 tape   783 Oct  5  2019 effect-puff.min.js
+-rw-r--r--. 1 33 tape   798 Oct  5  2019 effect-pulsate.min.js
+-rw-r--r--. 1 33 tape  1110 Oct  5  2019 effect-scale.min.js
+-rw-r--r--. 1 33 tape  1101 Oct  5  2019 effect-shake.min.js
+-rw-r--r--. 1 33 tape  3253 Oct  5  2019 effect-size.min.js
+-rw-r--r--. 1 33 tape   961 Oct  5  2019 effect-slide.min.js
+-rw-r--r--. 1 33 tape   857 Oct  5  2019 effect-transfer.min.js
+-rw-r--r--. 1 33 tape  9557 Oct  5  2019 menu.min.js
+-rw-r--r--. 1 33 tape  3142 Oct  5  2019 mouse.min.js
+-rw-r--r--. 1 33 tape  6482 Oct  5  2019 position.min.js
+-rw-r--r--. 1 33 tape  2468 Oct  5  2019 progressbar.min.js
+-rw-r--r--. 1 33 tape 18403 Oct  5  2019 resizable.min.js
+-rw-r--r--. 1 33 tape  4258 Oct  5  2019 selectable.min.js
+-rw-r--r--. 1 33 tape  8371 Oct  5  2019 selectmenu.min.js
+-rw-r--r--. 1 33 tape 10931 Oct  5  2019 slider.min.js
+-rw-r--r--. 1 33 tape 24891 Oct  5  2019 sortable.min.js
+-rw-r--r--. 1 33 tape  7070 Oct  5  2019 spinner.min.js
+-rw-r--r--. 1 33 tape 12036 Oct  5  2019 tabs.min.js
+-rw-r--r--. 1 33 tape  5662 Oct  5  2019 tooltip.min.js
+-rw-r--r--. 1 33 tape  6838 Oct  5  2019 widget.min.js
+
+/root/var/www/html/wp-includes/js/mediaelement:
+total 740
+-rw-r--r--. 1 33 tape 273289 Oct  8  2019 mediaelement-and-player.js
+-rw-r--r--. 1 33 tape 160453 Oct  8  2019 mediaelement-and-player.min.js
+-rw-r--r--. 1 33 tape 130015 Oct  8  2019 mediaelement.js
+-rw-r--r--. 1 33 tape   2841 Oct 16  2017 mediaelement-migrate.js
+-rw-r--r--. 1 33 tape   1193 Oct  5  2019 mediaelement-migrate.min.js
+-rw-r--r--. 1 33 tape  70925 Oct  8  2019 mediaelement.min.js
+-rw-r--r--. 1 33 tape  15907 Oct  8  2019 mediaelementplayer.css
+-rw-r--r--. 1 33 tape  15758 Oct  8  2019 mediaelementplayer-legacy.css
+-rw-r--r--. 1 33 tape  11425 Oct  8  2019 mediaelementplayer-legacy.min.css
+-rw-r--r--. 1 33 tape  11574 Oct  8  2019 mediaelementplayer.min.css
+-rw-r--r--. 1 33 tape   2883 Aug  1  2017 mejs-controls.png
+-rw-r--r--. 1 33 tape   4598 Aug  1  2017 mejs-controls.svg
+drwxr-xr-x. 2 33 tape     42 Jun 10 17:48 renderers
+-rw-r--r--. 1 33 tape   4960 Jun  7  2019 wp-mediaelement.css
+-rw-r--r--. 1 33 tape   2363 Jan 20 21:21 wp-mediaelement.js
+-rw-r--r--. 1 33 tape   4186 Jun  7  2019 wp-mediaelement.min.css
+-rw-r--r--. 1 33 tape    907 Jan 20 21:21 wp-mediaelement.min.js
+-rw-r--r--. 1 33 tape   5357 Nov 29  2019 wp-playlist.js
+-rw-r--r--. 1 33 tape   3431 Oct  5  2019 wp-playlist.min.js
+
+/root/var/www/html/wp-includes/js/mediaelement/renderers:
+total 20
+-rw-r--r--. 1 33 tape 12028 Oct  8  2019 vimeo.js
+-rw-r--r--. 1 33 tape  6256 Oct  8  2019 vimeo.min.js
+
+/root/var/www/html/wp-includes/js/plupload:
+total 492
+-rw-r--r--. 1 33 tape  18765 Jan 28 19:45 handlers.js
+-rw-r--r--. 1 33 tape  11264 Oct 21  2019 handlers.min.js
+-rw-r--r--. 1 33 tape  17987 Nov  3  2019 license.txt
+-rw-r--r--. 1 33 tape 254084 Nov  3  2019 moxie.js
+-rw-r--r--. 1 33 tape  88108 Nov  3  2019 moxie.min.js
+-rw-r--r--. 1 33 tape  60314 Nov  3  2019 plupload.js
+-rw-r--r--. 1 33 tape  15658 Nov  3  2019 plupload.min.js
+-rw-r--r--. 1 33 tape  15884 Jan 28 19:45 wp-plupload.js
+-rw-r--r--. 1 33 tape   5638 Oct 21  2019 wp-plupload.min.js
+
+/root/var/www/html/wp-includes/js/swfupload:
+total 20
+-rw-r--r--. 1 33 tape 1460 Sep 21  2017 handlers.js
+-rw-r--r--. 1 33 tape 1276 Sep 21  2017 handlers.min.js
+-rw-r--r--. 1 33 tape 1540 Jul 29  2011 license.txt
+-rw-r--r--. 1 33 tape 4439 Sep 21  2017 swfupload.js
+
+/root/var/www/html/wp-includes/js/thickbox:
+total 40
+-rw-r--r--. 1 33 tape 15238 Nov  5  2012 loadingAnimation.gif
+-rw-r--r--. 1 33 tape    94 Nov  7  2012 macFFBgHack.png
+-rw-r--r--. 1 33 tape  2658 Sep  9  2017 thickbox.css
+-rw-r--r--. 1 33 tape 13163 May 23  2016 thickbox.js
+
+/root/var/www/html/wp-includes/js/tinymce:
+total 1064
+drwxr-xr-x.  2 33 tape     28 Jun 10 17:48 langs
+-rw-r--r--.  1 33 tape  26441 May  8  2017 license.txt
+drwxr-xr-x. 24 33 tape   4096 Jun 10 17:48 plugins
+drwxr-xr-x.  4 33 tape     40 Jun 10 17:48 skins
+drwxr-xr-x.  4 33 tape     34 Jun 10 17:48 themes
+-rw-r--r--.  1 33 tape 364071 Sep 18  2019 tinymce.min.js
+-rw-r--r--.  1 33 tape  15988 Sep 26  2017 tiny_mce_popup.js
+drwxr-xr-x.  2 33 tape     90 Jun 10 17:48 utils
+-rw-r--r--.  1 33 tape 669216 Oct  5  2019 wp-tinymce.js
+-rw-r--r--.  1 33 tape   1042 Feb  6 01:33 wp-tinymce.php
+
+/root/var/www/html/wp-includes/js/tinymce/langs:
+total 16
+-rw-r--r--. 1 33 tape 15529 Feb  4 11:43 wp-langs-en.js
+
+/root/var/www/html/wp-includes/js/tinymce/plugins:
+total 0
+drwxr-xr-x. 2 33 tape 44 Jun 10 17:48 charmap
+drwxr-xr-x. 2 33 tape 44 Jun 10 17:48 colorpicker
+drwxr-xr-x. 3 33 tape 55 Jun 10 17:48 compat3x
+drwxr-xr-x. 2 33 tape 44 Jun 10 17:48 directionality
+drwxr-xr-x. 2 33 tape 44 Jun 10 17:48 fullscreen
+drwxr-xr-x. 2 33 tape 44 Jun 10 17:48 hr
+drwxr-xr-x. 2 33 tape 44 Jun 10 17:48 image
+drwxr-xr-x. 2 33 tape 44 Jun 10 17:48 link
+drwxr-xr-x. 2 33 tape 44 Jun 10 17:48 lists
+drwxr-xr-x. 2 33 tape 44 Jun 10 17:48 media
+drwxr-xr-x. 2 33 tape 44 Jun 10 17:48 paste
+drwxr-xr-x. 2 33 tape 44 Jun 10 17:48 tabfocus
+drwxr-xr-x. 2 33 tape 44 Jun 10 17:48 textcolor
+drwxr-xr-x. 2 33 tape 44 Jun 10 17:48 wordpress
+drwxr-xr-x. 2 33 tape 44 Jun 10 17:48 wpautoresize
+drwxr-xr-x. 2 33 tape 44 Jun 10 17:48 wpdialogs
+drwxr-xr-x. 2 33 tape 44 Jun 10 17:48 wpeditimage
+drwxr-xr-x. 2 33 tape 44 Jun 10 17:48 wpemoji
+drwxr-xr-x. 2 33 tape 44 Jun 10 17:48 wpgallery
+drwxr-xr-x. 2 33 tape 44 Jun 10 17:48 wplink
+drwxr-xr-x. 2 33 tape 44 Jun 10 17:48 wptextpattern
+drwxr-xr-x. 2 33 tape 44 Jun 10 17:48 wpview
+
+/root/var/www/html/wp-includes/js/tinymce/plugins/charmap:
+total 36
+-rw-r--r--. 1 33 tape 23210 Jan 29  2019 plugin.js
+-rw-r--r--. 1 33 tape  8601 Apr 25  2018 plugin.min.js
+
+/root/var/www/html/wp-includes/js/tinymce/plugins/colorpicker:
+total 8
+-rw-r--r--. 1 33 tape 3561 Jan 29  2019 plugin.js
+-rw-r--r--. 1 33 tape 1349 Apr 25  2018 plugin.min.js
+
+/root/var/www/html/wp-includes/js/tinymce/plugins/compat3x:
+total 20
+drwxr-xr-x. 2 33 tape   24 Jun 10 17:48 css
+-rw-r--r--. 1 33 tape 9451 Jan 28 19:45 plugin.js
+-rw-r--r--. 1 33 tape 4129 Apr 25  2018 plugin.min.js
+
+/root/var/www/html/wp-includes/js/tinymce/plugins/compat3x/css:
+total 8
+-rw-r--r--. 1 33 tape 8030 Jul 26  2016 dialog.css
+
+/root/var/www/html/wp-includes/js/tinymce/plugins/directionality:
+total 8
+-rw-r--r--. 1 33 tape 1892 Jan 29  2019 plugin.js
+-rw-r--r--. 1 33 tape  857 Apr 25  2018 plugin.min.js
+
+/root/var/www/html/wp-includes/js/tinymce/plugins/fullscreen:
+total 12
+-rw-r--r--. 1 33 tape 5595 May 15  2019 plugin.js
+-rw-r--r--. 1 33 tape 2184 May 15  2019 plugin.min.js
+
+/root/var/www/html/wp-includes/js/tinymce/plugins/hr:
+total 8
+-rw-r--r--. 1 33 tape 919 Jan 29  2019 plugin.js
+-rw-r--r--. 1 33 tape 428 Apr 25  2018 plugin.min.js
+
+/root/var/www/html/wp-includes/js/tinymce/plugins/image:
+total 56
+-rw-r--r--. 1 33 tape 40022 Sep 18  2019 plugin.js
+-rw-r--r--. 1 33 tape 15852 Sep 18  2019 plugin.min.js
+
+/root/var/www/html/wp-includes/js/tinymce/plugins/link:
+total 36
+-rw-r--r--. 1 33 tape 24009 May 15  2019 plugin.js
+-rw-r--r--. 1 33 tape  8940 May 15  2019 plugin.min.js
+
+/root/var/www/html/wp-includes/js/tinymce/plugins/lists:
+total 100
+-rw-r--r--. 1 33 tape 71038 Sep 18  2019 plugin.js
+-rw-r--r--. 1 33 tape 27169 Sep 18  2019 plugin.min.js
+
+/root/var/www/html/wp-includes/js/tinymce/plugins/media:
+total 56
+-rw-r--r--. 1 33 tape 37881 Jan 29  2019 plugin.js
+-rw-r--r--. 1 33 tape 15064 Apr 25  2018 plugin.min.js
+
+/root/var/www/html/wp-includes/js/tinymce/plugins/paste:
+total 116
+-rw-r--r--. 1 33 tape 82535 Sep 18  2019 plugin.js
+-rw-r--r--. 1 33 tape 30882 Sep 18  2019 plugin.min.js
+
+/root/var/www/html/wp-includes/js/tinymce/plugins/tabfocus:
+total 8
+-rw-r--r--. 1 33 tape 3722 May 15  2019 plugin.js
+-rw-r--r--. 1 33 tape 1614 May 15  2019 plugin.min.js
+
+/root/var/www/html/wp-includes/js/tinymce/plugins/textcolor:
+total 20
+-rw-r--r--. 1 33 tape 11310 Jan 29  2019 plugin.js
+-rw-r--r--. 1 33 tape  4927 Jan 29  2019 plugin.min.js
+
+/root/var/www/html/wp-includes/js/tinymce/plugins/wordpress:
+total 56
+-rw-r--r--. 1 33 tape 33820 Jan 28 19:45 plugin.js
+-rw-r--r--. 1 33 tape 16472 Oct  5  2019 plugin.min.js
+
+/root/var/www/html/wp-includes/js/tinymce/plugins/wpautoresize:
+total 12
+-rw-r--r--. 1 33 tape 5988 Jan 28 19:45 plugin.js
+-rw-r--r--. 1 33 tape 2353 Oct  5  2019 plugin.min.js
+
+/root/var/www/html/wp-includes/js/tinymce/plugins/wpdialogs:
+total 8
+-rw-r--r--. 1 33 tape 2439 Jan 28 19:45 plugin.js
+-rw-r--r--. 1 33 tape 1322 Oct  5  2019 plugin.min.js
+
+/root/var/www/html/wp-includes/js/tinymce/plugins/wpeditimage:
+total 40
+-rw-r--r--. 1 33 tape 25642 Jan 28 19:45 plugin.js
+-rw-r--r--. 1 33 tape 12266 Oct  5  2019 plugin.min.js
+
+/root/var/www/html/wp-includes/js/tinymce/plugins/wpemoji:
+total 8
+-rw-r--r--. 1 33 tape 3580 Jan 28 19:45 plugin.js
+-rw-r--r--. 1 33 tape 1531 Oct  5  2019 plugin.min.js
+
+/root/var/www/html/wp-includes/js/tinymce/plugins/wpgallery:
+total 8
+-rw-r--r--. 1 33 tape 3183 Jan 28 19:45 plugin.js
+-rw-r--r--. 1 33 tape 1654 Oct  5  2019 plugin.min.js
+
+/root/var/www/html/wp-includes/js/tinymce/plugins/wplink:
+total 32
+-rw-r--r--. 1 33 tape 17605 Jan 28 19:45 plugin.js
+-rw-r--r--. 1 33 tape  8906 Oct  5  2019 plugin.min.js
+
+/root/var/www/html/wp-includes/js/tinymce/plugins/wptextpattern:
+total 16
+-rw-r--r--. 1 33 tape 8810 Jan 28 19:45 plugin.js
+-rw-r--r--. 1 33 tape 3170 Oct  5  2019 plugin.min.js
+
+/root/var/www/html/wp-includes/js/tinymce/plugins/wpview:
+total 12
+-rw-r--r--. 1 33 tape 6083 Jan 28 19:45 plugin.js
+-rw-r--r--. 1 33 tape 2922 Oct  5  2019 plugin.min.js
+
+/root/var/www/html/wp-includes/js/tinymce/skins:
+total 0
+drwxr-xr-x. 4 33 tape 103 Jun 10 17:48 lightgray
+drwxr-xr-x. 3 33 tape  42 Jun 10 17:48 wordpress
+
+/root/var/www/html/wp-includes/js/tinymce/skins/lightgray:
+total 52
+-rw-r--r--. 1 33 tape  3526 Jul 16  2018 content.inline.min.css
+-rw-r--r--. 1 33 tape  3932 Jul 16  2018 content.min.css
+drwxr-xr-x. 2 33 tape   184 Jun 10 17:48 fonts
+drwxr-xr-x. 2 33 tape    77 Jun 10 17:48 img
+-rw-r--r--. 1 33 tape 44009 Dec 10  2019 skin.min.css
+
+/root/var/www/html/wp-includes/js/tinymce/skins/lightgray/fonts:
+total 172
+-rw-r--r--. 1 33 tape 18912 Jan 30  2019 tinymce.eot
+-rw-r--r--. 1 33 tape  9492 Jan 19  2016 tinymce-small.eot
+-rw-r--r--. 1 33 tape 24727 Jun 29  2016 tinymce-small.svg
+-rw-r--r--. 1 33 tape  9304 Jan 19  2016 tinymce-small.ttf
+-rw-r--r--. 1 33 tape  9380 Jan 19  2016 tinymce-small.woff
+-rw-r--r--. 1 33 tape 46373 Jan 29  2019 tinymce.svg
+-rw-r--r--. 1 33 tape 18748 Jan 30  2019 tinymce.ttf
+-rw-r--r--. 1 33 tape 18824 Jan 30  2019 tinymce.woff
+
+/root/var/www/html/wp-includes/js/tinymce/skins/lightgray/img:
+total 16
+-rw-r--r--. 1 33 tape   53 Dec 28  2013 anchor.gif
+-rw-r--r--. 1 33 tape 2608 Dec 28  2013 loader.gif
+-rw-r--r--. 1 33 tape  152 Dec 28  2013 object.gif
+-rw-r--r--. 1 33 tape   43 Dec 28  2013 trans.gif
+
+/root/var/www/html/wp-includes/js/tinymce/skins/wordpress:
+total 12
+drwxr-xr-x. 2 33 tape  281 Jun 10 17:48 images
+-rw-r--r--. 1 33 tape 8624 Jan 26 18:02 wp-content.css
+
+/root/var/www/html/wp-includes/js/tinymce/skins/wordpress/images:
+total 56
+-rw-r--r--. 1 33 tape  412 Feb 13  2014 audio.png
+-rw-r--r--. 1 33 tape  368 Dec  1  2014 dashicon-edit.png
+-rw-r--r--. 1 33 tape  339 Dec  1  2014 dashicon-no.png
+-rw-r--r--. 1 33 tape 8177 Nov 25  2014 embedded.png
+-rw-r--r--. 1 33 tape  447 Feb 13  2014 gallery-2x.png
+-rw-r--r--. 1 33 tape  379 Feb 13  2014 gallery.png
+-rw-r--r--. 1 33 tape  603 Oct 28  2014 more-2x.png
+-rw-r--r--. 1 33 tape  414 Oct 28  2014 more.png
+-rw-r--r--. 1 33 tape  835 Apr  4  2014 pagebreak-2x.png
+-rw-r--r--. 1 33 tape 1140 Oct 28  2014 pagebreak.png
+-rw-r--r--. 1 33 tape  440 Mar  4  2014 playlist-audio.png
+-rw-r--r--. 1 33 tape  290 Mar  4  2014 playlist-video.png
+-rw-r--r--. 1 33 tape  363 Feb 13  2014 video.png
+
+/root/var/www/html/wp-includes/js/tinymce/themes:
+total 0
+drwxr-xr-x. 2 33 tape 42 Jun 10 17:48 inlite
+drwxr-xr-x. 2 33 tape 42 Jun 10 17:48 modern
+
+/root/var/www/html/wp-includes/js/tinymce/themes/inlite:
+total 448
+-rw-r--r--. 1 33 tape 321743 Sep 18  2019 theme.js
+-rw-r--r--. 1 33 tape 132227 Sep 18  2019 theme.min.js
+
+/root/var/www/html/wp-includes/js/tinymce/themes/modern:
+total 440
+-rw-r--r--. 1 33 tape 316251 Sep 18  2019 theme.js
+-rw-r--r--. 1 33 tape 130991 Sep 18  2019 theme.min.js
+
+/root/var/www/html/wp-includes/js/tinymce/utils:
+total 28
+-rw-r--r--. 1 33 tape 2125 May  8  2017 editable_selects.js
+-rw-r--r--. 1 33 tape 6071 May  8  2017 form_utils.js
+-rw-r--r--. 1 33 tape 4160 Sep 26  2017 mctabs.js
+-rw-r--r--. 1 33 tape 6466 Apr 25  2018 validate.js
+
+/root/var/www/html/wp-includes/pomo:
+total 60
+-rw-r--r--. 1 33 tape  3295 Jan 28 19:45 entry.php
+-rw-r--r--. 1 33 tape  9375 Feb  9 11:55 mo.php
+-rw-r--r--. 1 33 tape  7109 Feb  9 11:55 plural-forms.php
+-rw-r--r--. 1 33 tape 14757 Feb  9 11:55 po.php
+-rw-r--r--. 1 33 tape  7442 Nov  2  2019 streams.php
+-rw-r--r--. 1 33 tape  9591 Feb  6 01:33 translations.php
+
+/root/var/www/html/wp-includes/random_compat:
+total 56
+-rw-r--r--. 1 33 tape 5973 Nov  8  2017 byte_safe_strings.php
+-rw-r--r--. 1 33 tape 2630 Nov  8  2017 cast_to_int.php
+-rw-r--r--. 1 33 tape 1697 Nov  8  2017 error_polyfill.php
+-rw-r--r--. 1 33 tape 2903 Nov  8  2017 random_bytes_com_dotnet.php
+-rw-r--r--. 1 33 tape 5440 Nov  8  2017 random_bytes_dev_urandom.php
+-rw-r--r--. 1 33 tape 2894 Nov  8  2017 random_bytes_libsodium_legacy.php
+-rw-r--r--. 1 33 tape 2836 Nov  8  2017 random_bytes_libsodium.php
+-rw-r--r--. 1 33 tape 2521 Nov  8  2017 random_bytes_mcrypt.php
+-rw-r--r--. 1 33 tape 6262 Nov  8  2017 random_int.php
+-rw-r--r--. 1 33 tape 7687 Nov  8  2017 random.php
+
+/root/var/www/html/wp-includes/Requests:
+total 104
+drwxr-xr-x. 2 33 tape    23 Jun 10 17:48 Auth
+-rw-r--r--. 1 33 tape   810 May 13  2016 Auth.php
+drwxr-xr-x. 2 33 tape    21 Jun 10 17:48 Cookie
+-rw-r--r--. 1 33 tape 12966 Oct  6  2019 Cookie.php
+drwxr-xr-x. 4 33 tape    72 Jun 10 17:48 Exception
+-rw-r--r--. 1 33 tape  1026 May 13  2016 Exception.php
+-rw-r--r--. 1 33 tape   708 May 13  2016 Hooker.php
+-rw-r--r--. 1 33 tape  1399 May 13  2016 Hooks.php
+-rw-r--r--. 1 33 tape 11325 Jun 10  2016 IDNAEncoder.php
+-rw-r--r--. 1 33 tape  4927 May 13  2016 IPv6.php
+-rw-r--r--. 1 33 tape 28467 Oct  4  2016 IRI.php
+drwxr-xr-x. 2 33 tape    22 Jun 10 17:48 Proxy
+-rw-r--r--. 1 33 tape   813 May 13  2016 Proxy.php
+drwxr-xr-x. 2 33 tape    25 Jun 10 17:48 Response
+-rw-r--r--. 1 33 tape  2505 May 13  2016 Response.php
+-rw-r--r--. 1 33 tape  7153 Jun 10  2016 Session.php
+-rw-r--r--. 1 33 tape  4022 Jun 10  2016 SSL.php
+drwxr-xr-x. 2 33 tape    43 Jun 10 17:48 Transport
+-rw-r--r--. 1 33 tape  1220 May 13  2016 Transport.php
+drwxr-xr-x. 2 33 tape    71 Jun 10 17:48 Utility
+
+/root/var/www/html/wp-includes/Requests/Auth:
+total 4
+-rw-r--r--. 1 33 tape 1941 May 13  2016 Basic.php
+
+/root/var/www/html/wp-includes/Requests/Cookie:
+total 4
+-rw-r--r--. 1 33 tape 3818 May 13  2016 Jar.php
+
+/root/var/www/html/wp-includes/Requests/Exception:
+total 12
+drwxr-xr-x. 2 33 tape 4096 Jun 10 17:48 HTTP
+-rw-r--r--. 1 33 tape 1419 May 13  2016 HTTP.php
+drwxr-xr-x. 2 33 tape   22 Jun 10 17:48 Transport
+-rw-r--r--. 1 33 tape   74 May 13  2016 Transport.php
+
+/root/var/www/html/wp-includes/Requests/Exception/HTTP:
+total 132
+-rw-r--r--. 1 33 tape 390 May 13  2016 304.php
+-rw-r--r--. 1 33 tape 382 May 13  2016 305.php
+-rw-r--r--. 1 33 tape 391 May 13  2016 306.php
+-rw-r--r--. 1 33 tape 387 May 13  2016 400.php
+-rw-r--r--. 1 33 tape 390 May 13  2016 401.php
+-rw-r--r--. 1 33 tape 402 May 13  2016 402.php
+-rw-r--r--. 1 33 tape 381 May 13  2016 403.php
+-rw-r--r--. 1 33 tape 381 May 13  2016 404.php
+-rw-r--r--. 1 33 tape 408 May 13  2016 405.php
+-rw-r--r--. 1 33 tape 396 May 13  2016 406.php
+-rw-r--r--. 1 33 tape 441 May 13  2016 407.php
+-rw-r--r--. 1 33 tape 399 May 13  2016 408.php
+-rw-r--r--. 1 33 tape 378 May 13  2016 409.php
+-rw-r--r--. 1 33 tape 366 May 13  2016 410.php
+-rw-r--r--. 1 33 tape 399 May 13  2016 411.php
+-rw-r--r--. 1 33 tape 411 May 13  2016 412.php
+-rw-r--r--. 1 33 tape 426 May 13  2016 413.php
+-rw-r--r--. 1 33 tape 417 May 13  2016 414.php
+-rw-r--r--. 1 33 tape 420 May 13  2016 415.php
+-rw-r--r--. 1 33 tape 447 May 13  2016 416.php
+-rw-r--r--. 1 33 tape 408 May 13  2016 417.php
+-rw-r--r--. 1 33 tape 478 Jun 10  2016 418.php
+-rw-r--r--. 1 33 tape 505 Jun 10  2016 428.php
+-rw-r--r--. 1 33 tape 549 Jun 10  2016 429.php
+-rw-r--r--. 1 33 tape 535 Jun 10  2016 431.php
+-rw-r--r--. 1 33 tape 417 May 13  2016 500.php
+-rw-r--r--. 1 33 tape 399 May 13  2016 501.php
+-rw-r--r--. 1 33 tape 387 May 13  2016 502.php
+-rw-r--r--. 1 33 tape 411 May 13  2016 503.php
+-rw-r--r--. 1 33 tape 399 May 13  2016 504.php
+-rw-r--r--. 1 33 tape 432 May 13  2016 505.php
+-rw-r--r--. 1 33 tape 535 Jun 10  2016 511.php
+-rw-r--r--. 1 33 tape 867 May 13  2016 Unknown.php
+
+/root/var/www/html/wp-includes/Requests/Exception/Transport:
+total 4
+-rw-r--r--. 1 33 tape 918 May 13  2016 cURL.php
+
+/root/var/www/html/wp-includes/Requests/Proxy:
+total 4
+-rw-r--r--. 1 33 tape 3471 May 13  2016 HTTP.php
+
+/root/var/www/html/wp-includes/Requests/Response:
+total 4
+-rw-r--r--. 1 33 tape 2125 May 13  2016 Headers.php
+
+/root/var/www/html/wp-includes/Requests/Transport:
+total 32
+-rw-r--r--. 1 33 tape 15325 Oct  4  2016 cURL.php
+-rw-r--r--. 1 33 tape 12436 Sep 23  2019 fsockopen.php
+
+/root/var/www/html/wp-includes/Requests/Utility:
+total 8
+-rw-r--r--. 1 33 tape 1993 May 13  2016 CaseInsensitiveDictionary.php
+-rw-r--r--. 1 33 tape  829 May 13  2016 FilteredIterator.php
+
+/root/var/www/html/wp-includes/rest-api:
+total 76
+-rw-r--r--. 1 33 tape 24385 Jan 28 19:45 class-wp-rest-request.php
+-rw-r--r--. 1 33 tape  7345 Jan 28 19:45 class-wp-rest-response.php
+-rw-r--r--. 1 33 tape 40493 Feb 24 13:07 class-wp-rest-server.php
+drwxr-xr-x. 2 33 tape  4096 Jun 10 17:48 endpoints
+drwxr-xr-x. 2 33 tape   214 Jun 10 17:48 fields
+drwxr-xr-x. 2 33 tape    91 Jun 10 17:48 search
+
+/root/var/www/html/wp-includes/rest-api/endpoints:
+total 416
+-rw-r--r--. 1 33 tape 30333 Feb 28 07:31 class-wp-rest-attachments-controller.php
+-rw-r--r--. 1 33 tape 13061 Mar  1 05:38 class-wp-rest-autosaves-controller.php
+-rw-r--r--. 1 33 tape  4990 Feb 28 07:31 class-wp-rest-block-renderer-controller.php
+-rw-r--r--. 1 33 tape  2792 Dec  6  2019 class-wp-rest-blocks-controller.php
+-rw-r--r--. 1 33 tape 56167 Feb 28 07:31 class-wp-rest-comments-controller.php
+-rw-r--r--. 1 33 tape 20764 Apr  9 18:54 class-wp-rest-controller.php
+-rw-r--r--. 1 33 tape 86443 Feb 11 11:28 class-wp-rest-posts-controller.php
+-rw-r--r--. 1 33 tape 10087 Jan 28 19:45 class-wp-rest-post-statuses-controller.php
+-rw-r--r--. 1 33 tape  9971 Jan 28 19:45 class-wp-rest-post-types-controller.php
+-rw-r--r--. 1 33 tape 24712 Apr  9 18:52 class-wp-rest-revisions-controller.php
+-rw-r--r--. 1 33 tape 10466 Jan 28 19:45 class-wp-rest-search-controller.php
+-rw-r--r--. 1 33 tape 10396 Jan 28 19:45 class-wp-rest-settings-controller.php
+-rw-r--r--. 1 33 tape 12504 Jan 28 19:45 class-wp-rest-taxonomies-controller.php
+-rw-r--r--. 1 33 tape 31735 Feb  2 00:41 class-wp-rest-terms-controller.php
+-rw-r--r--. 1 33 tape 15423 Mar  8 20:14 class-wp-rest-themes-controller.php
+-rw-r--r--. 1 33 tape 45571 Mar  1 05:38 class-wp-rest-users-controller.php
+
+/root/var/www/html/wp-includes/rest-api/fields:
+total 36
+-rw-r--r--. 1 33 tape   893 Jul 23  2018 class-wp-rest-comment-meta-fields.php
+-rw-r--r--. 1 33 tape 17018 Jan 28 19:45 class-wp-rest-meta-fields.php
+-rw-r--r--. 1 33 tape  1248 Jul 23  2018 class-wp-rest-post-meta-fields.php
+-rw-r--r--. 1 33 tape  1245 Jul 23  2018 class-wp-rest-term-meta-fields.php
+-rw-r--r--. 1 33 tape   860 Jul 23  2018 class-wp-rest-user-meta-fields.php
+
+/root/var/www/html/wp-includes/rest-api/search:
+total 12
+-rw-r--r--. 1 33 tape 5626 May 14  2019 class-wp-rest-post-search-handler.php
+-rw-r--r--. 1 33 tape 2130 Dec 13  2018 class-wp-rest-search-handler.php
+
+/root/var/www/html/wp-includes/SimplePie:
+total 348
+-rw-r--r--. 1 33 tape  3592 Nov 21  2012 Author.php
+drwxr-xr-x. 2 33 tape    89 Jun 10 17:48 Cache
+-rw-r--r--. 1 33 tape  4296 Nov 21  2012 Cache.php
+-rw-r--r--. 1 33 tape  4510 Nov 21  2012 Caption.php
+-rw-r--r--. 1 33 tape  3707 Nov 21  2012 Category.php
+drwxr-xr-x. 3 33 tape    18 Jun 10 17:48 Content
+-rw-r--r--. 1 33 tape  3367 Nov 21  2012 Copyright.php
+-rw-r--r--. 1 33 tape  2268 Nov 21  2012 Core.php
+-rw-r--r--. 1 33 tape  3721 Nov 21  2012 Credit.php
+drwxr-xr-x. 3 33 tape    18 Jun 10 17:48 Decode
+-rw-r--r--. 1 33 tape 27487 Nov 21  2012 Enclosure.php
+-rw-r--r--. 1 33 tape  2187 Nov  8  2012 Exception.php
+-rw-r--r--. 1 33 tape  9678 Nov 21  2012 File.php
+-rw-r--r--. 1 33 tape  8572 Nov 21  2012 gzdecode.php
+drwxr-xr-x. 2 33 tape    24 Jun 10 17:48 HTTP
+-rw-r--r--. 1 33 tape 28359 Nov 21  2012 IRI.php
+-rw-r--r--. 1 33 tape 98299 Nov 21  2012 Item.php
+-rw-r--r--. 1 33 tape 11185 Nov 21  2012 Locator.php
+-rw-r--r--. 1 33 tape 51550 Jul  8  2013 Misc.php
+drwxr-xr-x. 2 33 tape    22 Jun 10 17:48 Net
+drwxr-xr-x. 2 33 tape    22 Jun 10 17:48 Parse
+-rw-r--r--. 1 33 tape 11851 Nov 21  2012 Parser.php
+-rw-r--r--. 1 33 tape  3451 Nov 21  2012 Rating.php
+-rw-r--r--. 1 33 tape  5991 Nov 21  2012 Registry.php
+-rw-r--r--. 1 33 tape  3800 Nov 21  2012 Restriction.php
+-rw-r--r--. 1 33 tape 15698 Sep 11  2013 Sanitize.php
+-rw-r--r--. 1 33 tape 20539 Nov 21  2012 Source.php
+drwxr-xr-x. 3 33 tape    25 Jun 10 17:48 XML
+
+/root/var/www/html/wp-includes/SimplePie/Cache:
+total 40
+-rw-r--r--. 1 33 tape  3452 Nov 21  2012 Base.php
+-rw-r--r--. 1 33 tape  4726 Nov 21  2012 DB.php
+-rw-r--r--. 1 33 tape  4424 Nov 21  2012 File.php
+-rw-r--r--. 1 33 tape  5141 Nov 21  2012 Memcache.php
+-rw-r--r--. 1 33 tape 12280 Nov 21  2012 MySQL.php
+
+/root/var/www/html/wp-includes/SimplePie/Content:
+total 0
+drwxr-xr-x. 2 33 tape 25 Jun 10 17:48 Type
+
+/root/var/www/html/wp-includes/SimplePie/Content/Type:
+total 8
+-rw-r--r--. 1 33 tape 8137 Nov 21  2012 Sniffer.php
+
+/root/var/www/html/wp-includes/SimplePie/Decode:
+total 0
+drwxr-xr-x. 2 33 tape 26 Jun 10 17:48 HTML
+
+/root/var/www/html/wp-includes/SimplePie/Decode/HTML:
+total 20
+-rw-r--r--. 1 33 tape 17321 Nov 21  2012 Entities.php
+
+/root/var/www/html/wp-includes/SimplePie/HTTP:
+total 12
+-rw-r--r--. 1 33 tape 10882 Nov 21  2012 Parser.php
+
+/root/var/www/html/wp-includes/SimplePie/Net:
+total 8
+-rw-r--r--. 1 33 tape 7576 Nov 21  2012 IPv6.php
+
+/root/var/www/html/wp-includes/SimplePie/Parse:
+total 20
+-rw-r--r--. 1 33 tape 19701 Sep 23  2019 Date.php
+
+/root/var/www/html/wp-includes/SimplePie/XML:
+total 0
+drwxr-xr-x. 2 33 tape 24 Jun 10 17:48 Declaration
+
+/root/var/www/html/wp-includes/SimplePie/XML/Declaration:
+total 8
+-rw-r--r--. 1 33 tape 7149 Nov 21  2012 Parser.php
+
+/root/var/www/html/wp-includes/sodium_compat:
+total 12
+-rw-r--r--. 1 33 tape 2092 Dec  9  2019 autoload.php
+-rw-r--r--. 1 33 tape 1560 Dec  9  2019 composer.json
+drwxr-xr-x. 2 33 tape  126 Jun 10 17:48 lib
+-rw-r--r--. 1 33 tape  918 Dec  9  2019 LICENSE
+drwxr-xr-x. 3 33 tape   70 Jun 10 17:48 namespaced
+drwxr-xr-x. 5 33 tape  144 Jun 10 17:48 src
+
+/root/var/www/html/wp-includes/sodium_compat/lib:
+total 84
+-rw-r--r--. 1 33 tape  4161 Dec  9  2019 constants.php
+-rw-r--r--. 1 33 tape  1345 Dec  9  2019 namespaced.php
+-rw-r--r--. 1 33 tape  4491 Dec  9  2019 php72compat_const.php
+-rw-r--r--. 1 33 tape 40955 Dec  9  2019 php72compat.php
+-rw-r--r--. 1 33 tape 24518 Dec  9  2019 sodium_compat.php
+
+/root/var/www/html/wp-includes/sodium_compat/namespaced:
+total 16
+-rw-r--r--. 1 33 tape   86 Mar 21  2019 Compat.php
+drwxr-xr-x. 5 33 tape 4096 Jun 10 17:48 Core
+-rw-r--r--. 1 33 tape   86 Mar 21  2019 Crypto.php
+-rw-r--r--. 1 33 tape   82 Mar 21  2019 File.php
+
+/root/var/www/html/wp-includes/sodium_compat/namespaced/Core:
+total 52
+-rw-r--r--. 1 33 tape  98 Mar 21  2019 BLAKE2b.php
+drwxr-xr-x. 2 33 tape  40 Jun 10 17:48 ChaCha20
+-rw-r--r--. 1 33 tape 100 Mar 21  2019 ChaCha20.php
+drwxr-xr-x. 3 33 tape  43 Jun 10 17:48 Curve25519
+-rw-r--r--. 1 33 tape 104 Mar 21  2019 Curve25519.php
+-rw-r--r--. 1 33 tape  98 Mar 21  2019 Ed25519.php
+-rw-r--r--. 1 33 tape 102 Mar 21  2019 HChaCha20.php
+-rw-r--r--. 1 33 tape 100 Mar 21  2019 HSalsa20.php
+drwxr-xr-x. 2 33 tape  23 Jun 10 17:48 Poly1305
+-rw-r--r--. 1 33 tape 100 Mar 21  2019 Poly1305.php
+-rw-r--r--. 1 33 tape  98 May 17  2019 Salsa20.php
+-rw-r--r--. 1 33 tape  98 Mar 21  2019 SipHash.php
+-rw-r--r--. 1 33 tape  92 Mar 21  2019 Util.php
+-rw-r--r--. 1 33 tape  96 Mar 21  2019 X25519.php
+-rw-r--r--. 1 33 tape 102 Mar 21  2019 XChaCha20.php
+-rw-r--r--. 1 33 tape 100 May 17  2019 Xsalsa20.php
+
+/root/var/www/html/wp-includes/sodium_compat/namespaced/Core/ChaCha20:
+total 8
+-rw-r--r--. 1 33 tape 108 Mar 21  2019 Ctx.php
+-rw-r--r--. 1 33 tape 116 Mar 21  2019 IetfCtx.php
+
+/root/var/www/html/wp-includes/sodium_compat/namespaced/Core/Curve25519:
+total 8
+-rw-r--r--. 1 33 tape 110 Mar 21  2019 Fe.php
+drwxr-xr-x. 2 33 tape  87 Jun 10 17:48 Ge
+-rw-r--r--. 1 33 tape 108 Mar 21  2019 H.php
+
+/root/var/www/html/wp-includes/sodium_compat/namespaced/Core/Curve25519/Ge:
+total 20
+-rw-r--r--. 1 33 tape 124 Mar 21  2019 Cached.php
+-rw-r--r--. 1 33 tape 120 Mar 21  2019 P1p1.php
+-rw-r--r--. 1 33 tape 116 Mar 21  2019 P2.php
+-rw-r--r--. 1 33 tape 116 Mar 21  2019 P3.php
+-rw-r--r--. 1 33 tape 126 Mar 21  2019 Precomp.php
+
+/root/var/www/html/wp-includes/sodium_compat/namespaced/Core/Poly1305:
+total 4
+-rw-r--r--. 1 33 tape 112 Mar 21  2019 State.php
+
+/root/var/www/html/wp-includes/sodium_compat/src:
+total 312
+-rw-r--r--. 1 33 tape 134430 Dec  9  2019 Compat.php
+drwxr-xr-x. 7 33 tape   4096 Jun 10 17:48 Core
+drwxr-xr-x. 6 33 tape   4096 Jun 10 17:48 Core32
+-rw-r--r--. 1 33 tape  55119 Dec  9  2019 Crypto32.php
+-rw-r--r--. 1 33 tape  54810 Dec  9  2019 Crypto.php
+-rw-r--r--. 1 33 tape  53281 Dec  9  2019 File.php
+drwxr-xr-x. 2 33 tape     31 Jun 10 17:48 PHP52
+-rw-r--r--. 1 33 tape    158 Mar 21  2019 SodiumException.php
+
+/root/var/www/html/wp-includes/sodium_compat/src/Core:
+total 240
+drwxr-xr-x. 2 33 tape     63 Jun 10 17:48 Base64
+-rw-r--r--. 1 33 tape  23892 Dec  9  2019 BLAKE2b.php
+drwxr-xr-x. 2 33 tape     40 Jun 10 17:48 ChaCha20
+-rw-r--r--. 1 33 tape  12934 Mar 21  2019 ChaCha20.php
+drwxr-xr-x. 3 33 tape     60 Jun 10 17:48 Curve25519
+-rw-r--r--. 1 33 tape 105458 Mar 21  2019 Curve25519.php
+-rw-r--r--. 1 33 tape  15559 Dec  9  2019 Ed25519.php
+-rw-r--r--. 1 33 tape   3871 Mar 21  2019 HChaCha20.php
+-rw-r--r--. 1 33 tape   3673 Mar 21  2019 HSalsa20.php
+drwxr-xr-x. 2 33 tape     23 Jun 10 17:48 Poly1305
+-rw-r--r--. 1 33 tape   1574 Mar 21  2019 Poly1305.php
+-rw-r--r--. 1 33 tape   8233 Mar 21  2019 Salsa20.php
+drwxr-xr-x. 2 33 tape     23 Jun 10 17:48 SecretStream
+-rw-r--r--. 1 33 tape   8026 Mar 21  2019 SipHash.php
+-rw-r--r--. 1 33 tape  27429 May 17  2019 Util.php
+-rw-r--r--. 1 33 tape   9450 Mar 21  2019 X25519.php
+-rw-r--r--. 1 33 tape   3370 Dec  9  2019 XChaCha20.php
+-rw-r--r--. 1 33 tape   1371 Mar 21  2019 XSalsa20.php
+
+/root/var/www/html/wp-includes/sodium_compat/src/Core/Base64:
+total 24
+-rw-r--r--. 1 33 tape 6679 Dec  9  2019 Common.php
+-rw-r--r--. 1 33 tape 7725 Dec  9  2019 Original.php
+-rw-r--r--. 1 33 tape 7731 Dec  9  2019 UrlSafe.php
+
+/root/var/www/html/wp-includes/sodium_compat/src/Core/ChaCha20:
+total 8
+-rw-r--r--. 1 33 tape 3830 May 17  2019 Ctx.php
+-rw-r--r--. 1 33 tape 1322 Mar 21  2019 IetfCtx.php
+
+/root/var/www/html/wp-includes/sodium_compat/src/Core/Curve25519:
+total 116
+-rw-r--r--. 1 33 tape   2977 May 17  2019 Fe.php
+drwxr-xr-x. 2 33 tape     87 Jun 10 17:48 Ge
+-rw-r--r--. 1 33 tape 108755 Mar 21  2019 H.php
+-rw-r--r--. 1 33 tape    218 Mar 21  2019 README.md
+
+/root/var/www/html/wp-includes/sodium_compat/src/Core/Curve25519/Ge:
+total 20
+-rw-r--r--. 1 33 tape 1765 Mar 21  2019 Cached.php
+-rw-r--r--. 1 33 tape 1665 Mar 21  2019 P1p1.php
+-rw-r--r--. 1 33 tape 1345 Mar 21  2019 P2.php
+-rw-r--r--. 1 33 tape 1658 Mar 21  2019 P3.php
+-rw-r--r--. 1 33 tape 1448 Mar 21  2019 Precomp.php
+
+/root/var/www/html/wp-includes/sodium_compat/src/Core/Poly1305:
+total 16
+-rw-r--r--. 1 33 tape 12912 Dec  9  2019 State.php
+
+/root/var/www/html/wp-includes/sodium_compat/src/Core/SecretStream:
+total 4
+-rw-r--r--. 1 33 tape 3624 Dec  9  2019 State.php
+
+/root/var/www/html/wp-includes/sodium_compat/src/Core32:
+total 308
+-rw-r--r--. 1 33 tape  22275 Dec  9  2019 BLAKE2b.php
+drwxr-xr-x. 2 33 tape     40 Jun 10 17:48 ChaCha20
+-rw-r--r--. 1 33 tape  14511 Mar 21  2019 ChaCha20.php
+drwxr-xr-x. 3 33 tape     60 Jun 10 17:48 Curve25519
+-rw-r--r--. 1 33 tape 134754 Mar 21  2019 Curve25519.php
+-rw-r--r--. 1 33 tape  15541 Dec  9  2019 Ed25519.php
+-rw-r--r--. 1 33 tape   5297 Mar 21  2019 HChaCha20.php
+-rw-r--r--. 1 33 tape   6941 Mar 21  2019 HSalsa20.php
+-rw-r--r--. 1 33 tape  24542 May 17  2019 Int32.php
+-rw-r--r--. 1 33 tape  31156 May 17  2019 Int64.php
+drwxr-xr-x. 2 33 tape     23 Jun 10 17:48 Poly1305
+-rw-r--r--. 1 33 tape   1586 Mar 21  2019 Poly1305.php
+-rw-r--r--. 1 33 tape  11506 Mar 21  2019 Salsa20.php
+drwxr-xr-x. 2 33 tape     23 Jun 10 17:48 SecretStream
+-rw-r--r--. 1 33 tape   6613 Mar 21  2019 SipHash.php
+-rw-r--r--. 1 33 tape    209 Mar 21  2019 Util.php
+-rw-r--r--. 1 33 tape  11042 Dec  9  2019 X25519.php
+-rw-r--r--. 1 33 tape   1775 Mar 21  2019 XChaCha20.php
+-rw-r--r--. 1 33 tape   1379 Mar 21  2019 XSalsa20.php
+
+/root/var/www/html/wp-includes/sodium_compat/src/Core32/ChaCha20:
+total 12
+-rw-r--r--. 1 33 tape 4792 May 17  2019 Ctx.php
+-rw-r--r--. 1 33 tape 1503 Mar 21  2019 IetfCtx.php
+
+/root/var/www/html/wp-includes/sodium_compat/src/Core32/Curve25519:
+total 120
+-rw-r--r--. 1 33 tape   5207 Mar 21  2019 Fe.php
+drwxr-xr-x. 2 33 tape     87 Jun 10 17:48 Ge
+-rw-r--r--. 1 33 tape 108797 Mar 21  2019 H.php
+-rw-r--r--. 1 33 tape    218 Mar 21  2019 README.md
+
+/root/var/www/html/wp-includes/sodium_compat/src/Core32/Curve25519/Ge:
+total 20
+-rw-r--r--. 1 33 tape 1805 Mar 21  2019 Cached.php
+-rw-r--r--. 1 33 tape 1764 Mar 21  2019 P1p1.php
+-rw-r--r--. 1 33 tape 1377 Mar 21  2019 P2.php
+-rw-r--r--. 1 33 tape 1698 Mar 21  2019 P3.php
+-rw-r--r--. 1 33 tape 1533 Mar 21  2019 Precomp.php
+
+/root/var/www/html/wp-includes/sodium_compat/src/Core32/Poly1305:
+total 16
+-rw-r--r--. 1 33 tape 15980 Dec  9  2019 State.php
+
+/root/var/www/html/wp-includes/sodium_compat/src/Core32/SecretStream:
+total 4
+-rw-r--r--. 1 33 tape 3656 Dec  9  2019 State.php
+
+/root/var/www/html/wp-includes/sodium_compat/src/PHP52:
+total 4
+-rw-r--r--. 1 33 tape 4012 Dec  9  2019 SplFixedArray.php
+
+/root/var/www/html/wp-includes/Text:
+total 16
+drwxr-xr-x. 4 33 tape    56 Jun 10 17:48 Diff
+-rw-r--r--. 1 33 tape 12950 Jun 28  2015 Diff.php
+
+/root/var/www/html/wp-includes/Text/Diff:
+total 8
+drwxr-xr-x. 2 33 tape   76 Jun 10 17:48 Engine
+drwxr-xr-x. 2 33 tape   24 Jun 10 17:48 Renderer
+-rw-r--r--. 1 33 tape 6813 Jun 28  2015 Renderer.php
+
+/root/var/www/html/wp-includes/Text/Diff/Engine:
+total 40
+-rw-r--r--. 1 33 tape 15888 Oct 26  2017 native.php
+-rw-r--r--. 1 33 tape  5212 Oct  2  2017 shell.php
+-rw-r--r--. 1 33 tape  8354 Oct 24  2015 string.php
+-rw-r--r--. 1 33 tape  2210 May 25  2013 xdiff.php
+
+/root/var/www/html/wp-includes/Text/Diff/Renderer:
+total 8
+-rw-r--r--. 1 33 tape 5535 Feb 18  2010 inline.php
+
+/root/var/www/html/wp-includes/theme-compat:
+total 40
+-rw-r--r--. 1 33 tape 2144 Jan 28 19:45 comments.php
+-rw-r--r--. 1 33 tape  972 Sep  2  2019 embed-404.php
+-rw-r--r--. 1 33 tape 3451 Aug 16  2018 embed-content.php
+-rw-r--r--. 1 33 tape  481 Nov 30  2017 embed.php
+-rw-r--r--. 1 33 tape  438 May 25  2016 footer-embed.php
+-rw-r--r--. 1 33 tape 1063 Sep  2  2019 footer.php
+-rw-r--r--. 1 33 tape  702 Oct 31  2019 header-embed.php
+-rw-r--r--. 1 33 tape 1927 Jan 28 19:45 header.php
+-rw-r--r--. 1 33 tape 4279 Sep  2  2019 sidebar.php
+
+/root/var/www/html/wp-includes/widgets:
+total 172
+-rw-r--r--. 1 33 tape  5615 Jan 28 19:45 class-wp-nav-menu-widget.php
+-rw-r--r--. 1 33 tape  6057 Feb 13 19:07 class-wp-widget-archives.php
+-rw-r--r--. 1 33 tape  2863 Jun  5  2019 class-wp-widget-calendar.php
+-rw-r--r--. 1 33 tape  6364 Feb 25 14:29 class-wp-widget-categories.php
+-rw-r--r--. 1 33 tape 12142 Jan 28 19:45 class-wp-widget-custom-html.php
+-rw-r--r--. 1 33 tape  7228 Jan 28 19:45 class-wp-widget-links.php
+-rw-r--r--. 1 33 tape  6084 Jan  9 19:30 class-wp-widget-media-audio.php
+-rw-r--r--. 1 33 tape  7286 Jan  9 19:30 class-wp-widget-media-gallery.php
+-rw-r--r--. 1 33 tape 11983 Jan  9 19:30 class-wp-widget-media-image.php
+-rw-r--r--. 1 33 tape 14064 Jan 28 19:45 class-wp-widget-media.php
+-rw-r--r--. 1 33 tape  8407 Feb 18 13:19 class-wp-widget-media-video.php
+-rw-r--r--. 1 33 tape  3410 Aug  3  2019 class-wp-widget-meta.php
+-rw-r--r--. 1 33 tape  5014 Jan 28 19:45 class-wp-widget-pages.php
+-rw-r--r--. 1 33 tape  6395 Feb 25 14:29 class-wp-widget-recent-comments.php
+-rw-r--r--. 1 33 tape  5237 Oct 27  2019 class-wp-widget-recent-posts.php
+-rw-r--r--. 1 33 tape  3867 Jan 28 19:45 class-wp-widget-rss.php
+-rw-r--r--. 1 33 tape  2674 Jan 28 19:45 class-wp-widget-search.php
+-rw-r--r--. 1 33 tape  5841 Jan 28 19:45 class-wp-widget-tag-cloud.php
+-rw-r--r--. 1 33 tape 21267 Feb  6 01:33 class-wp-widget-text.php
+NETWORK ID          NAME                 DRIVER              SCOPE
+5a9dbcd2f222        bridge               bridge              local
+0ad99d890160        host                 host                local
+2cadd976321a        mariadb-wp-privnet   bridge              local
+bed032b2609a        none                 null                local
+CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS                NAMES
+6adc73244364        wordpress           "docker-entrypoint.s…"   39 hours ago        Up 27 hours         0.0.0.0:80->80/tcp   wordpress
+7a130edf71c3        mariadb             "docker-entrypoint.s…"   39 hours ago        Up 27 hours         3306/tcp             wordpressdb
+[
+    {
+        "Name": "mariadb-wp-privnet",
+        "Id": "2cadd976321ac8f920ceb590c2588d2f8f09a2dc09343c21ee936ffe69136122",
+        "Created": "2020-06-21T22:24:23.329594924-04:00",
+        "Scope": "local",
+        "Driver": "bridge",
+        "EnableIPv6": false,
+        "IPAM": {
+            "Driver": "default",
+            "Options": {},
+            "Config": [
+                {
+                    "Subnet": "172.18.0.0/16",
+                    "Gateway": "172.18.0.1"
+                }
+            ]
+        },
+        "Internal": false,
+        "Attachable": true,
+        "Ingress": false,
+        "ConfigFrom": {
+            "Network": ""
+        },
+        "ConfigOnly": false,
+        "Containers": {
+            "6adc7324436413fbd361c03bc07522beb761e315166e0d18f25ed2777def66f3": {
+                "Name": "wordpress",
+                "EndpointID": "5a8c16dd9cec7252782daa423200a4e6cca96c9a9ef528f859779d6c6790d99d",
+                "MacAddress": "02:42:ac:12:00:02",
+                "IPv4Address": "172.18.0.2/16",
+                "IPv6Address": ""
+            },
+            "7a130edf71c3999f7b80f0c2c370bd973b0be0aeba61306dd39dafd29a1480c4": {
+                "Name": "wordpressdb",
+                "EndpointID": "e0602c44e3aea66151fa1e98d4fb3d1443bf3908097a6186509c6dc2e8ca54bf",
+                "MacAddress": "02:42:ac:12:00:03",
+                "IPv4Address": "172.18.0.3/16",
+                "IPv6Address": ""
+            }
+        },
+        "Options": {},
+        "Labels": {}
+    }
+]
+[
+    {
+        "Id": "7a130edf71c3999f7b80f0c2c370bd973b0be0aeba61306dd39dafd29a1480c4",
+        "Created": "2020-07-06T06:44:11.637316538Z",
+        "Path": "docker-entrypoint.sh",
+        "Args": [
+            "mysqld"
+        ],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 4039,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2020-07-06T19:07:02.181241624Z",
+            "FinishedAt": "2020-07-06T19:03:25.695420615Z"
+        },
+        "Image": "sha256:22851c7fe9167a42757b40cd31f1e6d278faac3b1d1467fc40043b24fd068e3f",
+        "ResolvConfPath": "/var/lib/docker/containers/7a130edf71c3999f7b80f0c2c370bd973b0be0aeba61306dd39dafd29a1480c4/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/7a130edf71c3999f7b80f0c2c370bd973b0be0aeba61306dd39dafd29a1480c4/hostname",
+        "HostsPath": "/var/lib/docker/containers/7a130edf71c3999f7b80f0c2c370bd973b0be0aeba61306dd39dafd29a1480c4/hosts",
+        "LogPath": "/var/lib/docker/containers/7a130edf71c3999f7b80f0c2c370bd973b0be0aeba61306dd39dafd29a1480c4/7a130edf71c3999f7b80f0c2c370bd973b0be0aeba61306dd39dafd29a1480c4-json.log",
+        "Name": "/wordpressdb",
+        "RestartCount": 0,
+        "Driver": "overlay2",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": [
+                "/root/var/lib/mysql:/var/lib/mysql"
+            ],
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "mariadb-wp-privnet",
+            "PortBindings": {},
+            "RestartPolicy": {
+                "Name": "no",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "CapAdd": null,
+            "CapDrop": null,
+            "Capabilities": null,
+            "Dns": [],
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": null,
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": [],
+            "BlkioDeviceReadBps": null,
+            "BlkioDeviceWriteBps": null,
+            "BlkioDeviceReadIOps": null,
+            "BlkioDeviceWriteIOps": null,
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": [],
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "KernelMemory": 0,
+            "KernelMemoryTCP": 0,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": false,
+            "PidsLimit": null,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": [
+                "/proc/asound",
+                "/proc/acpi",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/sys/firmware"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ]
+        },
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/var/lib/docker/overlay2/96da32237f42bb647c596753fb1e1455be810254cf22391f70c458a868edba2f-init/diff:/var/lib/docker/overlay2/61b15b518e55e5c5829d56f890500c640512f5af9ee069d08616730ededb6a75/diff:/var/lib/docker/overlay2/7dbe596e91ebdbf354e42813afeb09686203dd756cc07189f68fdd0f5719c6d5/diff:/var/lib/docker/overlay2/2510b9ab082cfdb8996d7d514b76f1898a789a92112627c591403bfc3f80e222/diff:/var/lib/docker/overlay2/95ccfa3bfb8eee6de1226f7bfe635a0c4c6404026b45fea22679759a3555d6df/diff:/var/lib/docker/overlay2/87566fa3bab983c1fef73b52e707412b325e3c40166629e8f60a75eb9fb5564c/diff:/var/lib/docker/overlay2/fd81312cb1c0ff18182f7d42d89c8c98ef3bdf1089aa6756e4c5a28251c3fcd6/diff:/var/lib/docker/overlay2/5245d49364609bb90681fecb0c6c3dce80a2428af3e6cc049cdee3ddbfd855ce/diff:/var/lib/docker/overlay2/2e531360d94b6462286bd721c1aa614189ae2ed3546114eaac380b20b731a38a/diff:/var/lib/docker/overlay2/985cbad2cbaf281440845670dd402382f7114f2b977e5d4e1f1357f0e8e79ae1/diff:/var/lib/docker/overlay2/3a189984e002ce0e6ab4500ce449d97e0ac457e4303328391c491cbfe7d74b1e/diff:/var/lib/docker/overlay2/9b0326aa333afa9341b97d8910cea4fbc9339d4d07817e6cd321d64393a116e1/diff:/var/lib/docker/overlay2/21bec20dded57e61645aad5fb40a34b537d1037b52943cda3210b746407ddf0f/diff:/var/lib/docker/overlay2/5874a2c2be7faacb96a36c75b294ffb3337994aa24d352ee7555bb84366ebe95/diff",
+                "MergedDir": "/var/lib/docker/overlay2/96da32237f42bb647c596753fb1e1455be810254cf22391f70c458a868edba2f/merged",
+                "UpperDir": "/var/lib/docker/overlay2/96da32237f42bb647c596753fb1e1455be810254cf22391f70c458a868edba2f/diff",
+                "WorkDir": "/var/lib/docker/overlay2/96da32237f42bb647c596753fb1e1455be810254cf22391f70c458a868edba2f/work"
+            },
+            "Name": "overlay2"
+        },
+        "Mounts": [
+            {
+                "Type": "bind",
+                "Source": "/root/var/lib/mysql",
+                "Destination": "/var/lib/mysql",
+                "Mode": "",
+                "RW": true,
+                "Propagation": "rprivate"
+            }
+        ],
+        "Config": {
+            "Hostname": "7a130edf71c3",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "ExposedPorts": {
+                "3306/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "MYSQL_ROOT_PASSWORD=redhat",
+                "MYSQL_DATABASE=wordpress",
+                "MYSQL_USER=wordpress",
+                "MYSQL_PASSWORD=redhat",
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "GOSU_VERSION=1.12",
+                "GPG_KEYS=177F4010FE56CA3336300305F1656F24C74CD1D8",
+                "MARIADB_MAJOR=10.5",
+                "MARIADB_VERSION=1:10.5.4+maria~focal"
+            ],
+            "Cmd": [
+                "mysqld"
+            ],
+            "Image": "mariadb",
+            "Volumes": {
+                "/var/lib/mysql": {}
+            },
+            "WorkingDir": "",
+            "Entrypoint": [
+                "docker-entrypoint.sh"
+            ],
+            "OnBuild": null,
+            "Labels": {}
+        },
+        "NetworkSettings": {
+            "Bridge": "",
+            "SandboxID": "53e13d37976ce2df618a0dc32d3b3222e9b038c98c673820ef72618e8bba42bd",
+            "HairpinMode": false,
+            "LinkLocalIPv6Address": "",
+            "LinkLocalIPv6PrefixLen": 0,
+            "Ports": {
+                "3306/tcp": null
+            },
+            "SandboxKey": "/var/run/docker/netns/53e13d37976c",
+            "SecondaryIPAddresses": null,
+            "SecondaryIPv6Addresses": null,
+            "EndpointID": "",
+            "Gateway": "",
+            "GlobalIPv6Address": "",
+            "GlobalIPv6PrefixLen": 0,
+            "IPAddress": "",
+            "IPPrefixLen": 0,
+            "IPv6Gateway": "",
+            "MacAddress": "",
+            "Networks": {
+                "mariadb-wp-privnet": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": [
+                        "7a130edf71c3"
+                    ],
+                    "NetworkID": "2cadd976321ac8f920ceb590c2588d2f8f09a2dc09343c21ee936ffe69136122",
+                    "EndpointID": "e0602c44e3aea66151fa1e98d4fb3d1443bf3908097a6186509c6dc2e8ca54bf",
+                    "Gateway": "172.18.0.1",
+                    "IPAddress": "172.18.0.3",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "MacAddress": "02:42:ac:12:00:03",
+                    "DriverOpts": null
+                }
+            }
+        }
+    }
+]
+[
+    {
+        "Id": "6adc7324436413fbd361c03bc07522beb761e315166e0d18f25ed2777def66f3",
+        "Created": "2020-07-06T06:50:03.478245094Z",
+        "Path": "docker-entrypoint.sh",
+        "Args": [
+            "apache2-foreground"
+        ],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 3848,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2020-07-06T19:06:44.14785744Z",
+            "FinishedAt": "2020-07-06T19:03:25.938717299Z"
+        },
+        "Image": "sha256:a5fef19f5a86da2b4dab286afc4ddcc1484068d8f2cff920860bc698e8513e62",
+        "ResolvConfPath": "/var/lib/docker/containers/6adc7324436413fbd361c03bc07522beb761e315166e0d18f25ed2777def66f3/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/6adc7324436413fbd361c03bc07522beb761e315166e0d18f25ed2777def66f3/hostname",
+        "HostsPath": "/var/lib/docker/containers/6adc7324436413fbd361c03bc07522beb761e315166e0d18f25ed2777def66f3/hosts",
+        "LogPath": "/var/lib/docker/containers/6adc7324436413fbd361c03bc07522beb761e315166e0d18f25ed2777def66f3/6adc7324436413fbd361c03bc07522beb761e315166e0d18f25ed2777def66f3-json.log",
+        "Name": "/wordpress",
+        "RestartCount": 0,
+        "Driver": "overlay2",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": [
+                "/root/var/www/html:/var/www/html"
+            ],
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "mariadb-wp-privnet",
+            "PortBindings": {
+                "80/tcp": [
+                    {
+                        "HostIp": "",
+                        "HostPort": "80"
+                    }
+                ]
+            },
+            "RestartPolicy": {
+                "Name": "no",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "CapAdd": null,
+            "CapDrop": null,
+            "Capabilities": null,
+            "Dns": [],
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": null,
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": [],
+            "BlkioDeviceReadBps": null,
+            "BlkioDeviceWriteBps": null,
+            "BlkioDeviceReadIOps": null,
+            "BlkioDeviceWriteIOps": null,
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": [],
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "KernelMemory": 0,
+            "KernelMemoryTCP": 0,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": false,
+            "PidsLimit": null,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": [
+                "/proc/asound",
+                "/proc/acpi",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/sys/firmware"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ]
+        },
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/var/lib/docker/overlay2/a87bb7f7f19a241cff1978f0d582e902b7f4bac42bfa5d4c9e41ebb64b975161-init/diff:/var/lib/docker/overlay2/5f42de9be2125dd99631008674021a2f1313fbd621d2ee7b38b15f583243e0ca/diff:/var/lib/docker/overlay2/58afa8e60c46480f335c0d6f76e608f10e454fa2644a075ecea14dce849d597c/diff:/var/lib/docker/overlay2/1f65753775aa3c02a253b7e4f6e04bf762e9e0889f608f982931314f561c99b1/diff:/var/lib/docker/overlay2/4451673d1492da8bfc7a2f302540f1cbf5e779e4c1b72277a3102e533a18bcc3/diff:/var/lib/docker/overlay2/14ef33a7e302e9b5dc01e0b3d9bf9e8a10fdde2e89450cf14cd720b4adbba9ce/diff:/var/lib/docker/overlay2/b2ccec542a5814065383774dd0e3f0c7fa96cf4e891215a841733b2815c093f4/diff:/var/lib/docker/overlay2/fa315caf13c126948c251840345de41d46f347ee2edb46f9d054e068f2ba1490/diff:/var/lib/docker/overlay2/30d0935fc89ff4a945f6d9f01cfebe03dc5bdb3b7fbae5b31774bf9aadce4cbc/diff:/var/lib/docker/overlay2/38f482f4ca69b103cf2981aff6e3a0c9f653fe0c2ddac2731756a96887c6d935/diff:/var/lib/docker/overlay2/1828e1dbe93a14ffab0c4c2db11928776101ba61c9da350911ba4cfa784a7193/diff:/var/lib/docker/overlay2/45f409747bf06ca02c21bf318dd62f1c6c4b34147c3cc48b66b4ad0dade91355/diff:/var/lib/docker/overlay2/b4637f92d8ba1965370d0028ece857c3207df48708833280cf428779b62bc83f/diff:/var/lib/docker/overlay2/de1ddf077c0c78f30cf9e3a37ca828c6d224aa7846bb35b54f324365ed81fc11/diff:/var/lib/docker/overlay2/cff107662b75f54ea46450f0a7135556cd154e272f3d036a466dcec14b782699/diff:/var/lib/docker/overlay2/5615fff60f9c18a4f579fbd4be19ecbfdcb9cef674ceb641aacd116acfdeab10/diff:/var/lib/docker/overlay2/ad7ad8d477cedef9a5dc77bf804434756100e5279c733139892a13a1c6e89c96/diff:/var/lib/docker/overlay2/7eb67e2000bee717aae1639174f0698af694ef1fdaae56033aaa2adb77f17059/diff:/var/lib/docker/overlay2/6ae0dab85ec101723ae2904016252a2ae61bb6c5f8883e165b29e1dc599dca22/diff:/var/lib/docker/overlay2/ffca0af4a4ea509d1126ff6aebc747ca2f66781487c49837d0f10cc93a57a21a/diff:/var/lib/docker/overlay2/00503b7c684c750d5c7b3ace4bc9c6ebe2f7f275f2b9afc4552d9edd018cdf7e/diff",
+                "MergedDir": "/var/lib/docker/overlay2/a87bb7f7f19a241cff1978f0d582e902b7f4bac42bfa5d4c9e41ebb64b975161/merged",
+                "UpperDir": "/var/lib/docker/overlay2/a87bb7f7f19a241cff1978f0d582e902b7f4bac42bfa5d4c9e41ebb64b975161/diff",
+                "WorkDir": "/var/lib/docker/overlay2/a87bb7f7f19a241cff1978f0d582e902b7f4bac42bfa5d4c9e41ebb64b975161/work"
+            },
+            "Name": "overlay2"
+        },
+        "Mounts": [
+            {
+                "Type": "bind",
+                "Source": "/root/var/www/html",
+                "Destination": "/var/www/html",
+                "Mode": "",
+                "RW": true,
+                "Propagation": "rprivate"
+            }
+        ],
+        "Config": {
+            "Hostname": "6adc73244364",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "ExposedPorts": {
+                "80/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "WORDPRESS_DB_HOST=wordpressdb",
+                "WORDPRESS_DB_USER=wordpress",
+                "WORDPRESS_DB_PASSWORD=redhat",
+                "WORDPRESS_DB_NAME=wordpress",
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "PHPIZE_DEPS=autoconf \t\tdpkg-dev \t\tfile \t\tg++ \t\tgcc \t\tlibc-dev \t\tmake \t\tpkg-config \t\tre2c",
+                "PHP_INI_DIR=/usr/local/etc/php",
+                "APACHE_CONFDIR=/etc/apache2",
+                "APACHE_ENVVARS=/etc/apache2/envvars",
+                "PHP_EXTRA_BUILD_DEPS=apache2-dev",
+                "PHP_EXTRA_CONFIGURE_ARGS=--with-apxs2 --disable-cgi",
+                "PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64",
+                "PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64",
+                "PHP_LDFLAGS=-Wl,-O1 -pie",
+                "GPG_KEYS=42670A7FE4D0441C8E4632349E4FDC074A4EF02D 5A52880781F755608BF815FC910DEB46F53EA312",
+                "PHP_VERSION=7.4.7",
+                "PHP_URL=https://www.php.net/distributions/php-7.4.7.tar.xz",
+                "PHP_ASC_URL=https://www.php.net/distributions/php-7.4.7.tar.xz.asc",
+                "PHP_SHA256=53558f8f24cd8ab6fa0ea252ca8198e2650160649681ce5230c1df1dc2b52faf",
+                "PHP_MD5=",
+                "WORDPRESS_VERSION=5.4.2",
+                "WORDPRESS_SHA1=e5631f812232fbd45d3431783d3db2e0d5670d2d"
+            ],
+            "Cmd": [
+                "apache2-foreground"
+            ],
+            "Image": "wordpress",
+            "Volumes": {
+                "/var/www/html": {}
+            },
+            "WorkingDir": "/var/www/html",
+            "Entrypoint": [
+                "docker-entrypoint.sh"
+            ],
+            "OnBuild": null,
+            "Labels": {},
+            "StopSignal": "SIGWINCH"
+        },
+        "NetworkSettings": {
+            "Bridge": "",
+            "SandboxID": "633b480300bd46819c1ea54771ff98c6dd77fb9ee6ca9390bf854d811f666c30",
+            "HairpinMode": false,
+            "LinkLocalIPv6Address": "",
+            "LinkLocalIPv6PrefixLen": 0,
+            "Ports": {
+                "80/tcp": [
+                    {
+                        "HostIp": "0.0.0.0",
+                        "HostPort": "80"
+                    }
+                ]
+            },
+            "SandboxKey": "/var/run/docker/netns/633b480300bd",
+            "SecondaryIPAddresses": null,
+            "SecondaryIPv6Addresses": null,
+            "EndpointID": "",
+            "Gateway": "",
+            "GlobalIPv6Address": "",
+            "GlobalIPv6PrefixLen": 0,
+            "IPAddress": "",
+            "IPPrefixLen": 0,
+            "IPv6Gateway": "",
+            "MacAddress": "",
+            "Networks": {
+                "mariadb-wp-privnet": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": [
+                        "6adc73244364"
+                    ],
+                    "NetworkID": "2cadd976321ac8f920ceb590c2588d2f8f09a2dc09343c21ee936ffe69136122",
+                    "EndpointID": "5a8c16dd9cec7252782daa423200a4e6cca96c9a9ef528f859779d6c6790d99d",
+                    "Gateway": "172.18.0.1",
+                    "IPAddress": "172.18.0.2",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "MacAddress": "02:42:ac:12:00:02",
+                    "DriverOpts": null
+                }
+            }
+        }
+    }
+]
+FirewallD is not running
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+	<meta name="viewport" content="width=device-width" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="robots" content="noindex,nofollow" />
+	<title>WordPress &rsaquo; Installation</title>
+	<link rel='stylesheet' id='dashicons-css'  href='http://localhost/wp-includes/css/dashicons.min.css?ver=5.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='buttons-css'  href='http://localhost/wp-includes/css/buttons.min.css?ver=5.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='forms-css'  href='http://localhost/wp-admin/css/forms.min.css?ver=5.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='l10n-css'  href='http://localhost/wp-admin/css/l10n.min.css?ver=5.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='install-css'  href='http://localhost/wp-admin/css/install.min.css?ver=5.4.2' type='text/css' media='all' />
+</head>
+<body class="wp-core-ui language-chooser">
+<p id="logo"><a href="https://wordpress.org/">WordPress</a></p>
+
+	<form id="setup" method="post" action="?step=1"><label class='screen-reader-text' for='language'>Select a default language</label>
+<select size='14' name='language' id='language'>
+<option value="" lang="en" selected="selected" data-continue="Continue" data-installed="1">English (United States)</option>
+<option value="af" lang="af" data-continue="Gaan voort">Afrikaans</option>
+<option value="ar" lang="ar" data-continue="المتابعة">العربية</option>
+<option value="ary" lang="ar" data-continue="المتابعة">العربية المغربية</option>
+<option value="as" lang="as" data-continue="Continue">অসমীয়া</option>
+<option value="az" lang="az" data-continue="Davam">Azərbaycan dili</option>
+<option value="azb" lang="az" data-continue="Continue">گؤنئی آذربایجان</option>
+<option value="bel" lang="be" data-continue="Працягнуць">Беларуская мова</option>
+<option value="bg_BG" lang="bg" data-continue="Напред">Български</option>
+<option value="bn_BD" lang="bn" data-continue="এগিয়ে চল.">বাংলা</option>
+<option value="bo" lang="bo" data-continue="མུ་མཐུད་དུ།">བོད་ཡིག</option>
+<option value="bs_BA" lang="bs" data-continue="Nastavi">Bosanski</option>
+<option value="ca" lang="ca" data-continue="Continua">Català</option>
+<option value="ceb" lang="ceb" data-continue="Padayun">Cebuano</option>
+<option value="cs_CZ" lang="cs" data-continue="Pokračovat">Čeština</option>
+<option value="cy" lang="cy" data-continue="Parhau">Cymraeg</option>
+<option value="da_DK" lang="da" data-continue="Fortsæt">Dansk</option>
+<option value="de_CH_informal" lang="de" data-continue="Weiter">Deutsch (Schweiz, Du)</option>
+<option value="de_CH" lang="de" data-continue="Weiter">Deutsch (Schweiz)</option>
+<option value="de_DE" lang="de" data-continue="Weiter">Deutsch</option>
+<option value="de_DE_formal" lang="de" data-continue="Weiter">Deutsch (Sie)</option>
+<option value="de_AT" lang="de" data-continue="Weiter">Deutsch (Österreich)</option>
+<option value="dzo" lang="dz" data-continue="Continue">རྫོང་ཁ</option>
+<option value="el" lang="el" data-continue="Συνέχεια">Ελληνικά</option>
+<option value="en_GB" lang="en" data-continue="Continue">English (UK)</option>
+<option value="en_ZA" lang="en" data-continue="Continue">English (South Africa)</option>
+<option value="en_CA" lang="en" data-continue="Continue">English (Canada)</option>
+<option value="en_AU" lang="en" data-continue="Continue">English (Australia)</option>
+<option value="en_NZ" lang="en" data-continue="Continue">English (New Zealand)</option>
+<option value="eo" lang="eo" data-continue="Daŭrigi">Esperanto</option>
+<option value="es_CL" lang="es" data-continue="Continuar">Español de Chile</option>
+<option value="es_CR" lang="es" data-continue="Continuar">Español de Costa Rica</option>
+<option value="es_VE" lang="es" data-continue="Continuar">Español de Venezuela</option>
+<option value="es_AR" lang="es" data-continue="Continuar">Español de Argentina</option>
+<option value="es_PE" lang="es" data-continue="Continuar">Español de Perú</option>
+<option value="es_PR" lang="es" data-continue="Continuar">Español de Puerto Rico</option>
+<option value="es_UY" lang="es" data-continue="Continuar">Español de Uruguay</option>
+<option value="es_GT" lang="es" data-continue="Continuar">Español de Guatemala</option>
+<option value="es_MX" lang="es" data-continue="Continuar">Español de México</option>
+<option value="es_CO" lang="es" data-continue="Continuar">Español de Colombia</option>
+<option value="es_ES" lang="es" data-continue="Continuar">Español</option>
+<option value="et" lang="et" data-continue="Jätka">Eesti</option>
+<option value="eu" lang="eu" data-continue="Jarraitu">Euskara</option>
+<option value="fa_IR" lang="fa" data-continue="ادامه">فارسی</option>
+<option value="fi" lang="fi" data-continue="Jatka">Suomi</option>
+<option value="fr_BE" lang="fr" data-continue="Continuer">Français de Belgique</option>
+<option value="fr_CA" lang="fr" data-continue="Continuer">Français du Canada</option>
+<option value="fr_FR" lang="fr" data-continue="Continuer">Français</option>
+<option value="fur" lang="fur" data-continue="Continue">Friulian</option>
+<option value="gd" lang="gd" data-continue="Lean air adhart">Gàidhlig</option>
+<option value="gl_ES" lang="gl" data-continue="Continuar">Galego</option>
+<option value="gu" lang="gu" data-continue="ચાલુ રાખવું">ગુજરાતી</option>
+<option value="haz" lang="haz" data-continue="ادامه">هزاره گی</option>
+<option value="he_IL" lang="he" data-continue="המשך">עִבְרִית</option>
+<option value="hi_IN" lang="hi" data-continue="जारी">हिन्दी</option>
+<option value="hr" lang="hr" data-continue="Nastavi">Hrvatski</option>
+<option value="hsb" lang="hsb" data-continue="Dale">Hornjoserbšćina</option>
+<option value="hu_HU" lang="hu" data-continue="Folytatás">Magyar</option>
+<option value="hy" lang="hy" data-continue="Շարունակել">Հայերեն</option>
+<option value="id_ID" lang="id" data-continue="Lanjutkan">Bahasa Indonesia</option>
+<option value="is_IS" lang="is" data-continue="Áfram">Íslenska</option>
+<option value="it_IT" lang="it" data-continue="Continua">Italiano</option>
+<option value="ja" lang="ja" data-continue="次へ">日本語</option>
+<option value="jv_ID" lang="jv" data-continue="Nerusaké">Basa Jawa</option>
+<option value="ka_GE" lang="ka" data-continue="გაგრძელება">ქართული</option>
+<option value="kab" lang="kab" data-continue="Kemmel">Taqbaylit</option>
+<option value="kk" lang="kk" data-continue="Жалғастыру">Қазақ тілі</option>
+<option value="km" lang="km" data-continue="បន្ត">ភាសាខ្មែរ</option>
+<option value="kn" lang="kn" data-continue="ಮುಂದುವರೆಸಿ">ಕನ್ನಡ</option>
+<option value="ko_KR" lang="ko" data-continue="계속">한국어</option>
+<option value="ckb" lang="ku" data-continue="به‌رده‌وام به‌">كوردی‎</option>
+<option value="lo" lang="lo" data-continue="ຕໍ່​ໄປ">ພາສາລາວ</option>
+<option value="lt_LT" lang="lt" data-continue="Tęsti">Lietuvių kalba</option>
+<option value="lv" lang="lv" data-continue="Turpināt">Latviešu valoda</option>
+<option value="mk_MK" lang="mk" data-continue="Продолжи">Македонски јазик</option>
+<option value="ml_IN" lang="ml" data-continue="തുടരുക">മലയാളം</option>
+<option value="mn" lang="mn" data-continue="Үргэлжлүүлэх">Монгол</option>
+<option value="mr" lang="mr" data-continue="सुरु ठेवा">मराठी</option>
+<option value="ms_MY" lang="ms" data-continue="Teruskan">Bahasa Melayu</option>
+<option value="my_MM" lang="my" data-continue="ဆက်လက်လုပ်ဆောင်ပါ။">ဗမာစာ</option>
+<option value="nb_NO" lang="nb" data-continue="Fortsett">Norsk bokmål</option>
+<option value="ne_NP" lang="ne" data-continue="जारी राख्नुहोस्">नेपाली</option>
+<option value="nl_NL_formal" lang="nl" data-continue="Doorgaan">Nederlands (Formeel)</option>
+<option value="nl_NL" lang="nl" data-continue="Doorgaan">Nederlands</option>
+<option value="nl_BE" lang="nl" data-continue="Doorgaan">Nederlands (België)</option>
+<option value="nn_NO" lang="nn" data-continue="Hald fram">Norsk nynorsk</option>
+<option value="oci" lang="oc" data-continue="Contunhar">Occitan</option>
+<option value="pa_IN" lang="pa" data-continue="ਜਾਰੀ ਰੱਖੋ">ਪੰਜਾਬੀ</option>
+<option value="pl_PL" lang="pl" data-continue="Kontynuuj">Polski</option>
+<option value="ps" lang="ps" data-continue="دوام ورکړه">پښتو</option>
+<option value="pt_BR" lang="pt" data-continue="Continuar">Português do Brasil</option>
+<option value="pt_AO" lang="pt" data-continue="Continuar">Português de Angola</option>
+<option value="pt_PT_ao90" lang="pt" data-continue="Continuar">Português (AO90)</option>
+<option value="pt_PT" lang="pt" data-continue="Continuar">Português</option>
+<option value="rhg" lang="rhg" data-continue="Continue">Ruáinga</option>
+<option value="ro_RO" lang="ro" data-continue="Continuă">Română</option>
+<option value="ru_RU" lang="ru" data-continue="Продолжить">Русский</option>
+<option value="sah" lang="sah" data-continue="Салҕаа">Сахалыы</option>
+<option value="snd" lang="sd" data-continue="اڳتي هلو">سنڌي</option>
+<option value="si_LK" lang="si" data-continue="දිගටම කරගෙන යන්න">සිංහල</option>
+<option value="sk_SK" lang="sk" data-continue="Pokračovať">Slovenčina</option>
+<option value="skr" lang="skr" data-continue="جاری رکھو">سرائیکی</option>
+<option value="sl_SI" lang="sl" data-continue="Nadaljuj">Slovenščina</option>
+<option value="sq" lang="sq" data-continue="Vazhdo">Shqip</option>
+<option value="sr_RS" lang="sr" data-continue="Настави">Српски језик</option>
+<option value="sv_SE" lang="sv" data-continue="Fortsätt">Svenska</option>
+<option value="sw" lang="sw" data-continue="Endelea">Kiswahili</option>
+<option value="szl" lang="szl" data-continue="Kōntynuować">Ślōnskŏ gŏdka</option>
+<option value="ta_IN" lang="ta" data-continue="தொடரவும்">தமிழ்</option>
+<option value="te" lang="te" data-continue="కొనసాగించు">తెలుగు</option>
+<option value="th" lang="th" data-continue="ต่อไป">ไทย</option>
+<option value="tl" lang="tl" data-continue="Magpatuloy">Tagalog</option>
+<option value="tr_TR" lang="tr" data-continue="Devam">Türkçe</option>
+<option value="tt_RU" lang="tt" data-continue="дәвам итү">Татар теле</option>
+<option value="tah" lang="ty" data-continue="Continue">Reo Tahiti</option>
+<option value="ug_CN" lang="ug" data-continue="داۋاملاشتۇرۇش">ئۇيغۇرچە</option>
+<option value="uk" lang="uk" data-continue="Продовжити">Українська</option>
+<option value="ur" lang="ur" data-continue="جاری رکھیں">اردو</option>
+<option value="uz_UZ" lang="uz" data-continue="Davom etish">O‘zbekcha</option>
+<option value="vi" lang="vi" data-continue="Tiếp tục">Tiếng Việt</option>
+<option value="zh_CN" lang="zh" data-continue="继续">简体中文</option>
+<option value="zh_TW" lang="zh" data-continue="繼續">繁體中文</option>
+<option value="zh_HK" lang="zh" data-continue="繼續">香港中文版	</option>
+</select>
+<p class="step"><span class="spinner"></span><input id="language-continue" type="submit" class="button button-primary button-large" value="Continue" /></p></form><script type="text/javascript">var t = document.getElementById('weblog_title'); if (t){ t.focus(); }</script>
+	<script type='text/javascript' src='http://localhost/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp'></script>
+<script type='text/javascript' src='http://localhost/wp-includes/js/jquery/jquery-m  0     0    0 12575    0     0  15754      0 --:--:-- --:--:-- --:--:-- 15754
+igrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript' src='http://localhost/wp-admin/js/language-chooser.min.js?ver=5.4.2'></script>
+<script type="text/javascript">
+jQuery( function( $ ) {
+	$( '.hide-if-no-js' ).removeClass( 'hide-if-no-js' );
+} );
+</script>
+</body>
+</html>
